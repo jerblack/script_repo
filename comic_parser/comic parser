@@ -1,0 +1,58 @@
+comic parser
+
+
+
+"""
+    parse a comic file name into the most likely comic details for the given comic
+    
+    - iterate through comics in folder
+    - for each comic
+        parse the file name using the potential comic details in different formats
+        created multiple templates and attempt to map file name to each template format
+        parse resulting data and use that to score the likelihood that the format was correct
+    - possible details parsed could include
+        title, series, year, issue_number, number_issues, volume_number, extension, release_group, digital, type, covers, issue_desc
+
+
+    PARSING OPTIONS
+    - define a series of potential template formats to test for
+        [title] [issue_number] ([year]) ([release_group]).
+        [title] [issue_number] ([year]) ([digital])([release_group]).
+
+    - split string into parts by space (or other breaking character)
+    	get portion of string up to first paren, should be title and issue_num
+    		iterate through each chunk in first substring
+    		if 1st char is alpha join to title string
+    			get number of chunks in string
+    			get number of chunks in string that are only numbers
+    				if none, then no issue number
+    				if one, then is likely issue number
+    				if two, first number may be part of title of may be num of nums.
+    					if first number is less than or equal to second number, it can be the issue number
+    					if number is a year, then it's either the issue year or part of the title
+    						did one of the parens test positive for year? then this year is probably part of the title
+    					
+    	separately test each paren
+    		is year? string inside only contains number from 1900 to 2017
+    		is digital? string inside only contains digital or hd 
+    		is release-group? string inside contains some strings from release groups array
+    		is covers? has the word cover or covers and a number in front
+    		is volume? string contains (volume|vol|v followed by a number either directly or after a space or period)
+        
+    - Samples
+        Deathstroke 007 (2017).cbr
+        Action Comics 048 (2016) (Digital-Empire).cbr
+        Batman & Robin Eternal 014 (2016) (Digital) (Zone-Empire).cbr
+        Detective Comics 048(2016)(2 covers)(Digital)(TLK-EMPIRE-HD).cbr
+        Earth 2 - Society 020 (2017) (Digital) (Zone-Empire).cbr
+        Earth 2 Society Annual 001 (2016).cbr
+        Justice League vs. Suicide Squad 04 (of 06) (2017) (3 covers) (digital) (Minutemen-Demolition).cbz
+        Batman '66 Meets Wonder Woman '77 004 (2017) (digital) (Son of Ultron-Empire).cbr
+        Looney Tunes 235 (2017) (digital) (Son of Ultron-Empire).cbr
+        Green Lantern v5 049 (2016) (Webrip) (The Last Kryptonian-DCP).cbr
+        Batman v Superman - Dawn of Justice 'Field Trip', General Mills Presents (2016).cbr
+        Avengers 003.1 (2017) (digital) (Minutemen-Slayer).cbr
+        Titans, 2016-07-27 (#01) (2 covers) (digital) (Glorith-Novus-HD).cbz
+        Sinestro Vol 01 020 (2016) (Digital) (HD) (Thornn-Empire).cbr
+
+"""
