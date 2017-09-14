@@ -1,0 +1,4 @@
+#!/bin/bash
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+
+screen -dmS hole_patcher sudo ~/hole_patcher/hole_patcher.py &

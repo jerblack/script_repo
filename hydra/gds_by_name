@@ -1,0 +1,10 @@
+#!/bin/bash
+
+if [ "$2" == "true" ]; then
+  folder="and mimeType = 'application/vnd.google-apps.folder'"
+else
+  folder=""
+fi
+
+gdrive -c /home/jeremy/.gdrive/gds list --no-header --absolute --name-width 0 --query " name=\"$1\" $folder "
+        

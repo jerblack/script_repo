@@ -1,0 +1,5 @@
+#!/bin/bash
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+sleep 30
+screen -dmS mount_checker /home/jeremy/mount_checker/mount_checker.py &
+

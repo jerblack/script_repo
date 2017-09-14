@@ -1,0 +1,99 @@
+
+
+PogFS
+Plex on Google FS
+
+
+python-based FUSE file system for Google Drive
+primary use case is serving files stored on GD to Plex
+    focus is on minimizing api calls to GD, so on initial run all data is cached
+    all file system activity that doesn't require the actual file content will use the cache db
+    google drive changes api is used to get get changes since first run, which are inserted into the cache
+        changes api provides all differences, so those are utilized to update the db. no need to rescan whole drive
+    all communication to google is done by updater thread
+        except downloads and uploads, which have their own threads
+    downloads happen by requested chunk, and are saved into cache folder
+        Config.cache_folder/parent_id/file_id.cache
+        try to yield bytes as they are received while simultaneously caching
+        find a way to write file_progress dict to db when cleaning up File objects
+        do i need to worry about cleaning up file objects from memory after some time or will i explicilty know that the file is no longer being accessed
+
+    Uploads are copied into Config.upload\og_path\og_file
+        move to cache on complete
+
+
+utility functions
+    dedupe
+        fix duplicate folders in paths (two subfolders with same name)
+        coalesce the two trees into the parents with the earliest ids
+        if dupe files (same file names) in one folder after that
+            if same md5, delete second one
+            else, prompt with size date
+            provide options to keep newest or largest
+
+
+Config
+    use_file_cache = True
+    file_cache_folder = /...
+    file_cache_size = 10 gb
+    read_only = False
+
+on first run
+    auth user
+    cache file and folder information using new hole_patcher method
+    get config information , mount_path, rw?, cache_size, cache_location
+
+on startup
+    create cache folder if it doesn't exist
+    create config folder if it doesn't exist
+    delete any incomplete files from cache
+        not marked as complete in db
+        unless state is stored in db, then resume from saved state
+
+download file
+    can i use a generator to yield bytes as they are downloaded and simultaneously cache them?
+        or only chunk by chunk
+    file requested by file system, will be beginning or some later range
+        calculate range_id by chunk size
+        download needed chunk to fulfill request as needed
+        need to learn how to write chunks within a file by byte range
+
+
+
+uploading files
+    if Config.read_only = False
+
+    Uploads are copied into Config.upload\og_path\og_file
+        move to cache on complete if enabled
+            wait till file not in use
+                move file to cache, update db with new path
+                mark File.cache_complete = True
+    files.should remain available for local streaming while uploading
+    uploading should happen on a separate thread
+
+
+cache
+    file accessed and looked up in db
+    as files are downloaded from google, chunk by chunk, the chunks are saved to the file
+    state can be saved as string of 012012 mapped to file_progress dict values in order
+        changing chunk size should invalidate incomplete files
+
+
+
+accessing files
+    file info retrieved from db
+    file chunks are downloaded as requested + readahead
+    Config.chunk_size = ??
+    Config.cache_age = 24 hours
+    Config.read_ahead = num chunks to read ahead when data requested
+    file_progress_dict[chunk_id] = state
+        0 = not_downloaded
+        1 = downloaded
+        2 = downloading
+
+
+
+
+
+
+RW file system

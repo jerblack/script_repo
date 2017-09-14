@@ -1,0 +1,6 @@
+#!/bin/bash
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+
+screen -dmS gdc_only /home/jeremy/gdc_only/gdc_only.py 0 &
+
+

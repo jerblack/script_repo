@@ -1,0 +1,5 @@
+#!/bin/bash
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+sleep 60
+screen -dmS plex_multiscanner /home/jeremy/plex_multiscanner/plex_multiscanner.py &
+

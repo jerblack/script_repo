@@ -1,0 +1,229 @@
+new hole patcher outline
+
+faster, stores state, no longer needs full scan, uses changes api
+
+
+on start, goto Main()
+	call Main.config_loader()
+	get DB(), Drive() instances
+	if db.state.first_run or start_token =0
+		call first_run
+	else 
+		call next_run
+    
+    start change watcher thread
+    start download_controller thread
+        start Config.download_threads number of individual download threads
+
+config_loader
+	responsible for adding any attributes to Config that require calculations
+	can be called if settings are updated in runtime
+	base config attribs are:
+		app_name='hole_patcher' # currently, will probably change name
+		check_changes_minutes=15 # how often to ask google for new changes since start_token
+		use_remote_subfolder=True # only check for files in a particular subfolder
+		remote_subfolder=path # remote subfolder to check for new files in (/backup/)
+		local_path="~/server_z/_media"
+	calculated attribs
+		tmp_folder=local_path/.tmp/ , must create folder if doesn't exist
+		config_folder=~/.app_name/  , must create folder if doesn't exist
+		db=config_folder/app_name.db
+
+
+first_run
+	first run will check to see if this is the first run of the program
+		its purpose is to do the initial large scan and add all files and folders to the db
+		update the start token before the scan to be sure files added after scan starts get picked up
+	if db.get_first_run is true or start_token is 0
+		first run tasks will be performed
+			get start token from google, write to db
+			get all folders from google, write to db
+			get all files from google, write to db
+			flush drive.files since we won't use after the initial index
+		on successful completion of first_run tasks, db.set_first_run(false) is called
+
+next_run
+	this class gets app setup for runs that are not first runs
+	populate drive.folders from db
+
+
+
+drive class
+	abstracts all google interaction
+		deals in terms of file and folder objects
+		all functions accept file or folder objects for input
+	first authenticate and create working drive.service object
+	build hierarchy for paths
+		first search for all folders and build the folder structure, which gives the ability to looks up paths by parent so it's much easier to place files after this.
+			add results to drive.folders[folder_object.id] = folder_object
+			iterate through all objects, get their parent and update the subfolders array in the parent object
+				drive.folders[folder_object.parent_id].subfolders.append(folder_object.id)
+			recursive function build_paths to update folder_object.path on all objects
+				starting from root object
+					update folder_object.path
+					if Config.use_remote_subfolder=True mark folders as existing inside or outside remote subfolder
+						if folder outside, set folder_object.included = False, else folder_object.included = True
+					else set folder_object.included=True on everything
+					call build_paths for each subfolder in the array with the id and path of the calling function,
+					    which appends that path to the current name for the new path
+	next search for all files
+		search google for all files that are not folders
+			create drive.files[file_object.id] = file_object for each file
+		only add files that are in included paths
+			if drive.folders[file_object.parent_id].included = true
+				add file_object to db
+				    DB.add_file(file_object)
+
+
+DB class
+	abstract all sql to a class that contains all needed verbs and primarily uses file and folder objects for input and output
+	connection to db is created and held when class is instantiated
+	autocommit is enabled
+	verify is called at instantiation
+		creates state, files, folders tables if they do not exist
+		if it doesn't exist, adds default values row to state
+	state stores following in row 0
+		start_token, last_check_date
+	files table
+		id(google file id)
+		name
+		path(full path to file on google, including filename)
+		remote_size(int)
+		local_size(int)
+		need_download(int) 0=no,1=yes
+		parent(text, id of parent folder)
+	folders table
+		id(google file id)
+		name
+		path(full path of folder on google)
+		parent(text)
+		included(int, folder is or exists inside of remote subfolder)
+
+	verbs include
+		close, execute
+		verify
+		get_first_run # returns int 0,1
+		set_first_run # pass int 0,1
+		remove_all_data # drop files, folders table in event of subsequent calls to first_run
+		set_last_check_time # last time we checked for changes or  first_run
+		get_last_check_time # readable string, only used in logs so far
+		get_start_token # string
+		set_start_token # string
+		add_file # accepts file_object (or array of them), writes to db
+		add_folder # accepts folder_object (or array of them), write to db
+		remove_file # accepts id,file_object,array, removes from db
+		remove_folder # accepts id,folder_object,array removes from db
+		get_all_folders # returns all folders in table as folder objects in a dictionary suitable for drive.folders
+			calls folder.check() to get attribs that did not come from db
+			called on all startups that are not first_run, and after first_run is completed.
+			this is called in a separate thread that only handles checking google for changes and adding those changes to the db with file_object.needs_download=True
+		get_downloads(num=All) # returns num files in table with needs_download set to 1(true) as a dict of file_objects suitable for drive.files
+			calls file.check() to get attribs that did not come from db
+			this is called in a separate thread that only manages new downloads it finds in the db
+		update_file # if drives.changes says file changed, update in db
+			just call add_file with new file object
+		get_file # return file object given an id
+
+
+
+change_watcher class
+	this class is instantiated in a different thread and its primary function is to periodically check for changes in the google drive account
+	watcher is started as a new thread by Main()
+
+	watcher
+    	get changes since last run
+        if changes
+        - convert to files, determine change type and handle    
+        - save new start token to db
+        loop every Config.check_interval
+
+	all changes are reflected in the db
+		every config.interval
+			call drive.get_changes which returns an array of changes
+			uses the array of changes to perform the appropriate change
+					new_file, file_removed, folder_removed, file_updated
+
+	determine kind of change
+		if change.removed=true
+			delete file from disk
+			remove file from db # should determine from mimetype if file or folder
+		if change.file.id not in db
+			create file_object from change.file
+			add file_object to db
+		if change.file.id in db
+		    # this part allows us to handle renames w/out needing to redownload the file or leave the old file in its place
+			db_file = db.get_file(change.file.id)
+			if change.file.remote_size != db.local_size
+				if change.file.parent != db.parent or change.file.name != db.name
+					remove local file
+				update db with new information from change.file
+				mark as download needed
+			rename() # moves existing good file to new location
+
+	rename if necessary
+		path = os.path.dirname(db.path)
+		name = os.path.split(db.path)[:-1]
+		changed = False
+		if change.file.parent != db.parent:
+			path = drive.folders[change.file.parent].path
+			changed = True
+		if change.file.name != db.name:
+			name = change.file.name
+			changed = True
+		if changed:
+			shutil.move(db.path, os.path.join(path, name))
+			update db.path
+			    db.update(file_object)
+
+
+file_object
+	instanced w/ (name, id, parent, path, remote_size)
+	attribs
+		name, id, parent, path, remote_size, local_size, local_exists, tmp_path, local_path
+
+	self.check called from __init__
+		if file exists locally, set file_object.local_exists=True and file_object.local_size
+		calculate tmp_path
+			set tmp_path to Config.tmp_path/{file_object.id}.tmp
+		calculate local_path
+			if Config.use_remote_subfolder, set local_path to 
+				replace(Config.remote_subfolder, Config.local_path)/drive.folder[file_object.parent_id].path/file_object.name
+			else
+				set local_path to Config.local_path/drive.folder[file_object.parent_id].path/file_object.name
+		if not exists locally or local_size != remote_size
+			set needs_download=true
+	has test function that returns num files
+
+folder_object
+	instanced w/ (name, id, parent)
+	attribs
+		name, id, parent, path, subfolders, included
+		path, subfolders calculated during drive.get_folders
+
+	get_included()
+		if Config.use_remote_subfolder=False
+			return True
+		else
+			if folder includes remote_subfolder at beginning of path 
+				return False
+			else
+				return True
+			
+
+downloader thread
+    main thread
+    	get DB instance
+        checks db for files marked need_download, which populates drive.files with dict of file_objects
+        maps drive.files (as array if needed) to downloader_thread
+        this thread handles writing status to console using data reported from child threads
+            want to be able to log in a way that is not just a one line per update, but need to handle retrieving progress from download threads
+    
+    downloader_thread
+    	get DB, Drive instances
+        os.makedirs(os.path.dirname(local_tmp_path), exist_ok=True)
+        os.makedirs(os.path.dirname(final_path), exist_ok=True)
+        drive.download(id, local_tmp_path/id.tmp)
+            reports progress back to parent thread during download (how?)
+        shutil.move(local_tmp_path/id.tmp, final_path)
+		mark file in db as download needed = False (update file by id)
+

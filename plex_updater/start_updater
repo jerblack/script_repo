@@ -1,0 +1,5 @@
+#!/bin/bash
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+
+screen -dmS plex_updater /home/jeremy/plex_updater/plex_updater.py &
+

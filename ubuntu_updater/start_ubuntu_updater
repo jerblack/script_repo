@@ -1,0 +1,5 @@
+#!/bin/bash
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+sleep 30
+screen -dmS ubuntu_updater /home/jeremy/ubuntu_updater/ubuntu_updater.py &
+

@@ -1,0 +1,7 @@
+#!/bin/bash
+
+cd /home/jeremy/.cache/acd_cli
+rm acd_cli*
+rm nodes*
+rm endpoint*
+

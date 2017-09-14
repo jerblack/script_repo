@@ -1,0 +1,5 @@
+#! /bin/bash
+
+sudo screen -r plex_updater
+
+

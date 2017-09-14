@@ -1,0 +1,5 @@
+#!/bin/bash
+
+screen -r plex_multiscanner
+
+

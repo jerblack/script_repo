@@ -1,0 +1,6 @@
+#!/bin/bash
+
+sudo apt install screen python3-pip -y
+sudo pip3 install plexapi requests
+sudo sed -i "s|^exit 0|$PWD/start_updater\nexit 0|g" /etc/rc.local
+
