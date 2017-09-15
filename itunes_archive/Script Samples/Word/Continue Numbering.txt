@@ -1,0 +1,12 @@
+Sub ContinueNumbering()
+    Dim myPara As Paragraph
+    
+    For Each myPara In ActiveDocument.Paragraphs
+        If myPara.Style = ActiveDocument.Styles("List Number") Then
+            If myPara.Previous.Style = ActiveDocument.Styles("Paragraph Text") Then
+                myPara.SeparateList
+            End If
+        End If
+    Next myPara
+
+End Sub

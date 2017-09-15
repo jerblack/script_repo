@@ -1,0 +1,77 @@
+Sub BulletList()
+  With ListGalleries(wdNumberGallery).ListTemplates(1).ListLevels(1)
+        .NumberFormat = "%1."
+        .NumberStyle = wdListNumberStyleArabic
+        .NumberPosition = InchesToPoints(0)
+        .TextPosition = InchesToPoints(0.25)
+        .ResetOnHigher = 0
+    End With
+
+    With ListGalleries(wdNumberGallery).ListTemplates(6).ListLevels(1)
+        .NumberFormat = "%1."
+        .NumberStyle = wdListNumberStyleLowercaseLetter
+        .NumberPosition = InchesToPoints(0.5)
+        .TextPosition = InchesToPoints(0.75)
+        .ResetOnHigher = 0
+    End With
+    
+    With ListGalleries(wdNumberGallery).ListTemplates(7).ListLevels(1)
+        .NumberFormat = "%1."
+        .NumberStyle = wdListNumberStyleLowercaseRoman
+        .NumberPosition = InchesToPoints(1)
+        .TextPosition = InchesToPoints(1.25)
+        .ResetOnHigher = 0
+    End With
+    
+    REM With ListGalleries(wdNumberGallery).ListTemplates(4).ListLevels(1)
+        REM .NumberFormat = "%1."
+        REM .NumberStyle = wdListNumberStyleUppercaseLetter
+        REM .NumberPosition = InchesToPoints(1.5)
+        REM .TextPosition = InchesToPoints(1.75)
+        REM .ResetOnHigher = 0
+    REM End With
+    
+
+
+    REM ListGalleries(wdNumberGallery).ListTemplates(4).Name = ""
+    
+    Dim myPara As Paragraph
+    For Each myPara In ActiveDocument.Paragraphs
+        If myPara.Style = ActiveDocument.Styles("NumberListT1") Then
+            myPara.Style = ActiveDocument.Styles("NumberList1")
+        End If
+        If myPara.Style = ActiveDocument.Styles("NumberListT2") Then
+            myPara.Style = ActiveDocument.Styles("NumberList2")
+        End If
+    Next myPara
+
+    For Each myPara In ActiveDocument.Paragraphs
+	    ListGalleries(wdNumberGallery).ListTemplates(1).Name = ""
+        If myPara.Style = ActiveDocument.Styles("NumberList1") Then
+            myPara.Style = ActiveDocument.Styles("List Paragraph")
+            myPara.Range.ListFormat.ApplyListTemplate ListTemplate:=ListGalleries(wdNumberGallery).ListTemplates(1), ContinuePreviousList:=True, ApplyTo:=wdListApplyToWholeList, DefaultListBehavior:=wdWord10ListBehavior
+        End If
+		ListGalleries(wdNumberGallery).ListTemplates(6).Name = ""
+        If myPara.Style = ActiveDocument.Styles("NumberList2") Then
+            myPara.Style = ActiveDocument.Styles("List Paragraph")
+            myPara.Range.ListFormat.ApplyListTemplate ListTemplate:=ListGalleries(wdNumberGallery).ListTemplates(6), ContinuePreviousList:=True, ApplyTo:=wdListApplyToWholeList, DefaultListBehavior:=wdWord10ListBehavior
+        End If
+	    ListGalleries(wdNumberGallery).ListTemplates(7).Name = ""
+        If myPara.Style = ActiveDocument.Styles("NumberList3") Then
+            myPara.Style = ActiveDocument.Styles("List Paragraph")
+            myPara.Range.ListFormat.ApplyListTemplate ListTemplate:=ListGalleries(wdNumberGallery).ListTemplates(7), ContinuePreviousList:=True, ApplyTo:=wdListApplyToWholeList, DefaultListBehavior:=wdWord10ListBehavior
+        End If
+        REM If myPara.Style = ActiveDocument.Styles("NumberList4") Then
+            REM myPara.Style = ActiveDocument.Styles("List Paragraph")
+            REM myPara.Range.ListFormat.ApplyListTemplate ListTemplate:=ListGalleries(wdNumberGallery).ListTemplates(4), ContinuePreviousList:=True, ApplyTo:=wdListApplyToWholeList, DefaultListBehavior:=wdWord10ListBehavior
+        REM End If
+    Next myPara
+    
+
+        
+
+
+End Sub
+
+
+

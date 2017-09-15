@@ -1,0 +1,7 @@
+---------------------------
+Error
+---------------------------
+The 'size' attribute is invalid - The value 'small' is invalid according to its datatype 'http://schemas.microsoft.com/office/2009/07/customui:ST_Size' - The Enumeration constraint failed.
+---------------------------
+OK   
+---------------------------

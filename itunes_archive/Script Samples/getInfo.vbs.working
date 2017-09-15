@@ -1,0 +1,82 @@
+'Option Explicit
+'On Error Resume Next 
+Dim iTunes,Title,Tracks,tName,tArtist,tAlbum,tPlayTimes, tDateAdded, tGenre
+Dim tLength,tBitrate,tYear, tTrackNum
+Dim newFS, File_Name, realRating, tPlaylist
+Set iTunes=CreateObject("iTunes.Application")
+Set Track=iTunes.CurrentTrack
+
+Set newFS = Createobject("Scripting.FileSystemObject") 
+Set File_Name = newFS.OpenTextFile("C:\\xampp\\htdocs\\trackinfo.htm", 2, True) 
+With Track
+	tName = .Name
+	tArtist = .Artist
+	tAlbum = .Album
+	tRating = .Rating
+	tYear = .Year
+	tTrackNum = .TrackNumber
+	tPlayTimes = .PlayedCount
+	tLength = .Time
+	tBitrate = .BitRate
+	tGenre = .Genre
+	tDateAdded = .DateAdded
+  End With
+
+ if tRating = 0 then
+	realRating = "Not Rated"
+elseif tRating = 20 then
+	realRating = "1 Star"
+elseif tRating = 40 then
+	realRating = "2 Stars"
+elseif tRating = 60 then
+	realRating = "3 Stars"
+elseif tRating = 80 then
+	realRating = "4 Stars"
+elseif tRating = 100 then
+	realRating = "5 Stars"
+end if
+
+if iTunes.PlayerState <> 0 then
+File_Name.WriteLine "<html><head><title>PoleyMote</title>"
+File_Name.WriteLine "<meta name = ""viewport"" content = ""width=device-width,user-scalable=no""><META HTTP-EQUIV=""Pragma"" CONTENT=""no-cache"">"
+File_Name.WriteLine "<meta name=""apple-mobile-web-app-capable"" content=""yes"" >"
+File_Name.WriteLine "<meta name=""apple-mobile-web-app-status-bar-style"" content=""black"" >"
+File_Name.WriteLine "<link href=""iphone.css"" type=""text/css"" rel=""stylesheet"">"
+File_Name.WriteLine "</head><body>"
+File_Name.WriteLine "<div style=""height:10px;""></div>"
+File_Name.WriteLine "<p id=""trackInfoHead"">[artist]</p>"
+File_Name.WriteLine "<p id=""trackInfo"">" & tArtist & "</p>"
+File_Name.WriteLine "<p id=""trackInfoHead"">[album]</p>"	
+File_Name.WriteLine "<p id=""trackInfo"">" & tAlbum & "</p>"
+File_Name.WriteLine "<p id=""trackInfoHead"">[title]</p>"
+File_Name.WriteLine "<p id=""trackInfo"">" & tName & "</p>"
+File_Name.WriteLine "<input style=""border-top-width:1px;margin-top:10px;"" id=""button"" value=""Return Home"" type=""button"" onclick=""window.location='/';"" >"
+File_Name.WriteLine "<div style=""margin:24px"">"
+File_Name.WriteLine "<p id=""trackDetails"">Rating: " & realRating & "</p>"
+File_Name.WriteLine "<p id=""trackDetails"">Year: " & tYear & "</p>"
+File_Name.WriteLine "<p id=""trackDetails"">Length: " & tLength & "</p>"
+File_Name.WriteLine "<p id=""trackDetails""># Plays: " & tPlayTimes & "</p>"
+File_Name.WriteLine "<p id=""trackDetails"">Track#: " & tTrackNum & "</p>"
+File_Name.WriteLine "<p id=""trackDetails"">Bitrate: " & tBitrate & "</p>"
+File_Name.WriteLine "<p id=""trackDetails"">Genre: " & tGenre & "</p>"
+File_Name.WriteLine "<p id=""trackDetails"">Date Added: " & tDateAdded & "</p></div>"
+File_Name.WriteLine "</body></html>"
+File_Name.Close 
+else
+File_Name.WriteLine "<html><head><title>PoleyMote</title>"
+File_Name.WriteLine "<meta name = ""viewport"" content = ""width=device-width,user-scalable=no"">"
+File_Name.WriteLine "<meta name=""apple-mobile-web-app-capable"" content=""yes"" >"
+File_Name.WriteLine "<meta name=""apple-mobile-web-app-status-bar-style"" content=""black"" >"
+File_Name.WriteLine "<link href=""iphone.css"" type=""text/css"" rel=""stylesheet"">"
+File_Name.WriteLine "</head><body>"
+File_Name.WriteLine "<p id=""trackInfoHead"">Stopped</p>"
+File_Name.WriteLine "<p id=""trackInfo"">No Music Playing</p>"
+File_Name.WriteLine "<input style=""border-top-width:1px;margin-top:10px;"" id=""button"" value=""Return Home"" type=""button"" onclick=""window.location='/';"" >"
+File_Name.WriteLine "</body></html>"
+File_Name.Close 
+end if
+Set File_Name = Nothing 
+Set newFS = Nothing 
+
+
+

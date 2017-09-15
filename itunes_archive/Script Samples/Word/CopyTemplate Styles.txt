@@ -1,0 +1,60 @@
+Sub CopyStylesFromTemplate()
+	ActiveDocument.AttachedTemplate = "Word to Flare Template.dotm"
+    Application.OrganizerCopy Source:=ActiveDocument.AttachedTemplate.FullName, Destination:=ActiveDocument.FullName, Name:="Normal", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:=ActiveDocument.AttachedTemplate.FullName, Destination:=ActiveDocument.FullName, Name:="Paragraph Text", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:=ActiveDocument.AttachedTemplate.FullName, Destination:=ActiveDocument.FullName, Name:="Caption", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:=ActiveDocument.AttachedTemplate.FullName, Destination:=ActiveDocument.FullName, Name:="code", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:=ActiveDocument.AttachedTemplate.FullName, Destination:=ActiveDocument.FullName, Name:="Default Paragraph Font", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:=ActiveDocument.AttachedTemplate.FullName, Destination:=ActiveDocument.FullName, Name:="Comment Reference", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:=ActiveDocument.AttachedTemplate.FullName, Destination:=ActiveDocument.FullName, Name:="Comment Text", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:=ActiveDocument.AttachedTemplate.FullName, Destination:=ActiveDocument.FullName, Name:="Comment Subject", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:=ActiveDocument.AttachedTemplate.FullName, Destination:=ActiveDocument.FullName, Name:="FollowedHyperlink", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:=ActiveDocument.AttachedTemplate.FullName, Destination:=ActiveDocument.FullName, Name:="Footer", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:=ActiveDocument.AttachedTemplate.FullName, Destination:=ActiveDocument.FullName, Name:="Graphic", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:=ActiveDocument.AttachedTemplate.FullName, Destination:=ActiveDocument.FullName, Name:="Header", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:=ActiveDocument.AttachedTemplate.FullName, Destination:=ActiveDocument.FullName, Name:="Heading 1", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:=ActiveDocument.AttachedTemplate.FullName, Destination:=ActiveDocument.FullName, Name:="Heading 2", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:=ActiveDocument.AttachedTemplate.FullName, Destination:=ActiveDocument.FullName, Name:="Heading 3", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:=ActiveDocument.AttachedTemplate.FullName, Destination:=ActiveDocument.FullName, Name:="Heading 4", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:=ActiveDocument.AttachedTemplate.FullName, Destination:=ActiveDocument.FullName, Name:="Heading 5", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:=ActiveDocument.AttachedTemplate.FullName, Destination:=ActiveDocument.FullName, Name:="Heading 6", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:=ActiveDocument.AttachedTemplate.FullName, Destination:=ActiveDocument.FullName, Name:="Heading 7", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:=ActiveDocument.AttachedTemplate.FullName, Destination:=ActiveDocument.FullName, Name:="Heading 8", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:=ActiveDocument.AttachedTemplate.FullName, Destination:=ActiveDocument.FullName, Name:="Hyperlink", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:=ActiveDocument.AttachedTemplate.FullName, Destination:=ActiveDocument.FullName, Name:="Note", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:=ActiveDocument.AttachedTemplate.FullName, Destination:=ActiveDocument.FullName, Name:="Important", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:=ActiveDocument.AttachedTemplate.FullName, Destination:=ActiveDocument.FullName, Name:="Title", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:=ActiveDocument.AttachedTemplate.FullName, Destination:=ActiveDocument.FullName, Name:="List Bullet", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:=ActiveDocument.AttachedTemplate.FullName, Destination:=ActiveDocument.FullName, Name:="List Bullet 2", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:=ActiveDocument.AttachedTemplate.FullName, Destination:=ActiveDocument.FullName, Name:="List Bullet 3", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:=ActiveDocument.AttachedTemplate.FullName, Destination:=ActiveDocument.FullName, Name:="List Bullet 4", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:=ActiveDocument.AttachedTemplate.FullName, Destination:=ActiveDocument.FullName, Name:="List Number", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:=ActiveDocument.AttachedTemplate.FullName, Destination:=ActiveDocument.FullName, Name:="List Number 2", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:=ActiveDocument.AttachedTemplate.FullName, Destination:=ActiveDocument.FullName, Name:="List Number 3", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:=ActiveDocument.AttachedTemplate.FullName, Destination:=ActiveDocument.FullName, Name:="List Number 4", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:=ActiveDocument.AttachedTemplate.FullName, Destination:=ActiveDocument.FullName, Name:="List Number 5", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:=ActiveDocument.AttachedTemplate.FullName, Destination:=ActiveDocument.FullName, Name:="No List", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:=ActiveDocument.AttachedTemplate.FullName, Destination:=ActiveDocument.FullName, Name:="No Spacing", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:=ActiveDocument.AttachedTemplate.FullName, Destination:=ActiveDocument.FullName, Name:="Paragraph Indent", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:=ActiveDocument.AttachedTemplate.FullName, Destination:=ActiveDocument.FullName, Name:="Primary Bullet List", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:=ActiveDocument.AttachedTemplate.FullName, Destination:=ActiveDocument.FullName, Name:="Primary Number List", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:=ActiveDocument.AttachedTemplate.FullName, Destination:=ActiveDocument.FullName, Name:="Strong", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:=ActiveDocument.AttachedTemplate.FullName, Destination:=ActiveDocument.FullName, Name:="Table Grid", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:=ActiveDocument.AttachedTemplate.FullName, Destination:=ActiveDocument.FullName, Name:="Table Grid1", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:=ActiveDocument.AttachedTemplate.FullName, Destination:=ActiveDocument.FullName, Name:="Tip", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:=ActiveDocument.AttachedTemplate.FullName, Destination:=ActiveDocument.FullName, Name:="TOC 1", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:=ActiveDocument.AttachedTemplate.FullName, Destination:=ActiveDocument.FullName, Name:="TOC 2", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:=ActiveDocument.AttachedTemplate.FullName, Destination:=ActiveDocument.FullName, Name:="TOC 3", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:=ActiveDocument.AttachedTemplate.FullName, Destination:=ActiveDocument.FullName, Name:="TOC 4", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:=ActiveDocument.AttachedTemplate.FullName, Destination:=ActiveDocument.FullName, Name:="TOC 5", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:=ActiveDocument.AttachedTemplate.FullName, Destination:=ActiveDocument.FullName, Name:="TOC 6", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:=ActiveDocument.AttachedTemplate.FullName, Destination:=ActiveDocument.FullName, Name:="TOC 7", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:=ActiveDocument.AttachedTemplate.FullName, Destination:=ActiveDocument.FullName, Name:="TOC 8", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:=ActiveDocument.AttachedTemplate.FullName, Destination:=ActiveDocument.FullName, Name:="TOC 9", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:=ActiveDocument.AttachedTemplate.FullName, Destination:=ActiveDocument.FullName, Name:="TOC Heading", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:=ActiveDocument.AttachedTemplate.FullName, Destination:=ActiveDocument.FullName, Name:="Warning", Object:=wdOrganizerObjectStyles
+
+End Sub
+
+
+

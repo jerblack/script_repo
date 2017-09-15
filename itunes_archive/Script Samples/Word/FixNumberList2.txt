@@ -1,0 +1,32 @@
+Sub NumberList()
+
+    Dim myPara As Paragraph
+    For Each myPara In ActiveDocument.Paragraphs
+        If myPara.Style = ActiveDocument.Styles("NumberListT3") Then
+            myPara.Style = ActiveDocument.Styles("NumberList3")
+        End If
+        If myPara.Style = ActiveDocument.Styles("NumberListT2") Then
+            myPara.Style = ActiveDocument.Styles("NumberList2")
+        End If
+        If myPara.Style = ActiveDocument.Styles("NumberListT1") Then
+            myPara.Style = ActiveDocument.Styles("NumberList1")
+        End If
+        If myPara.Style = ActiveDocument.Styles("NumberList4") Then
+            myPara.Style = ActiveDocument.Styles("List Number 4")
+            myPara.Range.SetListLevel Level:=4
+        End If
+        If myPara.Style = ActiveDocument.Styles("NumberList3") Then
+            myPara.Style = ActiveDocument.Styles("List Number 3")
+            myPara.Range.SetListLevel Level:=3
+        End If
+        If myPara.Style = ActiveDocument.Styles("NumberList2") Then
+            myPara.Style = ActiveDocument.Styles("List Number 2")
+            myPara.Range.SetListLevel Level:=2
+        End If
+        If myPara.Style = ActiveDocument.Styles("NumberList1") Then
+            myPara.Style = ActiveDocument.Styles("List Number")
+            myPara.Range.SetListLevel Level:=1
+        End If
+    Next myPara
+
+End Sub

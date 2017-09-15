@@ -1,0 +1,15 @@
+1 star
+stop playing and delete immediately
+
+2 star
+continue playing but delete later
+<deleted by script>
+
+2 month archive
+do not play for 60 days
+Set LastPlayed Date to today plus 60 days
+
+
+
+
+

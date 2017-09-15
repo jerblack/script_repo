@@ -1,0 +1,17 @@
+//Insert in toolbar js
+function addTrainingTitle() {
+h1Headings = document.getElementsByTagName("h1");
+// New snippet for page heading.
+h1HelpTitle = document.createElement("H1");
+h1HelpTitle.setAttribute("style", "font-family : 'Segoe UI light'; font-weight : normal; font-size: 16pt; color : #f7f7f7; margin-left : 15px; margin-top : 6px;");
+h1HelpTitle.appendChild(document.createTextNode(document.title));
+// Find the logo image, and insert the heading snippet after it.
+for (h = 0; h &lt; h1Headings.length; h++) {
+h1Heading = h1Headings[h];
+if (h1Heading.getAttribute("class") == "logo") {
+sib = h1Heading.parentNode.nextSibling;            // Parent node is &lt;a&gt;, and its next sibling is a &lt;div&gt;.
+sib.parentNode.insertBefore(h1HelpTitle, sib);     // Insert the new snippet before the &lt;div&gt;
+}
+}
+}
+window.onload = addTrainingTitle;

@@ -1,0 +1,13 @@
+function urlFix() {
+var links = document.getElementsByTagName("a");
+for(var i = 0; i < links.length; i++) {
+var strIdx = links[i].href.toString().search(/#_Toc/i);
+if (links[i].href.toString().search(/#_Toc/i) != -1) {
+links[i].href = links[i].href.toString().slice(0,strIdx); }
+%3FTocPath
+var strIdx2 = links[i].href.toString().search(/%3FTocPath/i);
+if (links[i].href.toString().search(/%3FTocPath/i) != -1) {
+links[i].href = links[i].href.toString().slice(0,strIdx2); }
+}}
+
+window.onload = urlFix;

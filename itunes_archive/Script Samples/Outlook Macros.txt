@@ -1,0 +1,27 @@
+Option Explicit
+Dim WithEvents objInspectors As Outlook.Inspectors
+Dim WithEvents objOpenInspector As Outlook.Inspector
+Dim WithEvents objMailItem As Outlook.MailItem
+Private Sub Application_Startup()
+Set objInspectors = Application.Inspectors
+End Sub
+Private Sub Application_Quit()
+Set objOpenInspector = Nothing
+Set objInspectors = Nothing
+Set objMailItem = Nothing
+End Sub
+Private Sub objInspectors_NewInspector(ByVal Inspector As Inspector)
+If Inspector.CurrentItem.Class = olMail Then
+Set objMailItem = Inspector.CurrentItem
+Set objOpenInspector = Inspector
+End If
+End Sub
+Private Sub objOpenInspector_Close()
+Set objMailItem = Nothing
+End Sub
+Private Sub objOpenInspector_Activate()
+Dim wdDoc As Word.Document
+Set wdDoc = objOpenInspector.WordEditor
+wdDoc.Windows(1).Panes(1).View.Zoom.Percentage = 130
+End Sub
+

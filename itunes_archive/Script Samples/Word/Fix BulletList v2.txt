@@ -1,0 +1,29 @@
+Sub BulletList()
+
+    Dim myPara As Paragraph
+    For Each myPara In ActiveDocument.Paragraphs
+        If myPara.Style = ActiveDocument.Styles("BulletListT2") Then
+            myPara.Style = ActiveDocument.Styles("BulletList2")
+        End If
+        If myPara.Style = ActiveDocument.Styles("BulletListT1") Then
+            myPara.Style = ActiveDocument.Styles("BulletList1")
+        End If
+        If myPara.Style = ActiveDocument.Styles("BulletList4") Then
+            myPara.Style = ActiveDocument.Styles("List Bullet 4")
+            myPara.Range.SetListLevel Level:=4
+        End If
+        If myPara.Style = ActiveDocument.Styles("BulletList3") Then
+            myPara.Style = ActiveDocument.Styles("List Bullet 3")
+            myPara.Range.SetListLevel Level:=3
+        End If
+        If myPara.Style = ActiveDocument.Styles("BulletList2") Then
+            myPara.Style = ActiveDocument.Styles("List Bullet 2")
+            myPara.Range.SetListLevel Level:=2
+        End If
+        If myPara.Style = ActiveDocument.Styles("BulletList1") Then
+            myPara.Style = ActiveDocument.Styles("List Bullet")
+            myPara.Range.SetListLevel Level:=1
+        End If
+    Next myPara
+
+End Sub

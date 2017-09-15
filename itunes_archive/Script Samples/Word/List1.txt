@@ -1,0 +1,94 @@
+
+Sub fixLists()
+On Error Resume Next
+ActiveDocument.AttachedTemplate = "Word to Flare Template.dotm"
+Dim lList As Long
+Dim Level As Integer
+Dim myPara As Paragraph
+For Each myPara In ActiveDocument.ListParagraphs
+    Level = myPara.Range.ListFormat.ListLevelNumber
+    If (myPara.Range.ListFormat.ListType = wdListBullet Or myPara.Range.ListFormat.ListType = wdListNoNumbering Or myPara.Range.ListFormat.ListType = wdListPictureBullet) Then
+    Select Case Level
+            Case 1
+                myPara.Range.Style = ActiveDocument.Styles("List Bullet")
+            Case 2
+                 myPara.Range.Style = ActiveDocument.Styles("List Bullet 2")
+            Case 3
+                 myPara.Range.Style = ActiveDocument.Styles("List Bullet 3")
+            Case 4
+                 myPara.Range.Style = ActiveDocument.Styles("List Bullet 4")
+        End Select
+    ElseIf (myPara.Range.ListFormat.ListType = wdListListNumOnly Or myPara.Range.ListFormat.ListType = wdListMixedNumbering Or myPara.Range.ListFormat.ListType = wdListSimpleNumbering Or myPara.Range.ListFormat.ListType = wdListOutlineNumbering) Then
+        Select Case Level
+            Case 1
+                 myPara.Range.Style = ActiveDocument.Styles("List Number")
+            Case 2
+                 myPara.Range.Style = ActiveDocument.Styles("List Number 2")
+            Case 3
+                 myPara.Range.Style = ActiveDocument.Styles("List Number 3")
+            Case 4
+                 myPara.Range.Style = ActiveDocument.Styles("List Number 4")
+        End Select
+    End If
+' Continue Numbering
+    If (myPara.Style = ActiveDocument.Styles("List Number") Or myPara.Style = ActiveDocument.Styles("List Bullet")) Then
+            If myPara.Previous.Style = ActiveDocument.Styles("Paragraph Text") Then
+                myPara.SeparateList
+            End If
+    ElseIf (myPara.Style = ActiveDocument.Styles("List Number") Or myPara.Style = ActiveDocument.Styles("List Bullet")) Then
+        If myPara.Previous.Style = ActiveDocument.Styles("Heading 3") Then
+            myPara.SeparateList
+        End If
+    ElseIf (myPara.Style = ActiveDocument.Styles("List Number") Or myPara.Style = ActiveDocument.Styles("List Bullet")) Then
+        If myPara.Previous.Style = ActiveDocument.Styles("Heading 4") Then
+            myPara.SeparateList
+        End If
+    ElseIf (myPara.Style = ActiveDocument.Styles("List Number") Or myPara.Style = ActiveDocument.Styles("List Bullet")) Then
+        If myPara.Previous.Style = ActiveDocument.Styles("Heading 5") Then
+            myPara.SeparateList
+        End If
+    ElseIf (myPara.Style = ActiveDocument.Styles("List Number") Or myPara.Style = ActiveDocument.Styles("List Bullet")) Then
+        If myPara.Previous.Style = ActiveDocument.Styles("Heading 6") Then
+            myPara.SeparateList
+        End If
+    End If
+Next myPara
+Beep
+End Sub
+
+
+
+Sub fixContinueNumbering()
+On Error Resume Next
+ActiveDocument.AttachedTemplate = "Word to Flare Template.dotm"
+Dim lList As Long
+Dim Level As Integer
+Dim myPara As Paragraph
+For Each myPara In ActiveDocument.ListParagraphs
+  
+' Continue Numbering
+    If (myPara.Style = ActiveDocument.Styles("List Number") Or myPara.Style = ActiveDocument.Styles("List Bullet")) Then
+            If myPara.Previous.Style = ActiveDocument.Styles("Paragraph Text") Then
+                myPara.SeparateList
+            End If
+    ElseIf (myPara.Style = ActiveDocument.Styles("List Number") Or myPara.Style = ActiveDocument.Styles("List Bullet")) Then
+        If myPara.Previous.Style = ActiveDocument.Styles("Heading 3") Then
+            myPara.SeparateList
+        End If
+    ElseIf (myPara.Style = ActiveDocument.Styles("List Number") Or myPara.Style = ActiveDocument.Styles("List Bullet")) Then
+        If myPara.Previous.Style = ActiveDocument.Styles("Heading 4") Then
+            myPara.SeparateList
+        End If
+    ElseIf (myPara.Style = ActiveDocument.Styles("List Number") Or myPara.Style = ActiveDocument.Styles("List Bullet")) Then
+        If myPara.Previous.Style = ActiveDocument.Styles("Heading 5") Then
+            myPara.SeparateList
+        End If
+    ElseIf (myPara.Style = ActiveDocument.Styles("List Number") Or myPara.Style = ActiveDocument.Styles("List Bullet")) Then
+        If myPara.Previous.Style = ActiveDocument.Styles("Heading 6") Then
+            myPara.SeparateList
+        End If
+    End If
+Next myPara
+Beep
+End Sub
+

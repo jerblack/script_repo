@@ -1,0 +1,644 @@
+Sub Macro1()
+'
+' Macro1 Macro
+'
+'
+    Selection.MoveUp Unit:=wdLine, Count:=2
+    Selection.HomeKey Unit:=wdLine
+    Selection.MoveDown Unit:=wdLine, Count:=4, Extend:=wdExtend
+    Selection.MoveLeft Unit:=wdWord, Count:=3, Extend:=wdExtend
+    Selection.Style = ActiveDocument.Styles("List Paragraph")
+    With ListGalleries(wdBulletGallery).ListTemplates(1).ListLevels(1)
+        .NumberFormat = ChrW(61623)
+        .TrailingCharacter = wdTrailingTab
+        .NumberStyle = wdListNumberStyleBullet
+        .NumberPosition = InchesToPoints(0.25)
+        .Alignment = wdListLevelAlignLeft
+        .TextPosition = InchesToPoints(0.5)
+        .TabPosition = wdUndefined
+        .ResetOnHigher = 0
+        .StartAt = 1
+        With .Font
+            .Bold = wdUndefined
+            .Italic = wdUndefined
+            .StrikeThrough = wdUndefined
+            .Subscript = wdUndefined
+            .Superscript = wdUndefined
+            .Shadow = wdUndefined
+            .Outline = wdUndefined
+            .Emboss = wdUndefined
+            .Engrave = wdUndefined
+            .AllCaps = wdUndefined
+            .Hidden = wdUndefined
+            .Underline = wdUndefined
+            .Color = wdUndefined
+            .Size = wdUndefined
+            .Animation = wdUndefined
+            .DoubleStrikeThrough = wdUndefined
+            .Name = "Symbol"
+        End With
+        .LinkedStyle = ""
+    End With
+    ListGalleries(wdBulletGallery).ListTemplates(1).Name = ""
+    Selection.Range.ListFormat.ApplyListTemplateWithLevel ListTemplate:= _
+        ListGalleries(wdBulletGallery).ListTemplates(1), ContinuePreviousList:= _
+        False, ApplyTo:=wdListApplyToWholeList, DefaultListBehavior:= _
+        wdWord10ListBehavior
+    Selection.Range.SetListLevel Level:=2
+    Selection.Range.SetListLevel Level:=3
+    Selection.Range.SetListLevel Level:=4
+    Selection.Range.SetListLevel Level:=1
+End Sub
+Sub Macro2()
+'
+' Macro2 Macro
+'
+'
+    Selection.MoveDown Unit:=wdLine, Count:=21, Extend:=wdExtend
+    Selection.MoveLeft Unit:=wdWord, Count:=1, Extend:=wdExtend
+    Selection.Style = ActiveDocument.Styles("List Paragraph")
+    With ListGalleries(wdNumberGallery).ListTemplates(1).ListLevels(1)
+        .NumberFormat = "%1."
+        .TrailingCharacter = wdTrailingTab
+        .NumberStyle = wdListNumberStyleArabic
+        .NumberPosition = InchesToPoints(0.25)
+        .Alignment = wdListLevelAlignLeft
+        .TextPosition = InchesToPoints(0.5)
+        .TabPosition = wdUndefined
+        .ResetOnHigher = 0
+        .StartAt = 1
+        With .Font
+            .Bold = wdUndefined
+            .Italic = wdUndefined
+            .StrikeThrough = wdUndefined
+            .Subscript = wdUndefined
+            .Superscript = wdUndefined
+            .Shadow = wdUndefined
+            .Outline = wdUndefined
+            .Emboss = wdUndefined
+            .Engrave = wdUndefined
+            .AllCaps = wdUndefined
+            .Hidden = wdUndefined
+            .Underline = wdUndefined
+            .Color = wdUndefined
+            .Size = wdUndefined
+            .Animation = wdUndefined
+            .DoubleStrikeThrough = wdUndefined
+            .Name = ""
+        End With
+        .LinkedStyle = ""
+    End With
+    ListGalleries(wdNumberGallery).ListTemplates(1).Name = ""
+    Selection.Range.ListFormat.ApplyListTemplateWithLevel ListTemplate:= _
+        ListGalleries(wdNumberGallery).ListTemplates(1), ContinuePreviousList:= _
+        False, ApplyTo:=wdListApplyToWholeList, DefaultListBehavior:= _
+        wdWord10ListBehavior
+    Selection.MoveUp Unit:=wdLine, Count:=4
+    Selection.MoveLeft Unit:=wdCharacter, Count:=1
+    Selection.MoveDown Unit:=wdLine, Count:=20
+    Selection.MoveUp Unit:=wdLine, Count:=2
+    Selection.MoveRight Unit:=wdWord, Count:=6, Extend:=wdExtend
+    With ListGalleries(wdBulletGallery).ListTemplates(1).ListLevels(1)
+        .NumberFormat = ChrW(61623)
+        .TrailingCharacter = wdTrailingTab
+        .NumberStyle = wdListNumberStyleBullet
+        .NumberPosition = InchesToPoints(0.25)
+        .Alignment = wdListLevelAlignLeft
+        .TextPosition = InchesToPoints(0.5)
+        .TabPosition = wdUndefined
+        .ResetOnHigher = 0
+        .StartAt = 1
+        With .Font
+            .Bold = wdUndefined
+            .Italic = wdUndefined
+            .StrikeThrough = wdUndefined
+            .Subscript = wdUndefined
+            .Superscript = wdUndefined
+            .Shadow = wdUndefined
+            .Outline = wdUndefined
+            .Emboss = wdUndefined
+            .Engrave = wdUndefined
+            .AllCaps = wdUndefined
+            .Hidden = wdUndefined
+            .Underline = wdUndefined
+            .Color = wdUndefined
+            .Size = wdUndefined
+            .Animation = wdUndefined
+            .DoubleStrikeThrough = wdUndefined
+            .Name = "Symbol"
+        End With
+        .LinkedStyle = ""
+    End With
+    ListGalleries(wdBulletGallery).ListTemplates(1).Name = ""
+    Selection.Range.ListFormat.ApplyListTemplateWithLevel ListTemplate:= _
+        ListGalleries(wdBulletGallery).ListTemplates(1), ContinuePreviousList:= _
+        False, ApplyTo:=wdListApplyToSelection, DefaultListBehavior:= _
+        wdWord10ListBehavior
+    Selection.Range.SetListLevel Level:=2
+    With ListGalleries(wdBulletGallery).ListTemplates(1).ListLevels(1)
+        .NumberFormat = ChrW(61623)
+        .TrailingCharacter = wdTrailingTab
+        .NumberStyle = wdListNumberStyleBullet
+        .NumberPosition = InchesToPoints(0.25)
+        .Alignment = wdListLevelAlignLeft
+        .TextPosition = InchesToPoints(0.5)
+        .TabPosition = wdUndefined
+        .ResetOnHigher = 0
+        .StartAt = 1
+        With .Font
+            .Bold = wdUndefined
+            .Italic = wdUndefined
+            .StrikeThrough = wdUndefined
+            .Subscript = wdUndefined
+            .Superscript = wdUndefined
+            .Shadow = wdUndefined
+            .Outline = wdUndefined
+            .Emboss = wdUndefined
+            .Engrave = wdUndefined
+            .AllCaps = wdUndefined
+            .Hidden = wdUndefined
+            .Underline = wdUndefined
+            .Color = wdUndefined
+            .Size = wdUndefined
+            .Animation = wdUndefined
+            .DoubleStrikeThrough = wdUndefined
+            .Name = "Symbol"
+        End With
+        .LinkedStyle = ""
+    End With
+    ListGalleries(wdBulletGallery).ListTemplates(1).Name = ""
+    Selection.Range.ListFormat.ApplyListTemplateWithLevel ListTemplate:= _
+        ListGalleries(wdBulletGallery).ListTemplates(1), ContinuePreviousList:= _
+        False, ApplyTo:=wdListApplyToSelection, DefaultListBehavior:= _
+        wdWord10ListBehavior
+    With ListGalleries(wdBulletGallery).ListTemplates(1).ListLevels(1)
+        .NumberFormat = "o"
+        .TrailingCharacter = wdTrailingTab
+        .NumberStyle = wdListNumberStyleBullet
+        .NumberPosition = InchesToPoints(0.25)
+        .Alignment = wdListLevelAlignLeft
+        .TextPosition = InchesToPoints(0.5)
+        .TabPosition = wdUndefined
+        .ResetOnHigher = 0
+        .StartAt = 1
+        With .Font
+            .Bold = wdUndefined
+            .Italic = wdUndefined
+            .StrikeThrough = wdUndefined
+            .Subscript = wdUndefined
+            .Superscript = wdUndefined
+            .Shadow = wdUndefined
+            .Outline = wdUndefined
+            .Emboss = wdUndefined
+            .Engrave = wdUndefined
+            .AllCaps = wdUndefined
+            .Hidden = wdUndefined
+            .Underline = wdUndefined
+            .Color = wdUndefined
+            .Size = wdUndefined
+            .Animation = wdUndefined
+            .DoubleStrikeThrough = wdUndefined
+            .Name = "Courier New"
+        End With
+        .LinkedStyle = ""
+    End With
+    ListGalleries(wdBulletGallery).ListTemplates(1).Name = ""
+    Selection.Range.ListFormat.ApplyListTemplateWithLevel ListTemplate:= _
+        ListGalleries(wdBulletGallery).ListTemplates(1), ContinuePreviousList:= _
+        False, ApplyTo:=wdListApplyToSelection, DefaultListBehavior:= _
+        wdWord10ListBehavior
+    Selection.MoveDown Unit:=wdLine, Count:=6
+    Selection.MoveLeft Unit:=wdWord, Count:=6, Extend:=wdExtend
+    Selection.TypeText Text:=vbTab
+    Selection.Range.SetListLevel Level:=2
+    With ListGalleries(wdBulletGallery).ListTemplates(1).ListLevels(1)
+        .NumberFormat = "o"
+        .TrailingCharacter = wdTrailingTab
+        .NumberStyle = wdListNumberStyleBullet
+        .NumberPosition = InchesToPoints(0.25)
+        .Alignment = wdListLevelAlignLeft
+        .TextPosition = InchesToPoints(0.5)
+        .TabPosition = wdUndefined
+        .ResetOnHigher = 0
+        .StartAt = 1
+        With .Font
+            .Bold = wdUndefined
+            .Italic = wdUndefined
+            .StrikeThrough = wdUndefined
+            .Subscript = wdUndefined
+            .Superscript = wdUndefined
+            .Shadow = wdUndefined
+            .Outline = wdUndefined
+            .Emboss = wdUndefined
+            .Engrave = wdUndefined
+            .AllCaps = wdUndefined
+            .Hidden = wdUndefined
+            .Underline = wdUndefined
+            .Color = wdUndefined
+            .Size = wdUndefined
+            .Animation = wdUndefined
+            .DoubleStrikeThrough = wdUndefined
+            .Name = "Courier New"
+        End With
+        .LinkedStyle = ""
+    End With
+    ListGalleries(wdBulletGallery).ListTemplates(1).Name = ""
+    Selection.Range.ListFormat.ApplyListTemplateWithLevel ListTemplate:= _
+        ListGalleries(wdBulletGallery).ListTemplates(1), ContinuePreviousList:= _
+        False, ApplyTo:=wdListApplyToWholeList, DefaultListBehavior:= _
+        wdWord10ListBehavior
+    Selection.MoveUp Unit:=wdLine, Count:=1
+    With ListGalleries(wdNumberGallery).ListTemplates(1).ListLevels(1)
+        .NumberFormat = "%1."
+        .TrailingCharacter = wdTrailingTab
+        .NumberStyle = wdListNumberStyleArabic
+        .NumberPosition = InchesToPoints(0.5)
+        .Alignment = wdListLevelAlignLeft
+        .TextPosition = InchesToPoints(0.75)
+        .TabPosition = wdUndefined
+        .ResetOnHigher = 0
+        .StartAt = 1
+        With .Font
+            .Bold = wdUndefined
+            .Italic = wdUndefined
+            .StrikeThrough = wdUndefined
+            .Subscript = wdUndefined
+            .Superscript = wdUndefined
+            .Shadow = wdUndefined
+            .Outline = wdUndefined
+            .Emboss = wdUndefined
+            .Engrave = wdUndefined
+            .AllCaps = wdUndefined
+            .Hidden = wdUndefined
+            .Underline = wdUndefined
+            .Color = wdUndefined
+            .Size = wdUndefined
+            .Animation = wdUndefined
+            .DoubleStrikeThrough = wdUndefined
+            .Name = ""
+        End With
+        .LinkedStyle = ""
+    End With
+    ListGalleries(wdNumberGallery).ListTemplates(1).Name = ""
+    Selection.Range.ListFormat.ApplyListTemplateWithLevel ListTemplate:= _
+        ListGalleries(wdNumberGallery).ListTemplates(1), ContinuePreviousList:= _
+        True, ApplyTo:=wdListApplyToWholeList, DefaultListBehavior:= _
+        wdWord10ListBehavior
+    Selection.MoveDown Unit:=wdLine, Count:=1
+    With ListGalleries(wdBulletGallery).ListTemplates(1).ListLevels(1)
+        .NumberFormat = "o"
+        .TrailingCharacter = wdTrailingTab
+        .NumberStyle = wdListNumberStyleBullet
+        .NumberPosition = InchesToPoints(1)
+        .Alignment = wdListLevelAlignLeft
+        .TextPosition = InchesToPoints(1.25)
+        .TabPosition = wdUndefined
+        .ResetOnHigher = 0
+        .StartAt = 1
+        With .Font
+            .Bold = wdUndefined
+            .Italic = wdUndefined
+            .StrikeThrough = wdUndefined
+            .Subscript = wdUndefined
+            .Superscript = wdUndefined
+            .Shadow = wdUndefined
+            .Outline = wdUndefined
+            .Emboss = wdUndefined
+            .Engrave = wdUndefined
+            .AllCaps = wdUndefined
+            .Hidden = wdUndefined
+            .Underline = wdUndefined
+            .Color = wdUndefined
+            .Size = wdUndefined
+            .Animation = wdUndefined
+            .DoubleStrikeThrough = wdUndefined
+            .Name = "Courier New"
+        End With
+        .LinkedStyle = ""
+    End With
+    ListGalleries(wdBulletGallery).ListTemplates(1).Name = ""
+    Selection.Range.ListFormat.ApplyListTemplateWithLevel ListTemplate:= _
+        ListGalleries(wdBulletGallery).ListTemplates(1), ContinuePreviousList:= _
+        False, ApplyTo:=wdListApplyToWholeList, DefaultListBehavior:= _
+        wdWord10ListBehavior
+End Sub
+Sub Macro3()
+'
+' Macro3 Macro
+'
+'
+    With ListGalleries(wdBulletGallery).ListTemplates(2).ListLevels(1)
+        .NumberFormat = ChrW(61623)
+        .TrailingCharacter = wdTrailingTab
+        .NumberStyle = wdListNumberStyleBullet
+        .NumberPosition = InchesToPoints(0.25)
+        .Alignment = wdListLevelAlignLeft
+        .TextPosition = InchesToPoints(0.5)
+        .TabPosition = wdUndefined
+        .ResetOnHigher = 0
+        .StartAt = 1
+        With .Font
+            .Bold = wdUndefined
+            .Italic = wdUndefined
+            .StrikeThrough = wdUndefined
+            .Subscript = wdUndefined
+            .Superscript = wdUndefined
+            .Shadow = wdUndefined
+            .Outline = wdUndefined
+            .Emboss = wdUndefined
+            .Engrave = wdUndefined
+            .AllCaps = wdUndefined
+            .Hidden = wdUndefined
+            .Underline = wdUndefined
+            .Color = wdUndefined
+            .Size = wdUndefined
+            .Animation = wdUndefined
+            .DoubleStrikeThrough = wdUndefined
+            .Name = "Symbol"
+        End With
+        .LinkedStyle = ""
+    End With
+    ListGalleries(wdBulletGallery).ListTemplates(2).Name = ""
+    Selection.Range.ListFormat.ApplyListTemplateWithLevel ListTemplate:= _
+        ListGalleries(wdBulletGallery).ListTemplates(2), ContinuePreviousList:= _
+        False, ApplyTo:=wdListApplyToWholeList, DefaultListBehavior:= _
+        wdWord10ListBehavior
+    With ListGalleries(wdBulletGallery).ListTemplates(1).ListLevels(1)
+        .NumberFormat = "o"
+        .TrailingCharacter = wdTrailingTab
+        .NumberStyle = wdListNumberStyleBullet
+        .NumberPosition = InchesToPoints(0.25)
+        .Alignment = wdListLevelAlignLeft
+        .TextPosition = InchesToPoints(0.5)
+        .TabPosition = wdUndefined
+        .ResetOnHigher = 0
+        .StartAt = 1
+        With .Font
+            .Bold = wdUndefined
+            .Italic = wdUndefined
+            .StrikeThrough = wdUndefined
+            .Subscript = wdUndefined
+            .Superscript = wdUndefined
+            .Shadow = wdUndefined
+            .Outline = wdUndefined
+            .Emboss = wdUndefined
+            .Engrave = wdUndefined
+            .AllCaps = wdUndefined
+            .Hidden = wdUndefined
+            .Underline = wdUndefined
+            .Color = wdUndefined
+            .Size = wdUndefined
+            .Animation = wdUndefined
+            .DoubleStrikeThrough = wdUndefined
+            .Name = "Courier New"
+        End With
+        .LinkedStyle = ""
+    End With
+    ListGalleries(wdBulletGallery).ListTemplates(1).Name = ""
+    Selection.Range.ListFormat.ApplyListTemplateWithLevel ListTemplate:= _
+        ListGalleries(wdBulletGallery).ListTemplates(1), ContinuePreviousList:= _
+        False, ApplyTo:=wdListApplyToWholeList, DefaultListBehavior:= _
+        wdWord10ListBehavior
+    With ListGalleries(wdBulletGallery).ListTemplates(1).ListLevels(1)
+        .NumberFormat = ChrW(61607)
+        .TrailingCharacter = wdTrailingTab
+        .NumberStyle = wdListNumberStyleBullet
+        .NumberPosition = InchesToPoints(0.25)
+        .Alignment = wdListLevelAlignLeft
+        .TextPosition = InchesToPoints(0.5)
+        .TabPosition = wdUndefined
+        .ResetOnHigher = 0
+        .StartAt = 1
+        With .Font
+            .Bold = wdUndefined
+            .Italic = wdUndefined
+            .StrikeThrough = wdUndefined
+            .Subscript = wdUndefined
+            .Superscript = wdUndefined
+            .Shadow = wdUndefined
+            .Outline = wdUndefined
+            .Emboss = wdUndefined
+            .Engrave = wdUndefined
+            .AllCaps = wdUndefined
+            .Hidden = wdUndefined
+            .Underline = wdUndefined
+            .Color = wdUndefined
+            .Size = wdUndefined
+            .Animation = wdUndefined
+            .DoubleStrikeThrough = wdUndefined
+            .Name = "Wingdings"
+        End With
+        .LinkedStyle = ""
+    End With
+    ListGalleries(wdBulletGallery).ListTemplates(1).Name = ""
+    Selection.Range.ListFormat.ApplyListTemplateWithLevel ListTemplate:= _
+        ListGalleries(wdBulletGallery).ListTemplates(1), ContinuePreviousList:= _
+        False, ApplyTo:=wdListApplyToWholeList, DefaultListBehavior:= _
+        wdWord10ListBehavior
+    With ListGalleries(wdBulletGallery).ListTemplates(1).ListLevels(1)
+        .NumberFormat = ChrW(61623)
+        .TrailingCharacter = wdTrailingTab
+        .NumberStyle = wdListNumberStyleBullet
+        .NumberPosition = InchesToPoints(0.25)
+        .Alignment = wdListLevelAlignLeft
+        .TextPosition = InchesToPoints(0.5)
+        .TabPosition = wdUndefined
+        .ResetOnHigher = 0
+        .StartAt = 1
+        With .Font
+            .Bold = wdUndefined
+            .Italic = wdUndefined
+            .StrikeThrough = wdUndefined
+            .Subscript = wdUndefined
+            .Superscript = wdUndefined
+            .Shadow = wdUndefined
+            .Outline = wdUndefined
+            .Emboss = wdUndefined
+            .Engrave = wdUndefined
+            .AllCaps = wdUndefined
+            .Hidden = wdUndefined
+            .Underline = wdUndefined
+            .Color = wdUndefined
+            .Size = wdUndefined
+            .Animation = wdUndefined
+            .DoubleStrikeThrough = wdUndefined
+            .Name = "Symbol"
+        End With
+        .LinkedStyle = ""
+    End With
+    ListGalleries(wdBulletGallery).ListTemplates(1).Name = ""
+    Selection.Range.ListFormat.ApplyListTemplateWithLevel ListTemplate:= _
+        ListGalleries(wdBulletGallery).ListTemplates(1), ContinuePreviousList:= _
+        False, ApplyTo:=wdListApplyToWholeList, DefaultListBehavior:= _
+        wdWord10ListBehavior
+End Sub
+Sub NumberList1()
+'
+' NumberList1 Macro
+'
+'
+
+    Selection.Style = ActiveDocument.Styles("List Paragraph")
+    With ListGalleries(wdNumberGallery).ListTemplates(7).ListLevels(1)
+        .NumberFormat = "%1."
+        .TrailingCharacter = wdTrailingTab
+        .NumberStyle = wdListNumberStyleLowercaseLetter
+        .NumberPosition = InchesToPoints(1)
+        .Alignment = wdListLevelAlignLeft
+        .TextPosition = InchesToPoints(1.25)
+        .TabPosition = wdUndefined
+        .ResetOnHigher = 0
+        .StartAt = 1
+        With .Font
+            .Bold = wdUndefined
+            .Italic = wdUndefined
+            .StrikeThrough = wdUndefined
+            .Subscript = wdUndefined
+            .Superscript = wdUndefined
+            .Shadow = wdUndefined
+            .Outline = wdUndefined
+            .Emboss = wdUndefined
+            .Engrave = wdUndefined
+            .AllCaps = wdUndefined
+            .Hidden = wdUndefined
+            .Underline = wdUndefined
+            .Color = wdUndefined
+            .Size = wdUndefined
+            .Animation = wdUndefined
+            .DoubleStrikeThrough = wdUndefined
+            .Name = ""
+        End With
+        .LinkedStyle = ""
+    End With
+    ListGalleries(wdNumberGallery).ListTemplates(7).Name = ""
+    Selection.Range.ListFormat.ApplyListTemplateWithLevel ListTemplate:= _
+        ListGalleries(wdNumberGallery).ListTemplates(7), ContinuePreviousList:= _
+        False, ApplyTo:=wdListApplyToWholeList, DefaultListBehavior:= _
+        wdWord10ListBehavior
+    Selection.Range.SetListLevel Level:=1
+    With ListGalleries(wdNumberGallery).ListTemplates(1).ListLevels(1)
+        .NumberFormat = "%1."
+        .TrailingCharacter = wdTrailingTab
+        .NumberStyle = wdListNumberStyleArabic
+        .NumberPosition = InchesToPoints(0.25)
+        .Alignment = wdListLevelAlignLeft
+        .TextPosition = InchesToPoints(0.5)
+        .TabPosition = wdUndefined
+        .ResetOnHigher = 0
+        .StartAt = 1
+        With .Font
+            .Bold = wdUndefined
+            .Italic = wdUndefined
+            .StrikeThrough = wdUndefined
+            .Subscript = wdUndefined
+            .Superscript = wdUndefined
+            .Shadow = wdUndefined
+            .Outline = wdUndefined
+            .Emboss = wdUndefined
+            .Engrave = wdUndefined
+            .AllCaps = wdUndefined
+            .Hidden = wdUndefined
+            .Underline = wdUndefined
+            .Color = wdUndefined
+            .Size = wdUndefined
+            .Animation = wdUndefined
+            .DoubleStrikeThrough = wdUndefined
+            .Name = ""
+        End With
+        .LinkedStyle = ""
+    End With
+    ListGalleries(wdNumberGallery).ListTemplates(1).Name = ""
+    Selection.Range.ListFormat.ApplyListTemplateWithLevel ListTemplate:= _
+        ListGalleries(wdNumberGallery).ListTemplates(1), ContinuePreviousList:= _
+        False, ApplyTo:=wdListApplyToSelection, DefaultListBehavior:= _
+        wdWord10ListBehavior
+    Selection.Range.ListFormat.ListOutdent
+    Selection.Range.ListFormat.ListOutdent
+    Selection.MoveDown Unit:=wdLine, Count:=1
+    Selection.HomeKey Unit:=wdLine
+    Selection.MoveDown Unit:=wdLine, Count:=1, Extend:=wdExtend
+    Selection.MoveLeft Unit:=wdWord, Count:=4, Extend:=wdExtend
+    Selection.MoveDown Unit:=wdLine, Count:=6, Extend:=wdExtend
+    Selection.Style = ActiveDocument.Styles("List Paragraph")
+    With ListGalleries(wdNumberGallery).ListTemplates(1).ListLevels(1)
+        .NumberFormat = "%1."
+        .TrailingCharacter = wdTrailingTab
+        .NumberStyle = wdListNumberStyleArabic
+        .NumberPosition = InchesToPoints(0.25)
+        .Alignment = wdListLevelAlignLeft
+        .TextPosition = InchesToPoints(0.5)
+        .TabPosition = wdUndefined
+        .ResetOnHigher = 0
+        .StartAt = 1
+        With .Font
+            .Bold = wdUndefined
+            .Italic = wdUndefined
+            .StrikeThrough = wdUndefined
+            .Subscript = wdUndefined
+            .Superscript = wdUndefined
+            .Shadow = wdUndefined
+            .Outline = wdUndefined
+            .Emboss = wdUndefined
+            .Engrave = wdUndefined
+            .AllCaps = wdUndefined
+            .Hidden = wdUndefined
+            .Underline = wdUndefined
+            .Color = wdUndefined
+            .Size = wdUndefined
+            .Animation = wdUndefined
+            .DoubleStrikeThrough = wdUndefined
+            .Name = ""
+        End With
+        .LinkedStyle = ""
+    End With
+    ListGalleries(wdNumberGallery).ListTemplates(1).Name = ""
+    Selection.Range.ListFormat.ApplyListTemplateWithLevel ListTemplate:= _
+        ListGalleries(wdNumberGallery).ListTemplates(1), ContinuePreviousList:= _
+        True, ApplyTo:=wdListApplyToWholeList, DefaultListBehavior:= _
+        wdWord10ListBehavior
+    Selection.MoveUp Unit:=wdLine, Count:=1
+    Selection.MoveDown Unit:=wdLine, Count:=3
+    Selection.MoveUp Unit:=wdLine, Count:=1
+    Selection.Range.ListFormat.ListIndent
+    Selection.MoveDown Unit:=wdLine, Count:=3
+    With ListGalleries(wdNumberGallery).ListTemplates(1).ListLevels(1)
+        .NumberFormat = "%1."
+        .TrailingCharacter = wdTrailingTab
+        .NumberStyle = wdListNumberStyleLowercaseRoman
+        .NumberPosition = InchesToPoints(0.25)
+        .Alignment = wdListLevelAlignRight
+        .TextPosition = InchesToPoints(0.5)
+        .TabPosition = wdUndefined
+        .ResetOnHigher = 0
+        .StartAt = 1
+        With .Font
+            .Bold = wdUndefined
+            .Italic = wdUndefined
+            .StrikeThrough = wdUndefined
+            .Subscript = wdUndefined
+            .Superscript = wdUndefined
+            .Shadow = wdUndefined
+            .Outline = wdUndefined
+            .Emboss = wdUndefined
+            .Engrave = wdUndefined
+            .AllCaps = wdUndefined
+            .Hidden = wdUndefined
+            .Underline = wdUndefined
+            .Color = wdUndefined
+            .Size = wdUndefined
+            .Animation = wdUndefined
+            .DoubleStrikeThrough = wdUndefined
+            .Name = ""
+        End With
+        .LinkedStyle = ""
+    End With
+    ListGalleries(wdNumberGallery).ListTemplates(1).Name = ""
+    Selection.Range.ListFormat.ApplyListTemplateWithLevel ListTemplate:= _
+        ListGalleries(wdNumberGallery).ListTemplates(1), ContinuePreviousList:= _
+        True, ApplyTo:=wdListApplyToWholeList, DefaultListBehavior:= _
+        wdWord10ListBehavior
+    Selection.Range.ListFormat.ListIndent
+    Selection.Range.ListFormat.ListIndent
+    Selection.Range.ListFormat.ListIndent
+    Selection.Range.ListFormat.ListOutdent
+End Sub

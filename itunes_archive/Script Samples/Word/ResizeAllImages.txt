@@ -1,0 +1,51 @@
+Sub ResizeAllImages()
+'
+' ResizeAllImages Macro
+'
+
+Dim PercentSize As Integer
+Dim MyStyle As String
+Dim oIshp As InlineShape
+Dim oshp As Shape
+PercentSize = 70
+MyStyle = "Graphic"
+With ActiveDocument
+For Each oIshp In .InlineShapes
+With oIshp
+If .Range.Paragraphs(1).Style = MyStyle Then
+.ScaleHeight = PercentSize
+.ScaleWidth = PercentSize
+End If
+End With
+Next oIshp
+For Each oshp In .Shapes
+With oshp
+If .Anchor.Paragraphs(1).Style = MyStyle Then
+.ScaleHeight Factor:=(PercentSize / 100), RelativeToOriginalSize:=msoCTrue
+.ScaleWidth Factor:=(PercentSize / 100), RelativeToOriginalSize:=msoCTrue
+End If
+End With
+Next oshp
+End With
+
+PercentSize = 70
+MyStyle = "Graphic Large"
+With ActiveDocument
+For Each oIshp In .InlineShapes
+With oIshp
+If .Range.Paragraphs(1).Style = MyStyle Then
+.ScaleHeight = PercentSize
+.ScaleWidth = PercentSize
+End If
+End With
+Next oIshp
+For Each oshp In .Shapes
+With oshp
+If .Anchor.Paragraphs(1).Style = MyStyle Then
+.ScaleHeight Factor:=(PercentSize / 100), RelativeToOriginalSize:=msoCTrue
+.ScaleWidth Factor:=(PercentSize / 100), RelativeToOriginalSize:=msoCTrue
+End If
+End With
+Next oshp
+End With
+End Sub

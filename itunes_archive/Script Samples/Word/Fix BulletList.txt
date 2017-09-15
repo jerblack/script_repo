@@ -1,0 +1,37 @@
+    With ListGalleries(wdBulletGallery).ListTemplates(1).ListLevels(1)
+        .NumberFormat = ChrW(61623)
+        .NumberStyle = wdListNumberStyleBullet
+        .NumberPosition = InchesToPoints(0)
+        .TextPosition = InchesToPoints(0.25)
+        .Font.Name = "Symbol"
+        
+    End With
+
+	With ListGalleries(wdBulletGallery).ListTemplates(1).ListLevels(2)
+        .NumberFormat = "o"
+        .NumberStyle = wdListNumberStyleBullet
+        .NumberPosition = InchesToPoints(0.5)
+        .TextPosition = InchesToPoints(0.75)
+        .Font.Name = "Courier New"
+        
+    End With
+	
+	    With ListGalleries(wdBulletGallery).ListTemplates(1).ListLevels(3)
+        .NumberFormat = ChrW(61607)
+        .NumberStyle = wdListNumberStyleBullet
+        .NumberPosition = InchesToPoints(1)
+        .TextPosition = InchesToPoints(1.25)
+        .Font.Name = "Wingdings"
+        
+    End With
+    ListGalleries(wdBulletGallery).ListTemplates(1).Name = ""
+    
+    Dim myPara As Paragraph
+    For Each myPara In ActiveDocument.Paragraphs
+        If myPara.Style = ActiveDocument.Styles("Title") Then
+            Selection.ClearFormatting
+            Selection.Style = ActiveDocument.Styles("List Paragraph")
+            Selection.Range.ListFormat.ApplyListTemplateWithLevel ListTemplate:=ListGalleries(wdBulletGallery).ListTemplates(1), ContinuePreviousList:=False, ApplyTo:=wdListApplyToWholeList, DefaultListBehavior:=wdWord10ListBehavior, ApplyLevel:=1
+        
+        End If
+    Next myPara

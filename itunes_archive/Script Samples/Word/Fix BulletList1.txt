@@ -1,0 +1,90 @@
+
+    With ListGalleries(wdBulletGallery).ListTemplates(1).ListLevels(1)
+        .NumberFormat = ChrW(61623)
+        .NumberStyle = wdListNumberStyleBullet
+        .NumberPosition = InchesToPoints(0)
+        .TextPosition = InchesToPoints(0.25)
+        .Font.Name = "Symbol"
+        
+    End With
+
+    With ListGalleries(wdBulletGallery).ListTemplates(2).ListLevels(1)
+        .NumberFormat = "o"
+        .NumberStyle = wdListNumberStyleBullet
+        .NumberPosition = InchesToPoints(0.5)
+        .TextPosition = InchesToPoints(0.75)
+        .Font.Name = "Courier New"
+        
+    End With
+    
+    With ListGalleries(wdBulletGallery).ListTemplates(3).ListLevels(1)
+        .NumberFormat = ChrW(61607)
+        .NumberStyle = wdListNumberStyleBullet
+        .NumberPosition = InchesToPoints(1)
+        .TextPosition = InchesToPoints(1.25)
+        .Font.Name = "Wingdings"
+        
+    End With
+    
+    With ListGalleries(wdBulletGallery).ListTemplates(4).ListLevels(1)
+        .NumberFormat = ChrW(61623)
+        .NumberStyle = wdListNumberStyleBullet
+        .NumberPosition = InchesToPoints(1.5)
+        .TextPosition = InchesToPoints(1.75)
+        .Font.Name = "Symbol"
+        
+    End With
+    ListGalleries(wdBulletGallery).ListTemplates(1).Name = ""
+    ListGalleries(wdBulletGallery).ListTemplates(2).Name = ""
+    ListGalleries(wdBulletGallery).ListTemplates(3).Name = ""
+    ListGalleries(wdBulletGallery).ListTemplates(4).Name = ""
+    
+    Dim myPara As Paragraph
+    For Each myPara In ActiveDocument.Paragraphs
+        If myPara.Style = ActiveDocument.Styles("BulletList1") Then
+            myPara.Style = ActiveDocument.Styles("List Paragraph")
+            myPara.Range.ListFormat.ApplyListTemplateWithLevel ListTemplate:=ListGalleries(wdBulletGallery).ListTemplates(1), ContinuePreviousList:=False, ApplyTo:=wdListApplyToWholeList, DefaultListBehavior:=wdWord10ListBehavior
+        End If
+      
+    Next myPara
+    For Each myPara In ActiveDocument.Paragraphs
+        If myPara.Style = ActiveDocument.Styles("BulletList2") Then
+            myPara.Style = ActiveDocument.Styles("List Paragraph")
+            myPara.Range.ListFormat.ApplyListTemplateWithLevel ListTemplate:=ListGalleries(wdBulletGallery).ListTemplates(2), ContinuePreviousList:=False, ApplyTo:=wdListApplyToWholeList, DefaultListBehavior:=wdWord10ListBehavior
+
+        End If
+      
+    Next myPara
+    For Each myPara In ActiveDocument.Paragraphs
+        If myPara.Style = ActiveDocument.Styles("BulletList3") Then
+            myPara.Style = ActiveDocument.Styles("List Paragraph")
+            myPara.Range.ListFormat.ApplyListTemplateWithLevel ListTemplate:=ListGalleries(wdBulletGallery).ListTemplates(3), ContinuePreviousList:=False, ApplyTo:=wdListApplyToWholeList, DefaultListBehavior:=wdWord10ListBehavior
+
+        End If
+      
+    Next myPara
+    For Each myPara In ActiveDocument.Paragraphs
+        If myPara.Style = ActiveDocument.Styles("BulletList4") Then
+            myPara.Style = ActiveDocument.Styles("List Paragraph")
+            myPara.Range.ListFormat.ApplyListTemplateWithLevel ListTemplate:=ListGalleries(wdBulletGallery).ListTemplates(4), ContinuePreviousList:=False, ApplyTo:=wdListApplyToWholeList, DefaultListBehavior:=wdWord10ListBehavior
+
+        End If
+      
+    Next myPara
+
+    For Each myPara In ActiveDocument.Paragraphs
+        If myPara.Style = ActiveDocument.Styles("BulletListT1") Then
+            myPara.Style = ActiveDocument.Styles("List Paragraph")
+            myPara.Range.ListFormat.ApplyListTemplateWithLevel ListTemplate:=ListGalleries(wdBulletGallery).ListTemplates(1), ContinuePreviousList:=False, ApplyTo:=wdListApplyToWholeList, DefaultListBehavior:=wdWord10ListBehavior
+
+        End If
+      
+    Next myPara
+    For Each myPara In ActiveDocument.Paragraphs
+        If myPara.Style = ActiveDocument.Styles("BulletListT2") Then
+            myPara.Style = ActiveDocument.Styles("List Paragraph")
+            myPara.Range.ListFormat.ApplyListTemplateWithLevel ListTemplate:=ListGalleries(wdBulletGallery).ListTemplates(2), ContinuePreviousList:=False, ApplyTo:=wdListApplyToWholeList, DefaultListBehavior:=wdWord10ListBehavior
+
+        End If
+      
+    Next myPara

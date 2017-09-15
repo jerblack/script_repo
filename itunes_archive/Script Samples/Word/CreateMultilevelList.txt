@@ -1,0 +1,48 @@
+
+"Define New List Style"
+
+Name = "Primary List Style"
+
+Modify Level 1 in this style
+Number Formatting = 1.
+Number Style = 1, 2, 3
+Bullet Indent = 0.5
+Text Indent = 0.75
+Link Level to Style = List Number
+Start at = 1
+
+Modify Level 2 in this style
+Number Formatting = a.
+Number Style = a, b, c
+Bullet Indent = 1
+Text Indent = 1.25
+Link Level to Style = List Number 2
+Restart List After = Level 1
+Start at = a
+
+Modify Level 3 in this style
+Number Formatting = i.
+Number Style = i, ii, ii
+Bullet Indent = 1.5
+Text Indent = 1.75
+Link Level to Style = List Number 3
+Restart List After = Level 2
+Start at = i
+
+Modify Level 4 in this style
+Number Formatting = 1)
+Number Style = 1, 2, 3
+Bullet Indent = 2
+Text Indent = 2.25
+Link Level to Style = List Number 4
+Restart List After = Level 3
+Start at = 1
+
+Modify Level 5 in this style
+Number Formatting = a)
+Number Style = a, b, c
+Bullet Indent = 2.5
+Text Indent = 2.75
+Link Level to Style = List Number 5
+Restart List After = Level 4
+Start at = a

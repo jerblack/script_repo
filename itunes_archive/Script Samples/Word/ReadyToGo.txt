@@ -1,0 +1,246 @@
+Sub FixDoc()
+    On Error Resume Next
+    Rem Delete text with Title Style (delete titles from beginning of module)
+    
+    With ActiveDocument.Content.Find
+        .ClearFormatting
+        .Style = ActiveDocument.Styles("Title")
+        Do While .Execute(FindText:="", Forward:=True, Format:=True) = True
+            .Parent.Delete
+        Loop
+    End With
+    
+    Rem Resize all regular images to 100% and large images to 70%
+
+	Dim PercentSize As Integer
+	Dim MyStyle As String
+	Dim oIshp As InlineShape
+	Dim oshp As Shape
+	PercentSize = 100
+	MyStyle = "Graphic"
+	With ActiveDocument
+	For Each oIshp In .InlineShapes
+	With oIshp
+	If .Range.Paragraphs(1).Style = MyStyle Then
+	.ScaleHeight = PercentSize
+	.ScaleWidth = PercentSize
+	End If
+	End With
+	Next oIshp
+	For Each oshp In .Shapes
+	With oshp
+	If .Anchor.Paragraphs(1).Style = MyStyle Then
+	.ScaleHeight Factor:=(PercentSize / 100), RelativeToOriginalSize:=msoCTrue
+	.ScaleWidth Factor:=(PercentSize / 100), RelativeToOriginalSize:=msoCTrue
+	End If
+	End With
+	Next oshp
+	End With
+
+
+
+    Rem Fix Note styles. Warning, Caution get Warning Style. Important, Tip, and Note all have their own styles.
+    Rem Styles are used in Flare to determine icon that appears next to it
+    
+    With ActiveDocument.Content.Find
+        .ClearFormatting
+        .Font.Bold = True
+        Do While .Execute(FindText:="For More Information", Forward:=True, Format:=True) = True
+          .Parent.Style = ActiveDocument.Styles("Tip")
+        Loop
+    End With
+      
+    With ActiveDocument.Content.Find
+        .ClearFormatting
+        .Style = ActiveDocument.Styles("Note")
+    Do While .Execute(FindText:="tip", Forward:=True, Format:=True) = True
+        .Parent.Bold = True
+        .Parent.Style = ActiveDocument.Styles("Tip")
+    Loop
+    Do While .Execute(FindText:="caution", Forward:=True, Format:=True) = True
+        .Parent.Bold = True
+        .Parent.Style = ActiveDocument.Styles("Warning")
+    Loop
+    Do While .Execute(FindText:="warning", Forward:=True, Format:=True) = True
+        .Parent.Bold = True
+        .Parent.Style = ActiveDocument.Styles("Warning")
+    Loop
+    Do While .Execute(FindText:="important", Forward:=True, Format:=True) = True
+        .Parent.Bold = True
+        .Parent.Style = ActiveDocument.Styles("Important")
+    Loop
+    End With
+    
+    
+    Rem Repair Lists in document
+    
+    Dim myPara As Paragraph
+    For Each myPara In ActiveDocument.Paragraphs
+    
+        Rem Repair Number Lists
+        If myPara.Style = ActiveDocument.Styles("NoBulletIndent") Then
+            myPara.Style = ActiveDocument.Styles("Paragraph Indent")
+        End If
+        If myPara.Style = ActiveDocument.Styles("NumberListT3") Then
+            myPara.Style = ActiveDocument.Styles("NumberList3")
+        End If
+        If myPara.Style = ActiveDocument.Styles("NumberListT2") Then
+            myPara.Style = ActiveDocument.Styles("NumberList2")
+        End If
+        If myPara.Style = ActiveDocument.Styles("NumberListT1") Then
+            myPara.Style = ActiveDocument.Styles("NumberList1")
+        End If
+        If myPara.Style = ActiveDocument.Styles("NumberList4") Then
+            myPara.Style = ActiveDocument.Styles("List Number 4")
+            myPara.Range.SetListLevel Level:=4
+        End If
+        If myPara.Style = ActiveDocument.Styles("NumberList3") Then
+            myPara.Style = ActiveDocument.Styles("List Number 3")
+            myPara.Range.SetListLevel Level:=3
+        End If
+        If myPara.Style = ActiveDocument.Styles("NumberList2") Then
+            myPara.Style = ActiveDocument.Styles("List Number 2")
+            myPara.Range.SetListLevel Level:=2
+        End If
+        If myPara.Style = ActiveDocument.Styles("NumberList1") Then
+            myPara.Style = ActiveDocument.Styles("List Number")
+            myPara.Range.SetListLevel Level:=1
+        End If
+        
+        Rem Repair Bullet Lists
+
+        If myPara.Style = ActiveDocument.Styles("BulletListT2") Then
+            myPara.Style = ActiveDocument.Styles("BulletList2")
+        End If
+        If myPara.Style = ActiveDocument.Styles("BulletListT1") Then
+            myPara.Style = ActiveDocument.Styles("BulletList1")
+        End If
+        If myPara.Style = ActiveDocument.Styles("BulletList4") Then
+            myPara.Style = ActiveDocument.Styles("List Bullet 4")
+            myPara.Range.SetListLevel Level:=4
+        End If
+        If myPara.Style = ActiveDocument.Styles("BulletList3") Then
+            myPara.Style = ActiveDocument.Styles("List Bullet 3")
+            myPara.Range.SetListLevel Level:=3
+        End If
+        If myPara.Style = ActiveDocument.Styles("BulletList2") Then
+            myPara.Style = ActiveDocument.Styles("List Bullet 2")
+            myPara.Range.SetListLevel Level:=2
+        End If
+        If myPara.Style = ActiveDocument.Styles("BulletList1") Then
+            myPara.Style = ActiveDocument.Styles("List Bullet")
+            myPara.Range.SetListLevel Level:=1
+        End If
+        
+        Rem Remove Custom Table Styles
+        
+        If myPara.Style = ActiveDocument.Styles("code Table") Then
+            myPara.Style = ActiveDocument.Styles("code")
+        End If
+        If myPara.Style = ActiveDocument.Styles("Graphic Table") Then
+            myPara.Style = ActiveDocument.Styles("Graphic")
+        End If
+        If myPara.Style = ActiveDocument.Styles("Graphic Large") Then
+            myPara.Style = ActiveDocument.Styles("Graphic")
+        End If
+        If myPara.Style = ActiveDocument.Styles("Note Table") Then
+            myPara.Style = ActiveDocument.Styles("Note")
+        End If
+        
+        If myPara.Style = ActiveDocument.Styles("Paragraph Text Table Bold") Then
+            myPara.Style = ActiveDocument.Styles("Paragraph Text")
+            myPara.Range.Font.Bold = True
+        End If
+        If myPara.Style = ActiveDocument.Styles("Paragraph Text Table") Then
+            myPara.Style = ActiveDocument.Styles("Paragraph Text")
+        End If
+        If myPara.Style = ActiveDocument.Styles("Table Text") Then
+            myPara.Style = ActiveDocument.Styles("Paragraph Text")
+        End If
+    Next myPara
+        
+    Rem Fix Numbering
+
+    For Each myPara In ActiveDocument.Paragraphs
+        If myPara.Style = ActiveDocument.Styles("List Number") Then
+            If myPara.Previous.Style = ActiveDocument.Styles("Paragraph Text") Then
+                myPara.SeparateList
+            End If
+        End If
+    Next myPara
+    For Each myPara In ActiveDocument.Paragraphs
+        If myPara.Style = ActiveDocument.Styles("List Number") Then
+            If myPara.Previous.Style = ActiveDocument.Styles("Heading 3") Then
+                myPara.SeparateList
+            End If
+        End If
+    Next myPara
+    For Each myPara In ActiveDocument.Paragraphs
+        If myPara.Style = ActiveDocument.Styles("List Number") Then
+            If myPara.Previous.Style = ActiveDocument.Styles("Heading 4") Then
+                myPara.SeparateList
+            End If
+        End If
+    Next myPara
+    For Each myPara In ActiveDocument.Paragraphs
+        If myPara.Style = ActiveDocument.Styles("List Number") Then
+            If myPara.Previous.Style = ActiveDocument.Styles("Heading 5") Then
+                myPara.SeparateList
+            End If
+        End If
+    Next myPara
+    For Each myPara In ActiveDocument.Paragraphs
+        If myPara.Style = ActiveDocument.Styles("List Number") Then
+            If myPara.Previous.Style = ActiveDocument.Styles("Heading 6") Then
+                myPara.SeparateList
+            End If
+        End If
+    Next myPara
+    Rem Delete Unused Styles
+    
+    ActiveDocument.Styles("BulletIndent").Delete
+    ActiveDocument.Styles("BulletListT1").Delete
+    ActiveDocument.Styles("BulletListT2").Delete
+    ActiveDocument.Styles("BulletList1").Delete
+    ActiveDocument.Styles("BulletList2").Delete
+    ActiveDocument.Styles("BulletList3").Delete
+    ActiveDocument.Styles("BulletList4").Delete
+    ActiveDocument.Styles("NumberListT1").Delete
+    ActiveDocument.Styles("NumberListT2").Delete
+    ActiveDocument.Styles("NumberListT3").Delete
+    ActiveDocument.Styles("NumberList1").Delete
+    ActiveDocument.Styles("NumberList2").Delete
+    ActiveDocument.Styles("NumberList3").Delete
+    ActiveDocument.Styles("NumberList4").Delete
+    ActiveDocument.Styles("code Table").Delete
+    ActiveDocument.Styles("FlareTOC1").Delete
+    ActiveDocument.Styles("Graphic Table").Delete
+    ActiveDocument.Styles("Graphic Large").Delete
+    ActiveDocument.Styles("GraphicLarge").Delete
+    ActiveDocument.Styles("Lesson Title").Delete
+    ActiveDocument.Styles("Note Table").Delete
+    ActiveDocument.Styles("Paragraph Text Table Bold").Delete
+    ActiveDocument.Styles("Paragraph Text Table").Delete
+    ActiveDocument.Styles("Table Text").Delete
+    ActiveDocument.Styles("Notes_Course").Delete
+    ActiveDocument.Styles("Notes_Course Label").Delete
+    ActiveDocument.Styles("idtext").Delete
+    ActiveDocument.Styles("NumberList.1").Delete
+    ActiveDocument.Styles("NumberList.2").Delete
+    ActiveDocument.Styles("NumberList.3").Delete
+    ActiveDocument.Styles("ParaTextTable").Delete
+    ActiveDocument.Styles("Unordered List").Delete
+    ActiveDocument.Styles("Default").Delete
+    ActiveDocument.Styles("Body Text PSS").Delete
+    ActiveDocument.Styles("readeraidtitle").Delete
+    ActiveDocument.Styles("Activity Heading").Delete
+    ActiveDocument.Styles("CPBA Heading 1").Delete
+    ActiveDocument.Styles("keywordhighlight1").Delete
+
+    ActiveDocument.Styles("Le").Delete
+
+    ActiveDocument.Styles("Paragrph Text Table Bold").Delete
+    End Sub
+
+
+

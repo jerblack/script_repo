@@ -1,0 +1,10 @@
+	CopyStylesFromTemplate
+	reapplyStyles
+	fixText
+	fixContinueNumbering
+	fixImagesSizes
+	captionAllImages
+	cleanupAllTables
+	captionAllTables
+	updateAllFields
+	removeExcessStyles

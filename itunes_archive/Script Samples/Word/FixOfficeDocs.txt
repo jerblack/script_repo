@@ -1,0 +1,176 @@
+Sub FixOfficeDocs()
+    On Error Resume Next
+' Overwrite styles in doc with updated version from template
+
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="Normal", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="Balloon Text", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="BulletIndent", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="Paragraph Text", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="List Paragraph", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="BulletList1", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="BulletList2", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="BulletList3", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="BulletList4", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="BulletListT1", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="BulletListT2", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="Caption", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="code", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="code Table", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="Default Paragraph Font", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="Comment Reference", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="Comment Text", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="Comment Subject", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="FlareTOC1", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="FollowedHyperlink", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="Footer", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="Graphic", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="Graphic Large", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="Graphic Table", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="Header", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="Heading 1", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="Heading 2", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="Heading 3", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="Heading 4", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="Heading 5", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="Heading 6", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="Heading 7", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="Heading 8", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="Hyperlink", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="Note", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="Important", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="Issue", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="Table Normal", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="Lesson Table", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="Title", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="Lesson Title", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="List Bullet", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="List Bullet 2", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="List Bullet 3", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="List Bullet 4", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="List Number", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="List Number 2", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="List Number 3", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="List Number 4", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="List Number 5", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="MainBulletList", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="No List", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="No Spacing", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="Normal (Web)", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="Note Table", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="NumberList1", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="NumberList2", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="NumberList3", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="NumberList4", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="NumberListT1", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="NumberListT2", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="NumberListT3", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="Paragraph Indent", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="Paragraph Text Table", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="Paragraph Text Table Bold", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="Placeholder Text", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="Primary Bullet List", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="Primary List Style", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="String (finalized)", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="Strong", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="Style1", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="Table Grid", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="Table Grid1", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="Table Text", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="Tip", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="TOC 1", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="TOC 2", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="TOC 3", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="TOC 4", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="TOC 5", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="TOC 6", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="TOC 7", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="TOC 8", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="TOC 9", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="TOC Heading", Object:=wdOrganizerObjectStyles
+    Application.OrganizerCopy Source:="C:\Users\Jeremy\AppData\Roaming\Microsoft\Templates\Word to Flare Template.dotx", Destination:=ActiveDocument.FullName, Name:="Warning", Object:=wdOrganizerObjectStyles
+
+
+' Resize images wider than 8" to 70%
+
+Dim PercentSize As Integer
+Dim MyStyle As String
+Dim oIshp As InlineShape
+Dim oshp As Shape
+
+PercentSize = 70
+MyStyle = "Graphic"
+With ActiveDocument
+For Each oIshp In .InlineShapes
+With oIshp
+If .Range.Paragraphs(1).Style = MyStyle Then
+If .Width > InchesToPoints(8) Then
+.ScaleHeight = PercentSize
+.ScaleWidth = PercentSize
+End If
+End If
+End With
+Next oIshp
+For Each oshp In .Shapes
+With oshp
+If .Anchor.Paragraphs(1).Style = MyStyle Then
+.ScaleHeight Factor:=(PercentSize / 100), RelativeToOriginalSize:=msoCTrue
+.ScaleWidth Factor:=(PercentSize / 100), RelativeToOriginalSize:=msoCTrue
+End If
+End With
+Next oshp
+End With
+
+
+    ActiveDocument.Styles("BulletIndent").Delete
+    ActiveDocument.Styles("BulletListT1").Delete
+    ActiveDocument.Styles("BulletListT2").Delete
+    ActiveDocument.Styles("BulletList1").Delete
+    ActiveDocument.Styles("BulletList2").Delete
+    ActiveDocument.Styles("BulletList3").Delete
+    ActiveDocument.Styles("BulletList4").Delete
+    ActiveDocument.Styles("NumberListT1").Delete
+    ActiveDocument.Styles("NumberListT2").Delete
+    ActiveDocument.Styles("NumberListT3").Delete
+    ActiveDocument.Styles("NumberList1").Delete
+    ActiveDocument.Styles("NumberList2").Delete
+    ActiveDocument.Styles("NumberList3").Delete
+    ActiveDocument.Styles("NumberList4").Delete
+    ActiveDocument.Styles("code Table").Delete
+    ActiveDocument.Styles("FlareTOC1").Delete
+    ActiveDocument.Styles("Graphic Table").Delete
+    ActiveDocument.Styles("Graphic Large").Delete
+    ActiveDocument.Styles("GraphicLarge").Delete
+    ActiveDocument.Styles("Lesson Title").Delete
+    ActiveDocument.Styles("Note Table").Delete
+    ActiveDocument.Styles("Paragraph Text Table Bold").Delete
+    ActiveDocument.Styles("Paragraph Text Table").Delete
+    ActiveDocument.Styles("Table Text").Delete
+    ActiveDocument.Styles("Notes_Course").Delete
+    ActiveDocument.Styles("Notes_Course Label").Delete
+    ActiveDocument.Styles("idtext").Delete
+    ActiveDocument.Styles("NumberList.1").Delete
+    ActiveDocument.Styles("NumberList.2").Delete
+    ActiveDocument.Styles("NumberList.3").Delete
+    ActiveDocument.Styles("ParaTextTable").Delete
+    ActiveDocument.Styles("Unordered List").Delete
+    ActiveDocument.Styles("Default").Delete
+    ActiveDocument.Styles("Body Text PSS").Delete
+    ActiveDocument.Styles("readeraidtitle").Delete
+    ActiveDocument.Styles("Activity Heading").Delete
+    ActiveDocument.Styles("CPBA Heading 1").Delete
+    ActiveDocument.Styles("keywordhighlight1").Delete
+    ActiveDocument.Styles("Style1").Delete
+    ActiveDocument.Styles("Style2").Delete
+    ActiveDocument.Styles("Le").Delete
+    ActiveDocument.Styles("NoBulletIndent").Delete
+    ActiveDocument.Styles("Paragrph Text Table Bold").Delete
+    
+' Delete existing TOC and create new TOC that includes H1-H3, position just after 1st paragraph (usually title in H1)
+
+    With ActiveDocument
+        If .TablesOfContents.Count > 0 Then .TablesOfContents(1).Delete
+        .TablesOfContents.Add Range:=ActiveDocument.Paragraphs(2).Range, RightAlignPageNumbers:=True, UseHeadingStyles:=False, UpperHeadingLevel:=1, LowerHeadingLevel:=3, IncludePageNumbers:=True, HidePageNumbersInWeb:=False
+		.Rang
+    End With
+End Sub
+

@@ -1,0 +1,140 @@
+###############################################################################
+#
+# mm_rating_to_itunes.pl
+#
+# This script will read the POPM tag (used by Media Monkey to store song ratings)
+#
+#
+# Copyright (C) 2009  Robert Jacobson
+# written by: Robert Jacobson (http://mysite.verizon.net/teridon/itunesscripts)
+# Last Updated: 2009 July 22
+# Version 1.1
+#
+# This script is GPL v2.  see http://www.gnu.org/copyleft/gpl.html
+#
+###############################################################################
+
+use File::Basename;
+my $PROGNAME = basename($0);
+my $VERSION = "1.1";
+my $AUTHOR = "Robert Jacobson";
+my $HOMEPAGE = "http://www.pobox.com/~teridon/itunesscripts";
+my $YEAR = 2009;
+my $GNU_URL = "http://www.gnu.org/copyleft/gpl.html";
+
+{
+	print
+	"**************************************************************\n" .
+	"$PROGNAME version $VERSION\n" . 
+	"Copyright (C) $YEAR $AUTHOR\n" .
+	"Visit $HOMEPAGE for updates\n" . 
+	"$PROGNAME comes with ABSOLUTELY NO WARRANTY;\n".
+	"This is free software, and you are welcome\n" .
+	"to redistribute it under certain conditions\n" .
+	"for details see $GNU_URL.\n" .
+	"**************************************************************\n" .
+	"\n"
+	;
+}
+
+use strict;
+use Win32::OLE;
+use MP3::Tag;
+use Data::Dumper;
+
+# Create a signal handler to destroy the iTunes object
+# in case our program quits before the end
+use sigtrap 'handler', \&quit, 'normal-signals';
+
+## Create the OLE Object
+my $iTunes = Win32::OLE->new('iTunes.Application') or die Win32::OLE->LastError();
+
+my %mm_to_itunes_rating = (
+	"13" =>  10,  # 0.5 stars
+	"28" =>  10,  # 0.5 stars
+	"23" =>  20,  # 1.0 stars
+	"53" =>  20,  # 1.0 stars
+	"54" =>  30,  # 1.5 stars
+	"78" =>  30,  # 1.5 stars
+	"64" =>  40,  # 2.0 stars
+	"104" => 40,  # 2.0 stars
+	"118" => 50,  # 2.5 stars
+	"129" => 50,  # 2.5 stars
+	"128" => 60,  # 3.0 stars
+	"154" => 60,  # 3.0 stars
+	"179" => 70,  # 3.5 stars
+	"186" => 70,  # 3.5 stars
+	"196" => 80,  # 4.0 stars
+	"205" => 80,  # 4.0 stars
+	"230" => 90,  # 4.5 stars
+	"242" => 90,  # 4.5 stars
+	"252" => 100, # 5.0 stars
+	"255" => 100, # 5.0 stars
+);
+
+sub set_itunes_rating($);
+
+my $tracks = $iTunes->SelectedTracks;
+
+for (my $i = 1 ; $i <= $tracks->Count ; $i++ ) {
+	my $track = $tracks->Item($i);
+	&set_itunes_rating($track);
+}
+
+
+sub set_itunes_rating ($) {
+	my $track= shift;
+	my $filename = $track->Location();
+	# my $filename = $ARGV[0];
+	# 	my $filename = "./MP3samples/BF2RealTone-1star.mp3";
+	
+	my $rating;
+	my $mp3 = MP3::Tag->new($filename);
+	$mp3->get_tags();
+	
+	# print Dumper $mp3;
+	my $tag;
+	
+	if (exists $mp3->{'ID3v2'} ) {
+		$tag = $mp3->{'ID3v2'};
+	} else {
+		print "ERROR: no ID3v2 tag exists in file $filename!\n";
+	}
+	
+	my ($info, $name, @rest) = $tag->get_frame("POPM");
+	
+	if (not defined $info) {
+		print "Error getting ID3v2 POPM tag for $filename, skipping\n";
+		return 0;
+	} else {
+		# POPM tag $info is a hash:
+		#  {
+		#    'URL' => 'no@email',
+		#    'Counter' => 0,
+		#    'Rating' => 53
+		#  };
+		$rating = $info->{'Rating'};
+		
+		if (exists $mm_to_itunes_rating{$rating} ) {
+			my $itunes_rating = $mm_to_itunes_rating{$rating};
+			print "for track " . $track->Name . " with rating $rating, itunes rating is $itunes_rating\n";
+			$track->{'Rating'} = $itunes_rating;
+		} else {
+			print "ERROR: Got POPM value of $rating, for which no translation exists\n";
+		}
+	}
+}
+
+print "\n\nPress enter to exit  ";
+my $trash = <STDIN>;
+
+# Destroy the object.  Otherwise zombie object will come back
+# to haunt you
+quit();
+
+sub quit 
+{
+	# This destroys the object
+	undef $iTunes;
+	exit;
+}

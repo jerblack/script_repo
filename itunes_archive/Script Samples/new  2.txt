@@ -1,0 +1,26 @@
+order
+-----
+
+
+Reapply all styles, remove extra spaced, fix all list ordering, format and addd captions to all images and tables, and update TOC and caption numbers.
+
+
+
+
+
+text cleanup tool
+-----------------
+remove leading trailing spaces
+- checkbox1
+
+
+
+
+
+
+
+remove empty paragraphs
+- checkbox4
+
+   Me.Frame1.Tag = 1
+   AdvOption = 1

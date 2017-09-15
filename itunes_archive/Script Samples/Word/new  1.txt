@@ -1,0 +1,86 @@
+Dim myPara as Paragraph
+For each myPara in ActiveDocument.Paragraphs
+If myPara.Style=ActiveDocument.Styles("Title") Then
+
+Selection.Font.Reset
+Selection.Style = ActiveDocument.Styles("Code")
+Selection.Font.Bold = True
+
+Endif
+Next myPara
+
+
+-----
+
+//This Deletes the Text with the Title style. Does not delete the style itself
+  With ActiveDocument.Content.Find
+    .ClearFormatting
+    .Style = ActiveDocument.Styles("Title")
+    Do While .Execute(FindText:="", Forward:=True, Format:=True) = True
+      .Parent.Style
+    Loop
+  End With
+  
+-----
+
+//This Changes the Text with the Title style to the Code style. Bolds COde text. Does not delete the style itself
+
+  With ActiveDocument.Content.Find
+    .ClearFormatting
+    .Style = ActiveDocument.Styles("Title")
+    Do While .Execute(FindText:="", Forward:=True, Format:=True) = True
+      .Parent.Style = ActiveDocument.Styles("Code")
+	  .Font.Bold = True
+    Loop
+  End With
+  
+  ----
+  //Delete Style
+   ActiveDocument.Styles("BulletIndent").Delete
+  
+  ----
+  Private Sub ConvertLists()
+   Dim para As Paragraph
+   Dim i As Long
+    For Each para In ActiveDocument.ListParagraphs
+        With para.Range
+            .InsertBefore " "
+            For i = 1 To .ListFormat.ListLevelNumber
+                If .ListFormat.ListType = wdListBullet Then
+                    .InsertBefore "*"
+                Else
+                    .InsertBefore "#"
+                End If
+            Next i
+            .ListFormat.RemoveNumbers
+        End With
+    Next para
+End Sub
+----
+
+why not try to find the word you want to change the style or formatting, then if it finds the word apply the style.. 
+here's the code..
+
+Code:
+Sub styledoc()
+Dim strfind As String
+
+strfind = InputBox("Type the string to change formatting")
+
+With Selection.Find
+        .Text = strfind
+        .Forward = True
+        .Wrap = wdFindContinue
+        .Format = False
+        .MatchCase = False
+        .MatchWholeWord = True
+        .MatchWildcards = False
+        .MatchSoundsLike = False
+        .MatchAllWordForms = True
+    End With
+    Selection.Find.Execute
+    Selection.Font.Bold = wdToggle ' bold the text
+    Selection.Font.Italic = wdToggle ' change to italic
+    Selection.Font.Underline = wdUnderlineSingle
+
+End Sub

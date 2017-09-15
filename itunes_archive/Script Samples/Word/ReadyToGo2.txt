@@ -1,0 +1,178 @@
+Sub fixStyles ()   
+   Rem Resize all regular images to 100% and large images to 70%
+
+	Dim PercentSize As Integer
+	Dim MyStyle As String
+	Dim oIshp As InlineShape
+	Dim oshp As Shape
+	PercentSize = 100
+	MyStyle = "Graphic"
+	With ActiveDocument
+	For Each oIshp In .InlineShapes
+	With oIshp
+	If .Range.Paragraphs(1).Style = MyStyle Then
+	.ScaleHeight = PercentSize
+	.ScaleWidth = PercentSize
+	End If
+	End With
+	Next oIshp
+	For Each oshp In .Shapes
+	With oshp
+	If .Anchor.Paragraphs(1).Style = MyStyle Then
+	.ScaleHeight Factor:=(PercentSize / 100), RelativeToOriginalSize:=msoCTrue
+	.ScaleWidth Factor:=(PercentSize / 100), RelativeToOriginalSize:=msoCTrue
+	End If
+	End With
+	Next oshp
+	End With
+	
+	
+	
+	
+	
+	
+	End Sub
+	
+	Sub fixNoteBoxes()
+	 Rem Fix Note styles. Warning, Caution get Warning Style. Important, Tip, and Note all have their own styles.
+    Rem Styles are used in Flare to determine icon that appears next to it
+    
+    With ActiveDocument.Content.Find
+        .ClearFormatting
+        .Font.Bold = True
+        Do While .Execute(FindText:="For More Information", Forward:=True, Format:=True) = True
+          .Parent.Style = ActiveDocument.Styles("Tip")
+        Loop
+    End With
+      
+    With ActiveDocument.Content.Find
+        .ClearFormatting
+        .Style = ActiveDocument.Styles("Note")
+    Do While .Execute(FindText:="tip", Forward:=True, Format:=True) = True
+        .Parent.Bold = True
+        .Parent.Style = ActiveDocument.Styles("Tip")
+    Loop
+    Do While .Execute(FindText:="caution", Forward:=True, Format:=True) = True
+        .Parent.Bold = True
+        .Parent.Style = ActiveDocument.Styles("Warning")
+    Loop
+    Do While .Execute(FindText:="warning", Forward:=True, Format:=True) = True
+        .Parent.Bold = True
+        .Parent.Style = ActiveDocument.Styles("Warning")
+    Loop
+    Do While .Execute(FindText:="important", Forward:=True, Format:=True) = True
+        .Parent.Bold = True
+        .Parent.Style = ActiveDocument.Styles("Important")
+    Loop
+    End With
+	
+	End Sub
+	
+	
+	
+	Sub insertTOCtoH2()
+    With ActiveDocument
+        If .TablesOfContents.Count > 0 Then .TablesOfContents(1).Delete
+        .TablesOfContents.Add Range:=ActiveDocument.Paragraphs(2).Range, RightAlignPageNumbers:=True, UseHeadingStyles:=False, UpperHeadingLevel:=1, LowerHeadingLevel:=2, IncludePageNumbers:=True, HidePageNumbersInWeb:=False
+    End With
+End Sub
+
+
+Sub insertTOCtoH3()
+    With ActiveDocument
+        If .TablesOfContents.Count > 0 Then .TablesOfContents(1).Delete
+        .TablesOfContents.Add Range:=ActiveDocument.Paragraphs(2).Range, RightAlignPageNumbers:=True, UseHeadingStyles:=False, UpperHeadingLevel:=1, LowerHeadingLevel:=3, IncludePageNumbers:=True, HidePageNumbersInWeb:=False
+    End With
+End Sub
+
+
+Sub setStyleCode()
+        Selection.Style = ActiveDocument.Styles("code")
+End Sub
+
+Sub setStyleGraphic()
+        Selection.Style = ActiveDocument.Styles("Graphic")
+End Sub
+
+Sub setStyleParagraphText()
+        Selection.Style = ActiveDocument.Styles("Paragraph Text")
+End Sub
+
+Sub setStyleParagraphIndent()
+        Selection.Style = ActiveDocument.Styles("Paragraph Indent")
+End Sub
+
+Sub setStylecaption()
+        Selection.Style = ActiveDocument.Styles("caption")
+End Sub
+
+Sub setStyleNote()
+        Selection.Style = ActiveDocument.Styles("Note")
+End Sub
+
+Sub setStyleImportant()
+        Selection.Style = ActiveDocument.Styles("Important")
+End Sub
+
+Sub setStyleTip()
+        Selection.Style = ActiveDocument.Styles("Tip")
+End Sub
+
+Sub setStyleCode()
+        Selection.Style = ActiveDocument.Styles("code")
+End Sub
+
+Sub setStyleWarning()
+        Selection.Style = ActiveDocument.Styles("Warning")
+End Sub
+
+Sub setStyleh1()
+        Selection.Style = ActiveDocument.Styles("Heading 1")
+End Sub
+
+Sub setStyleh2()
+        Selection.Style = ActiveDocument.Styles("Heading 2")
+End Sub
+
+Sub setStyleh3()
+        Selection.Style = ActiveDocument.Styles("Heading 3")
+End Sub
+
+Sub setStyleh4()
+        Selection.Style = ActiveDocument.Styles("Heading 4")
+End Sub
+
+Sub setStyleh5()
+        Selection.Style = ActiveDocument.Styles("Heading 5")
+End Sub
+
+Sub setStyleh6()
+        Selection.Style = ActiveDocument.Styles("Heading 6")
+End Sub
+
+Sub setStyleLB1()
+        Selection.Style = ActiveDocument.Styles("List Bullet")
+End Sub
+
+Sub setStyleLB2()
+        Selection.Style = ActiveDocument.Styles("List Bullet 2")
+End Sub
+
+Sub setStyleLB3()
+        Selection.Style = ActiveDocument.Styles("List Bullet 3")
+End Sub
+
+Sub setStyleLN1()
+        Selection.Style = ActiveDocument.Styles("List Number")
+End Sub
+
+Sub setStyleLN2()
+        Selection.Style = ActiveDocument.Styles("List Number 2")
+End Sub
+
+Sub setStyleLN3()
+        Selection.Style = ActiveDocument.Styles("List Number 3")
+End Sub
+
+
+
