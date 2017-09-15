@@ -443,12 +443,12 @@ RDP client
       
       if find /etc/apt/ -name *.list | xargs cat | grep  ^[[:space:]]*deb | grep $REPO -q
       then
-      	echo ___$REPO repository is already present___
+        echo ___$REPO repository is already present___
       else
-      	echo ___adding $REPO repository___
-      	sudo apt-add-repository ppa:$REPO -y
-      	echo "___Updating repo database___"
-      	sudo apt update
+        echo ___adding $REPO repository___
+        sudo apt-add-repository ppa:$REPO -y
+        echo "___Updating repo database___"
+        sudo apt update
       fi
       
       echo "___Installing Sublime Text___"
@@ -459,11 +459,79 @@ RDP client
       SIDEBAR_THEME="https://gist.githubusercontent.com/jerblack/5d4ec251ca885b53d22ad5c57fd1d138/raw/1efcc83df0cd338c6c1f54c14b30516e64bc8ff7/Default.sublime-theme"
       wget $SIDEBAR_THEME -O ~/.config/sublime-text-3/Packages/Theme\ -\ Default/Default.sublime-theme
       
+      echo "___Adding User Preferences___"
+      USERPREF="{
+        "font_size": 16,
+        "scroll_speed": 0
+      }
+      " > "~/.config/sublime-text-3/Packages/User/Preferences.sublime-settings"
+      
 - **Transmission Remote**
 
       #!/bin/bash
       sudo apt install transgui -y
       # ~/.config/Transmission Remote GUI/transgui.ini
+
+- **Transmission**
+
+      #!/bin/bash
+      # https://help.ubuntu.com/community/TransmissionHowTo
+      
+      printf "Enter the credentials for the transmission daemon\n"
+      printf "Username? "
+      read USER
+      printf "Password? "
+      read PASS
+      
+      RPC_WHITELIST=127.0.0.1,71.37.51.171
+      DOWNLOAD_DIR="/home/jeremy/hdd/torrents/seeding"
+      INCOMPLETE_DIR="/home/jeremy/hdd/torrents/in_progress"
+      INCOMPLETE_DIR_ENABLED=true
+      DHT_ENABLED=false
+      PEX_ENABLED=false
+      UTP_ENABLED=false
+      QUEUE_STALLED_ENABLED=false
+      UMASK=2
+      REPO=transmissionbt/ppa
+      
+      if find /etc/apt/ -name *.list | xargs cat | grep  ^[[:space:]]*deb | grep $REPO -q
+      then
+      	echo ___$REPO repository is already present___
+      else
+      	echo ___adding $REPO repository___
+      	sudo apt-add-repository ppa:$REPO -y
+      	sudo apt update	
+      fi
+      
+      echo ___installing transmission daemon___
+      sudo apt install transmission-cli transmission-common transmission-daemon -y
+      
+      echo ___installing JSON parser \(jq\)___
+      sudo apt install jq -y
+      
+      echo ___stopping transmission-daemon___
+      sudo service transmission-daemon stop
+      
+      echo ___updating transmission-daemon settings___
+      SETTINGS={\"rpc-password\":\"$PASS\",\"rpc-username\":\"$USER\",\"umask\":$UMASK,\"rpc-whitelist\":\"$RPC_WHITELIST\",\"download-dir\":\"$DOWNLOAD_DIR\",\"incomplete-dir\":\"$INCOMPLETE_DIR\",\"incomplete-dir-enabled\":$INCOMPLETE_DIR_ENABLED,\"dht-enabled\":$DHT_ENABLED,\"pex-enabled\":$PEX_ENABLED,\"utp-enabled\":$UTP_ENABLED,\"queue-stalled-enabled\":$QUEUE_STALLED_ENABLED}
+      
+      TRANSMISSION_PROFILE=/var/lib/transmission-daemon/info
+      sudo jq '. + '$SETTINGS $TRANSMISSION_PROFILE/settings.json > tmp.json
+      sudo mv tmp.json $TRANSMISSION_PROFILE/settings.json
+      
+      echo ___adding $USER account to transmission group___
+      sudo usermod -a -G debian-transmission $USER
+      echo ___adding transmission user to $USER group___
+      sudo usermod -a -G $USER debian-transmission
+      
+      # /etc/default/transmission
+      # CONFIG_DIR="/home/jeremy/.config/transmission-daemon" 
+      
+      # copy updated settings.json to /etc/transmission-daemon
+      
+      echo ___starting transmission-daemon___
+      sudo service transmission-daemon start
+      
 
 - **Trash**
 trash-cli trashes files recording the original path, deletion date, and permissions. It uses the same trashcan used by KDE, GNOME, and XFCE, but you can invoke it from the command line (and scripts).
