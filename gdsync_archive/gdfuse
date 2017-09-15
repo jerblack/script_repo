@@ -1,0 +1,11 @@
+#!/bin/bash
+
+cid=""
+csec=""
+
+# su jeremy -l -c "google-drive-ocamlfuse -headless -id $cid -secret $csec -label $1 $*"
+su jeremy -l -c "google-drive-ocamlfuse -label $1 $*"
+
+exit 0
+
+

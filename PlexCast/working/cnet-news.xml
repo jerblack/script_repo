@@ -1,0 +1,236 @@
+
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <atom:link href="http://feed.cnet.com/feed/podcast/cnet-news.xml" rel="self" type="application/rss+xml"/>
+        <itunes:new-feed-url>http://feed.cnet.com/feed/podcast/cnet-news.xml</itunes:new-feed-url>        <title><![CDATA[News (SD)]]></title>
+        <itunes:author>CNETTV.com</itunes:author>
+        <link>http://cnettv.cnet.com/</link>
+        <copyright>2014 CNET.com</copyright>
+        <description><![CDATA[Videos pertaining to breaking tech news or focusing on newsworthy happenings, such as keynote addresses and interviews, as it pertains to the world of tech. These videos are intended to be viewed by those looking for video on news.com or news videos on CNET TV.]]></description>
+        <managingEditor>feedback-cnettv@cnet.com (CNETTV)</managingEditor>
+        <webMaster>feedback-cnettv@cnet.com (CNETTV)</webMaster>
+        <language>en-us</language>
+        <itunes:explicit>no</itunes:explicit>
+        <itunes:subtitle><![CDATA[From industry news to techy trends to newsmaker interviews, no technology angle is too small or obscure to explore. Our reporters take you there in this video series that aims to bring you even closer to the tech news you find daily on CNET News.]]></itunes:subtitle>
+        <itunes:summary><![CDATA[Videos pertaining to breaking tech news or focusing on newsworthy happenings, such as keynote addresses and interviews, as it pertains to the world of tech. These videos are intended to be viewed by those looking for video on news.com or news videos on CNET TV.]]></itunes:summary>
+        <itunes:image href="http://i.i.cbsi.com/cnwk.1d/i/tron/cnettv/podcast/news_1400.jpg" />
+        <image>
+            <link>http://cnettv.cnet.com</link>
+            <url>http://i.i.cbsi.com/cnwk.1d/i/tron/cnettv/podcast/news_300x300.jpg</url>
+            <title><![CDATA[News (SD)]]></title>
+            <width>300</width>
+            <height>300</height>
+        </image>
+        <category>Technology</category>
+        <itunes:category text="Technology"></itunes:category>
+        <itunes:owner>
+            <itunes:name>CNETTV.com</itunes:name>
+            <itunes:email>feedback-cnettv@cnet.com (CNETTV)</itunes:email>
+        </itunes:owner>
+
+        <lastBuildDate>Sat, 27 Jun 2015 02:21:06 PDT</lastBuildDate>
+        <pubDate>Sat, 27 Jun 2015 02:21:06 PDT</pubDate>
+        <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+
+                                                                                                    <item>
+                <title><![CDATA[Baseball tech keeps fans and players connected]]></title>
+                <link>http://dw.cbsi.com/redir/15n_0624Baseballtech_578412_440.mp4?destUrl=http://download.cnettv.com.edgesuite.net/21923/2015/06/25/471201859528/15n_0624Baseballtech_578412_440.mp4</link>
+                <author>feedback-cnettv@cnet.com (CNETTV)</author>
+                <description><![CDATA[Fans take their smartphone out to the ballgame to watch instant replays and share photos. AT&T Park in San Francisco has rolled out EchoBOT technology alongside the existing Wi-Fi to ensure the cellular network is performing at its peak.]]></description>
+                <itunes:subtitle><![CDATA[Fans take their smartphone out to the ballgame to watch instant replays and share photos. AT&T Park in San Francisco has rolled out EchoBOT technology alongside the existing Wi-Fi to ensure the cellular network is performing at its peak.]]></itunes:subtitle>
+                <itunes:summary><![CDATA[Fans take their smartphone out to the ballgame to watch instant replays and share photos. AT&T Park in San Francisco has rolled out EchoBOT technology alongside the existing Wi-Fi to ensure the cellular network is performing at its peak.]]></itunes:summary>
+                <itunes:explicit>no</itunes:explicit>
+                <itunes:author>CNET.com</itunes:author>
+                <guid isPermaLink="false">8b3b5241-e557-4c2d-81cb-61016ff79db2</guid>
+                <itunes:duration></itunes:duration>
+                <itunes:keywords>
+                    CNET
+                    CNETTV
+                    Tech Culture
+                </itunes:keywords>
+                <enclosure url="http://dw.cbsi.com/redir/15n_0624Baseballtech_578412_440.mp4?destUrl=http://download.cnettv.com.edgesuite.net/21923/2015/06/25/471201859528/15n_0624Baseballtech_578412_440.mp4" length="0" type="video/mp4"/>
+                <category>Technology</category>
+                <pubDate>Thu, 25 Jun 2015 11:00:02 PDT</pubDate>
+            </item>
+                                                                                                    <item>
+                <title><![CDATA[Tech that drives PGA Golf]]></title>
+                <link>http://dw.cbsi.com/redir/15n_0622GolfTech_576814_440.mp4?destUrl=http://download.cnettv.com.edgesuite.net/21923/2015/06/22/469636675760/15n_0622GolfTech_576814_440.mp4</link>
+                <author>feedback-cnettv@cnet.com (CNETTV)</author>
+                <description><![CDATA[The game of golf can look deceptively simple, but some elaborate technology is going on behind the scenes, impacting everything from the TV broadcast to the fan experience, to player performance. CNET's Kara Tsuboi shows us the tech in action.]]></description>
+                <itunes:subtitle><![CDATA[The game of golf can look deceptively simple, but some elaborate technology is going on behind the scenes, impacting everything from the TV broadcast to the fan experience, to player performance. CNET's Kara Tsuboi shows us the tech in action.]]></itunes:subtitle>
+                <itunes:summary><![CDATA[The game of golf can look deceptively simple, but some elaborate technology is going on behind the scenes, impacting everything from the TV broadcast to the fan experience, to player performance. CNET's Kara Tsuboi shows us the tech in action.]]></itunes:summary>
+                <itunes:explicit>no</itunes:explicit>
+                <itunes:author>CNET.com</itunes:author>
+                <guid isPermaLink="false">e5c63c07-52d1-4469-8e42-8d25579d9dc4</guid>
+                <itunes:duration></itunes:duration>
+                <itunes:keywords>
+                    CNET
+                    CNETTV
+                    Tech Culture
+                </itunes:keywords>
+                <enclosure url="http://dw.cbsi.com/redir/15n_0622GolfTech_576814_440.mp4?destUrl=http://download.cnettv.com.edgesuite.net/21923/2015/06/22/469636675760/15n_0622GolfTech_576814_440.mp4" length="0" type="video/mp4"/>
+                <category>Technology</category>
+                <pubDate>Tue, 23 Jun 2015 03:00:03 PDT</pubDate>
+            </item>
+                                                                                                    <item>
+                <title><![CDATA[Inside the Dolby Cinema technology of Pixar's 'Inside Out']]></title>
+                <link>http://dw.cbsi.com/redir/15n_0618InsideOut_575830_440.mp4?destUrl=http://download.cnettv.com.edgesuite.net/21923/2015/06/19/468259395675/15n_0618InsideOut_575830_440.mp4</link>
+                <author>feedback-cnettv@cnet.com (CNETTV)</author>
+                <description><![CDATA[Dolby is a name synonymous with sound, but now the company wants to reinvent the entire movie going experience. Pixar's "Inside Out" is the second film to be released for Dolby Cinema and promises a more vibrant picture than ever before.]]></description>
+                <itunes:subtitle><![CDATA[Dolby is a name synonymous with sound, but now the company wants to reinvent the entire movie going experience. Pixar's "Inside Out" is the second film to be released for Dolby Cinema and promises a more vibrant picture than ever before.]]></itunes:subtitle>
+                <itunes:summary><![CDATA[Dolby is a name synonymous with sound, but now the company wants to reinvent the entire movie going experience. Pixar's "Inside Out" is the second film to be released for Dolby Cinema and promises a more vibrant picture than ever before.]]></itunes:summary>
+                <itunes:explicit>no</itunes:explicit>
+                <itunes:author>CNET.com</itunes:author>
+                <guid isPermaLink="false">7f87abc7-b0f7-47d5-b2d6-fc1e1bb04188</guid>
+                <itunes:duration></itunes:duration>
+                <itunes:keywords>
+                    CNET
+                    CNETTV
+                    Tech Culture
+                </itunes:keywords>
+                <enclosure url="http://dw.cbsi.com/redir/15n_0618InsideOut_575830_440.mp4?destUrl=http://download.cnettv.com.edgesuite.net/21923/2015/06/19/468259395675/15n_0618InsideOut_575830_440.mp4" length="0" type="video/mp4"/>
+                <category>Technology</category>
+                <pubDate>Fri, 19 Jun 2015 10:00:39 PDT</pubDate>
+            </item>
+                                                                                                    <item>
+                <title><![CDATA[Nest CEO Tony Fadell wants to make your home even smarter]]></title>
+                <link>http://dw.cbsi.com/redir/Nest_TonyFadell_574713_440.mp4?destUrl=http://download.cnettv.com.edgesuite.net/21923/2015/06/17/466589251599/Nest_TonyFadell_574713_440.mp4</link>
+                <author>feedback-cnettv@cnet.com (CNETTV)</author>
+                <description><![CDATA[With updates to the entire Nest line-up of safety and comfort tech, the smart home of the future is already here, says Nest founder and CEO.]]></description>
+                <itunes:subtitle><![CDATA[With updates to the entire Nest line-up of safety and comfort tech, the smart home of the future is already here, says Nest founder and CEO.]]></itunes:subtitle>
+                <itunes:summary><![CDATA[With updates to the entire Nest line-up of safety and comfort tech, the smart home of the future is already here, says Nest founder and CEO.]]></itunes:summary>
+                <itunes:explicit>no</itunes:explicit>
+                <itunes:author>CNET.com</itunes:author>
+                <guid isPermaLink="false">3a24ce0d-97b3-48ca-93d3-81da88b0aed4</guid>
+                <itunes:duration></itunes:duration>
+                <itunes:keywords>
+                    CNET
+                    CNETTV
+                    Smart Home
+                </itunes:keywords>
+                <enclosure url="http://dw.cbsi.com/redir/Nest_TonyFadell_574713_440.mp4?destUrl=http://download.cnettv.com.edgesuite.net/21923/2015/06/17/466589251599/Nest_TonyFadell_574713_440.mp4" length="0" type="video/mp4"/>
+                <category>Technology</category>
+                <pubDate>Wed, 17 Jun 2015 15:28:43 PDT</pubDate>
+            </item>
+                                                                                                    <item>
+                <title><![CDATA[Virtual Reality makes waves at E3 gaming expo]]></title>
+                <link>http://dw.cbsi.com/redir/15n_0616_E302_573987_440.mp4?destUrl=http://download.cnettv.com.edgesuite.net/21923/2015/06/16/465648195966/15n_0616_E302_573987_440.mp4</link>
+                <author>feedback-cnettv@cnet.com (CNETTV)</author>
+                <description><![CDATA[Virtual reality or VR is expected to be the hottest new trend in the video game industry, and it made a very real appearance at the E3 conference in Los Angeles. As CNET's Lexy Savvides show us, your head can now be a controller.]]></description>
+                <itunes:subtitle><![CDATA[Virtual reality or VR is expected to be the hottest new trend in the video game industry, and it made a very real appearance at the E3 conference in Los Angeles. As CNET's Lexy Savvides show us, your head can now be a controller.]]></itunes:subtitle>
+                <itunes:summary><![CDATA[Virtual reality or VR is expected to be the hottest new trend in the video game industry, and it made a very real appearance at the E3 conference in Los Angeles. As CNET's Lexy Savvides show us, your head can now be a controller.]]></itunes:summary>
+                <itunes:explicit>no</itunes:explicit>
+                <itunes:author>CNET.com</itunes:author>
+                <guid isPermaLink="false">3fc66d14-2a8a-4239-bdf6-6733a2ea1a05</guid>
+                <itunes:duration></itunes:duration>
+                <itunes:keywords>
+                    CNET
+                    CNETTV
+                    Gaming
+                </itunes:keywords>
+                <enclosure url="http://dw.cbsi.com/redir/15n_0616_E302_573987_440.mp4?destUrl=http://download.cnettv.com.edgesuite.net/21923/2015/06/16/465648195966/15n_0616_E302_573987_440.mp4" length="0" type="video/mp4"/>
+                <category>Technology</category>
+                <pubDate>Tue, 16 Jun 2015 15:21:09 PDT</pubDate>
+            </item>
+                                                                                                    <item>
+                <title><![CDATA[Sony lays out a killer collection of games for 2016 and beyond]]></title>
+                <link>http://dw.cbsi.com/redir/E32015_SonyPS_573519_440.mp4?destUrl=http://download.cnettv.com.edgesuite.net/21923/2015/06/16/465136195960/E32015_SonyPS_573519_440.mp4</link>
+                <author>feedback-cnettv@cnet.com (CNETTV)</author>
+                <description><![CDATA[While the rest of 2015 may not be a busy time for PlayStation gamers, the company's E3 2015 press conference laid out an impressive collection of software for 2016 and beyond.]]></description>
+                <itunes:subtitle><![CDATA[While the rest of 2015 may not be a busy time for PlayStation gamers, the company's E3 2015 press conference laid out an impressive collection of software for 2016 and beyond.]]></itunes:subtitle>
+                <itunes:summary><![CDATA[While the rest of 2015 may not be a busy time for PlayStation gamers, the company's E3 2015 press conference laid out an impressive collection of software for 2016 and beyond.]]></itunes:summary>
+                <itunes:explicit>no</itunes:explicit>
+                <itunes:author>CNET.com</itunes:author>
+                <guid isPermaLink="false">3e5b85c5-b075-4084-9c6e-3fe34d8e501d</guid>
+                <itunes:duration></itunes:duration>
+                <itunes:keywords>
+                    CNET
+                    CNETTV
+                    Video Games
+                </itunes:keywords>
+                <enclosure url="http://dw.cbsi.com/redir/E32015_SonyPS_573519_440.mp4?destUrl=http://download.cnettv.com.edgesuite.net/21923/2015/06/16/465136195960/E32015_SonyPS_573519_440.mp4" length="0" type="video/mp4"/>
+                <category>Technology</category>
+                <pubDate>Mon, 15 Jun 2015 22:54:52 PDT</pubDate>
+            </item>
+                                                                                                    <item>
+                <title><![CDATA[Sony makes noise with E3 game lineup]]></title>
+                <link>http://dw.cbsi.com/redir/15n0515_E32015_SonyGameTrailers_573500_440.mp4?destUrl=http://download.cnettv.com.edgesuite.net/21923/2015/06/16/465128515882/15n0515_E32015_SonyGameTrailers_573500_440.mp4</link>
+                <author>feedback-cnettv@cnet.com (CNETTV)</author>
+                <description><![CDATA[Long-awaited sequels and new franchises highlight Sony's E3 press conference in Los Angeles.]]></description>
+                <itunes:subtitle><![CDATA[Long-awaited sequels and new franchises highlight Sony's E3 press conference in Los Angeles.]]></itunes:subtitle>
+                <itunes:summary><![CDATA[Long-awaited sequels and new franchises highlight Sony's E3 press conference in Los Angeles.]]></itunes:summary>
+                <itunes:explicit>no</itunes:explicit>
+                <itunes:author>CNET.com</itunes:author>
+                <guid isPermaLink="false">80887e75-d482-4e89-a681-8f0f33f42f37</guid>
+                <itunes:duration></itunes:duration>
+                <itunes:keywords>
+                    CNET
+                    CNETTV
+                    Gaming
+                </itunes:keywords>
+                <enclosure url="http://dw.cbsi.com/redir/15n0515_E32015_SonyGameTrailers_573500_440.mp4?destUrl=http://download.cnettv.com.edgesuite.net/21923/2015/06/16/465128515882/15n0515_E32015_SonyGameTrailers_573500_440.mp4" length="0" type="video/mp4"/>
+                <category>Technology</category>
+                <pubDate>Mon, 15 Jun 2015 21:51:57 PDT</pubDate>
+            </item>
+                                                                                                    <item>
+                <title><![CDATA[Sony's open-universe game No Man's Sky gets gameplay demo]]></title>
+                <link>http://dw.cbsi.com/redir/E315_Sony_NoManSky_573492_440.mp4?destUrl=http://download.cnettv.com.edgesuite.net/21923/2015/06/16/465123907954/E315_Sony_NoManSky_573492_440.mp4</link>
+                <author>feedback-cnettv@cnet.com (CNETTV)</author>
+                <description><![CDATA[At E3 in Los Angeles, Hello Games developer Sean Murray gives a tour of the ambitious sandbox game that was introduced during last year's event.]]></description>
+                <itunes:subtitle><![CDATA[At E3 in Los Angeles, Hello Games developer Sean Murray gives a tour of the ambitious sandbox game that was introduced during last year's event.]]></itunes:subtitle>
+                <itunes:summary><![CDATA[At E3 in Los Angeles, Hello Games developer Sean Murray gives a tour of the ambitious sandbox game that was introduced during last year's event.]]></itunes:summary>
+                <itunes:explicit>no</itunes:explicit>
+                <itunes:author>CNET.com</itunes:author>
+                <guid isPermaLink="false">97fe33c8-c959-4921-89e6-b98e9f36d2a7</guid>
+                <itunes:duration></itunes:duration>
+                <itunes:keywords>
+                    CNET
+                    CNETTV
+                    Video Games
+                </itunes:keywords>
+                <enclosure url="http://dw.cbsi.com/redir/E315_Sony_NoManSky_573492_440.mp4?destUrl=http://download.cnettv.com.edgesuite.net/21923/2015/06/16/465123907954/E315_Sony_NoManSky_573492_440.mp4" length="0" type="video/mp4"/>
+                <category>Technology</category>
+                <pubDate>Mon, 15 Jun 2015 21:26:44 PDT</pubDate>
+            </item>
+                                                                                                    <item>
+                <title><![CDATA['Star Wars' games for all ages on Sony PlayStation 4]]></title>
+                <link>http://dw.cbsi.com/redir/E315_Sony_StarWars_573481_440.mp4?destUrl=http://download.cnettv.com.edgesuite.net/21923/2015/06/16/465116227648/E315_Sony_StarWars_573481_440.mp4</link>
+                <author>feedback-cnettv@cnet.com (CNETTV)</author>
+                <description><![CDATA[At E3 in Los Angeles, Sony shows off Disney Infinity 3.0 and Battlefront, games it hopes will appeal to many generations of "Star Wars" fans.]]></description>
+                <itunes:subtitle><![CDATA[At E3 in Los Angeles, Sony shows off Disney Infinity 3.0 and Battlefront, games it hopes will appeal to many generations of "Star Wars" fans.]]></itunes:subtitle>
+                <itunes:summary><![CDATA[At E3 in Los Angeles, Sony shows off Disney Infinity 3.0 and Battlefront, games it hopes will appeal to many generations of "Star Wars" fans.]]></itunes:summary>
+                <itunes:explicit>no</itunes:explicit>
+                <itunes:author>CNET.com</itunes:author>
+                <guid isPermaLink="false">77875b57-940f-4289-86a9-f065473c3e77</guid>
+                <itunes:duration></itunes:duration>
+                <itunes:keywords>
+                    CNET
+                    CNETTV
+                    Video Games
+                </itunes:keywords>
+                <enclosure url="http://dw.cbsi.com/redir/E315_Sony_StarWars_573481_440.mp4?destUrl=http://download.cnettv.com.edgesuite.net/21923/2015/06/16/465116227648/E315_Sony_StarWars_573481_440.mp4" length="0" type="video/mp4"/>
+                <category>Technology</category>
+                <pubDate>Mon, 15 Jun 2015 20:49:00 PDT</pubDate>
+            </item>
+                                                                                                    <item>
+                <title><![CDATA[Project Morpheus, PlayStation Vue get status updates]]></title>
+                <link>http://dw.cbsi.com/redir/15n0515_E32015_MorpheusVue_573462_440.mp4?destUrl=http://download.cnettv.com.edgesuite.net/21923/2015/06/16/465100867596/15n0515_E32015_MorpheusVue_573462_440.mp4</link>
+                <author>feedback-cnettv@cnet.com (CNETTV)</author>
+                <description><![CDATA[At E3 2015 in Los Angeles, Sony's Andrew House shares new details on the company's virtual reality and video-streaming platforms.]]></description>
+                <itunes:subtitle><![CDATA[At E3 2015 in Los Angeles, Sony's Andrew House shares new details on the company's virtual reality and video-streaming platforms.]]></itunes:subtitle>
+                <itunes:summary><![CDATA[At E3 2015 in Los Angeles, Sony's Andrew House shares new details on the company's virtual reality and video-streaming platforms.]]></itunes:summary>
+                <itunes:explicit>no</itunes:explicit>
+                <itunes:author>CNET.com</itunes:author>
+                <guid isPermaLink="false">f8b0d597-f1ef-44e9-9b0a-702d8ab81757</guid>
+                <itunes:duration></itunes:duration>
+                <itunes:keywords>
+                    CNET
+                    CNETTV
+                    Gaming
+                </itunes:keywords>
+                <enclosure url="http://dw.cbsi.com/redir/15n0515_E32015_MorpheusVue_573462_440.mp4?destUrl=http://download.cnettv.com.edgesuite.net/21923/2015/06/16/465100867596/15n0515_E32015_MorpheusVue_573462_440.mp4" length="0" type="video/mp4"/>
+                <category>Technology</category>
+                <pubDate>Mon, 15 Jun 2015 20:06:19 PDT</pubDate>
+            </item>
+                </channel>
+</rss>

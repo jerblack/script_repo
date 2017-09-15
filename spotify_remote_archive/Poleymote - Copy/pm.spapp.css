@@ -1,0 +1,91 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+html, body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #373737;
+    min-width: 660px;
+    overflow-y: hidden;
+}
+
+.navbar-right {
+    margin-right: 0.5em;
+}
+
+
+.jumbotron {
+    margin: 2em;
+    padding: 1.2em;
+    position: relative;
+}
+
+/*Now Playing*/
+#np-image {
+    height: 300px;
+    width: 300px;
+    background-size: 300px 300px;
+}
+#np-info {
+    padding-left: 2.5em;
+    padding-top: 0.5em;
+}
+#np-title, #np-artist, #np-album {
+    padding-left: 0.5em;
+}
+
+/*Star Icon*/
+#star {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
+#star-true {
+    color: #d58a30;
+    display: none;
+}
+.star-icon {
+    font-size: 2em;
+}
+
+/*Remove Icon*/
+#remove {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    bottom: 13px;
+    right: 52px;
+}
+#remove-icon {
+    font-size: 1.55em;
+}
+
+/*Connection Status Bar*/
+#status {
+    position: absolute;
+    bottom: 21px;
+    right: 100px;
+}
+#status-good, #status-bad  {
+    display: none;
+    font-size: 0.675em;
+}
+
+/*Log*/
+#log-box {
+    position: relative;
+    margin: auto;
+    border-width: 1em;
+    border-color: #999999;
+}
+#log {
+    padding: 0.75em;
+    background-color: #101010;
+    height: 590px;
+    overflow: auto;
+    overflow-x:hidden;
+}
+.log-entry {
+    font-family: Consolas;
+    color: #999999;
+}

@@ -1,0 +1,391 @@
+PlexCast outline
+
+https://github.com/fuzeman/spotify.py
+
+UI
+- Web or Python GUI?
+
+(-Database-)
+- Podcast
+Podcast subscriptions
+(feed url, feed title, feed description, feed image)
+(all downloaded episodes (title, url, filename, dst_path, download_date) 
+(episode status: download, downloading, downloaded, getting_nfo, unwatched, watched, delete)
+(show status: active, paused)
+
+- Settings
+(feed defaults (num episodes to dl, expire old episodes? (to recycle bin?), order (old or new 1st), delete watched eps.))
+(tmp location (default: .\tmp)
+(simultaneous downloads? (default: 3?))
+(feed update frequency: default: 12hrs)
+(update window (night-only? 3am?))
+(re-install metadata agent)
+(update library location)
+(re-create plex library)
+
+
+    class Status:
+        available = 0
+        download = 1
+        downloading = 2
+        downloaded = 3
+        get_nfo = 4
+        move = 5
+        unwatched = 6
+        watched = 7
+        delete = 8
+        deleted = 9
+
+Podcasts
+- import podcastparser
+-- http://podcastparser.readthedocs.org/en/latest/
+- download xml feed
+- scheduler for feed check
+- track feed state in database
+
+Podcast_Downloads
+
+new url added in UI 
+	UI - ask how many episodes, old>new or new>old?
+	(check if url has already been added,
+	)
+	- XML feed download -> podcastparser -> podcast_feed()
+	UI - Display info about feed
+		- show image, text description, number episodes, author
+		- list episodes in feed
+		- give add button
+		- options related to feed
+			- number of dls(default: all)
+			- show folder (default: <library>\<show>)
+						  (warn on existing, conflicting tvshow.nfo)
+						  (can only have one show per folder)
+			- delete watched episodes automatically?
+			- backfill with older episodes as watched eps deleted
+		- manual download, single select,
+						   multi select (shift,ctrl clicking)
+						   dynamic download button
+		- if matching files found in folder, reflect downloaded status 
+	UI - Add button clicked
+		- user can leave page or use search field to add a new show
+		DB -> show info,
+			  show status: active
+			  Episodes seen in feed,
+			  status to download for selected eps. 
+			  status to unwatched for eps. already on disk 
+		- create folder in library
+		- create tvshow.nfo 
+		- call feed_checker() on this feed
+		- as download progresses, progress gauge for each download displayed in episode bar (a list of bars)
+	UI - Delete button
+		- replaces add button (split button with Pause)
+		- (optionally) deletes all episodes
+		- confirm (are you sure? all episodes will be deleted)
+		DB -> remove show,
+			  remove deleted eps
+	     delete all episodes.(mp4,jpg,nfo)(to recycle bin)
+	     delete tvshow.nfo (to recycle bin)
+	     if empty, delete folder
+	UI - Pause button
+		- replaces add button (split button with Delete)
+		DB -> subscription status paused
+		(no further episodes downloaded)
+
+
+
+UI - subscription list
+	- single,multi select to perform bulk actions
+		(delete,pause,modify settings:oldnew,numdls)
+		(supports ctrl, shift click selection, select all, inverse)
+
+
+UI - download list
+	- list of all downloads in progress
+	- auto remove as downloads complete
+
+
+-Controller-
+ - calls add_feed when feed is added
+ - calls feed checker when feed is added
+ - calls feed checker on schedule for feed
+ - feed checker passes new episodes into controller, which,
+ 		based on ep.status passes the ep object to downloader
+ - on download complete, call get_ep_metadata 
+ - on ep_metadata complete, call mover
+ - on mover complete, update db ep status to unwatched
+ 		on mover complete, thread ends, ep object dies, send donations in lieu of flowers
+
+
+-feed_checker()-
+	(can check one feed or all)
+ - checks for feed update
+ - add new episodes (sends ep objects) to controller
+ - includes all relevant episode metadata from feed
+ -   ep.title, ep,description, ep.image,
+ 	 ep.show_id, ep.show, ep.id,
+ 	 ep.url, ep.date_added, ep.fanart 
+ - ep.status = download
+
+-downloader- 
+http://stackoverflow.com/questions/22894211/how-to-resume-file-download-in-python
+Download class
+d.download( url, file_path, type )
+ep object has image and video download
+e.download_image
+e.download_video
+show object has image download
+s.download_image
+each downloads one file to same temp
+	one download complete
+	file_name appended 'downloading' during download
+	appendage remove once complete
+
+
+
+handle existing file during download
+if current bytes equals content length, don't
+
+
+	set ep.status to downloading once download starts
+	maintains a queue of downloads
+	handles downloads in order they are received 
+	downloads to tmp\<show>-<showID>-<epID>.mp4
+	can handle multiple download threads (configurable, default:3)
+	can resume broken downloads (chunk?, progress?)
+	tell controller on download complete
+	add mp4 file to ep.files array
+	set ep.status to downloaded on download complete
+ 
+-ep_metadata-
+	ep.status to get_nfo
+	download image linked in the ep object
+	tmp\<show>-<showID>-<epID>.jpg
+	use ep metadata to generate xml file with show info
+	tmp\<show>-<showID>-<epID>.nfo
+	add all new files to ep.files array
+	DB - add show metadata
+	ep.status to finished
+
+-mover-
+	check DB for show path from ep.show_id
+	move all files in ep.files to show path
+	set ep.status to moved
+
+-quota_handler-
+	scenario: user subscribes to podcast, set to keep 10 episodes, order: new->old
+		10 newest eps downloaded
+		deletions will display a warning in UI and in show text from nfo file
+			DB: shows marked for deletion have status set to delete
+				add to delete database with date added
+		option: count shows marked for deletion as deleted (go ahead and download new ep)
+		option: always maintain 10 newest unplayed episodes
+				new ep found, its downloaded and oldest deleted
+				ep watched and deleted, old unwatched will be downloaded to backfill
+		option: don't download anything new until existing ep has been remove
+
+
+-expire-
+	options: buffer days before delete, count marked shows as deleted, delayed delete
+	check plex for watched shows, remove show and related files if so
+		DB: ep status to watched, deleted to true, ep.files to empty
+	check plex or library folder for deleted shows
+		remove related files and update DB
+	check delete db, remove shows marked longer than buffer
+	option: expire old shows (delete after x days)
+
+-verify files on disk-
+part of Episode class
+e = Episode()
+e.verify_files()
+checks e.files[] and verifies each one exists, if not remove from files and update db
+e.update_db() after any field changes
+
+-maintenance worker-
+check missing files, re-download
+check for updates in nfo, suck in file changes to db
+Check DB health
+
+
+-scheduler-
+	scheduler launches controller with tasks at specific times
+		(check all feeds)
+		(delete watched shows)
+		(quota handler)
+		(expire)
+		(periodically check for missing metadata)
+	one schedule, configurable time
+
+
+-threading-
+each download watcher is a separate thread, one for each of the num of concurrent downloads
+
+Queue – A thread-safe FIFO implementation - Python Module of the Week
+http://pymotw.com/2/Queue/
+
+class show:
+(parent class with core show info)
+- Title
+- Description
+- Image
+- show ID? (int)
+- url
+- date added
+- fanart?
+
+class youtube_show(show):
+
+class podcast_feed(show):
+
+class episode()
+- Title
+- Description
+- Image
+-- May always be show image for podcasts
+- Date
+- Watched
+- url
+- Download status
+- file name
+- show
+- fanart
+
+
+
+-Setup-
+- on same machine as plex
+- install requirements or include as package (virtualenv)
+- install metadata agent
+- create plex library
+
+YouTube
+api key AIzaSyCOiA_XT9PyzdcGmQ2GtBWwjFVlWb2pCC4
+https://developers.google.com/youtube/v3/getting-started
+- Channels/Playlists/Videos
+Naming
+metadata downloads
+plex naming
+track watched videos in plex
+
+    from rfc822 import mktime_tz, parsedate_tz
+
+
+-Plex-
+put show in <show>\<episodes> format under directory specified as PlexCast library
+download metadata for episodes (description,date,image)
+save metadata in a format that plex understands 
+- write a custom metadata scanner for plex that reads metadata from local xml files
+-- need to see if i can use plex urls to get install path, need to find place to install
+plugin
+
+
+trigger update in plex after new shows are downloaded (optional)
+track when shows are completely watched in plex and automatically remove them (optional)
+(is it possible to script creation of plex library, with PlexCast agent and folder )
+
+- plexcast should get show and episode metadata keys and save them to database if available
+
+https://docs.google.com/document/d/1kbWZV4Qfjc6z22VTogn7iB_aeHpufvVZe5AKCF137Ls/edit
+plex api documentation
+
+https://forums.plex.tv/discussion/126919/working-on-a-python-plexapi
+
+
+- remove watched episodes from plex -
+list all sections
+http://192.168.0.5:32400/library/sections/
+
+get all shows in section
+http://192.168.0.5:32400/library/sections/9/all/
+
+use 'key' from this list to get access to specific show or ep (1840 is Helix)
+http://192.168.0.5:32400/library/metadata/1840
+
+get handle on children
+http://192.168.0.5:32400/library/metadata/1840/children
+from here, get '<Directory ratingKey="1841"...' to get actual episodes
+
+get list of episodes
+http://192.168.0.5:32400/library/metadata/1841/children
+use viewCount=0 to see if episodes are unwatched
+each ep has Video\Media\Part\file that gives exact path to video
+
+search specific section for unwatched videos
+- viewOffset=0 means the file is not in the middle of being watched
+- type=4 means episodes
+http://192.168.0.5:32400/library/sections/9/search?type=4&viewCount!=0&viewOffset=0
+
+extended info on episode
+http://192.168.0.5:32400/library/metadata/11072
+
+
+- metadata agent - 
+get list of installed agents
+http://192.168.0.5:32400/system/agents
+
+
+
+- add library -
+list all sections
+http://192.168.0.5:32400/library/sections/
+
+ We can create a section with a single request. Sections are associated with a primary metadata agent, which is the entity responsible for imbuing the media with rich metadata, usually from an online source. Want to know which agents are available? Request “/system/agents”. Scanners are responsible for looking on disk for media and pre-processing them before injecting into the library. Want to know which scanners are available for movie sections (movie type = 1)? Request “/system/scanners/1”.
+
+POST /library/sections?type=movie&agent=com.plexapp.agents.imdb&scanner=Plex+Movie+Scanner&language=en&location=%2Ftmp%2Felan&name=Ze+Test
+
+
+Deleting a section is easy as well, where X is the key of the section. Want to just modify a section? You can use the RESTful PUT verb on the same path.
+
+PUT /library/sections/X
+DELETE /library/sections/X
+
+You can refresh all sections, or just a single section. Refreshing a section runs the scanners to see what has changed in a section. You can pass a few arguments to these endpoints: turbo (0/1) specifies whether to run a quick “turbo” scan, not venturing into directories that it appears haven’t changed. This generally works well, but you can run into trouble with some NAS drives and networked filesystems that don’t update modification times appropriately. The deep (0/1) parameter forces a full scan, and the force (0/1) forces a refresh and reload of all metadata (which involves going out to the web and can take a long time.
+
+Finally, you can force the server to perform media analysis (usually performed at import time) on an entire section.
+
+GET /library/sections/all/refresh
+GET /library/sections/X/refresh
+PUT /library/sections/X/analyze
+
+There are also some maintenance tasks (hey, every library needs a custodian!) as well. The optimize endpoint ensures the database is as fast as possible, and the clean endpoint deletes unused metadata and media bundles from the disk (those bundles are written to by the agents, and then sucked into the database by the media server). Last, but not least, when a scan finds that an item has gone missing, it doesn’t delete the associated metadata yet; rather, it marks it as deleted (setting the deletedAt attribute). This is done in case the user has painstakingly customized metadata for an item, and it’s only temporarily missing. Emptying trash for a section removes all these items.
+
+PUT /library/optimize
+PUT /library/clean/bundles
+PUT /library/sections/X/emptyTrash
+
+Next up, there are quite a few endpoints dealing with a single item. These generally hang off the “details” endpoint (“/library/metadata/X”. To kick things off, there are single-item versions of a few endpoints we’ve seen above:
+
+PUT /library/metadata/X/refresh
+PUT /library/metadata/X/analyze
+
+The force parameter is not supported when refreshing a single item.
+
+
+
+-Plex Metadata-
+(using updated metadata agent)
+https://github.com/pydolan/XBMC-TVShows-Metadata-Agent-for-Plex
+
+
+tvshow.nfo <- xml, show info
+http://kodi.wiki/view/NFO_files/tvshows
+<same name as episode>.nfo <- xml, episode info
+http://kodi.wiki/view/NFO_files/tvepisodes
+[ poster.jpg,
+  folder.jpg,
+  show,jpg,
+  season-all-poster.jpg ] <- possible poster names
+[ banner.jpg,
+  folder-banner.jpg ] <- possible banner names
+[ fanart.jpg,
+  art.jpg,
+  backdrop.jpg,
+  background.jpg ] <- possible backdrop names
+<episode name>.jpg <- episode image
+
+
+-add to plexcast-
+chrome extension
+active on youtube.com (or supported service)
+right-click menu visible only on supported site
+from page choose to add page,
+					add channel it's on,
+					add playlist if one is detected,

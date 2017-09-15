@@ -1,0 +1,104 @@
+PoleyMote 3
+
+History
+(PM2 was HTML/JS web app that controlled Spotify and iTunes using the Spotify Desktop App API and a Python server)
+	- the Spotify App api for the Spotify Desktop application has been deprecated in favor of a new Web API.
+	- v0.98 of the Spotify Desktop app is still functioning with some missing features (album art in web remote) 
+	- Python server talked to instance of web app running inside of spotify desktop using websockets, web app in desktop app was required in order to control the desktop spotify app
+
+(PM1 was PHP web app that controlled iTunes with a collection of vbs files )
+
+
+Overview
+PoleyMote 3 is a remote control for Spotify and a collection of power tools that lets a user play Spotify music on one machine while controlling it from another.
+
+	- PM3 will use the new Spotify Web API
+		https://developer.spotify.com/web-api/
+	- PM3 will be a Python server where the logic lives in the Python app and the UX will primarily consist of 3 web interfaces 
+		Player
+		Remote
+		Settings
+	- PM3 makes it easy to process a large collection of music as you listen to it by providing the ability to perform large operations in context to what you are listening to.	- 
+
+The primary user scenario is that the user runs the player on one device (which might be connected to a stereo or large speakers) and they can control the music from a remote running on a different (or multiple) device(s)
+
+PM3 will also have a collection of power tools for bulk management of the Spotify music in your user account to control the music you are listening to in context.
+
+this is not about recreating all of the spotify desktop functionality in the web. 
+A basic player will be provided, as well as access to the power tools 
+
+-Sources-
+https://github.com/possan/webapi-player-example
+
+-Player-
+(main option)
+Player will be a web app with controls and power tools that will be used to initiate playback and output audio.
+Player will be the main dashboard for power tools and will provide the richest interface for controlling the server and the full collection of settings.
+If spotify web player solution only works on desktop, then player will be desktop only as well.
+
+
+
+Player will provide the ability to Airplay or ChromeCast (DIAL) the spotify stream
+- ideally the audio stream will originate from the server
+- if we have to we will cast from the player
+- else, just recommend AirFoil
+
+
+
+
+
+
+
+
+
+
+
+
+(alternate options)
+ATM, it looks like the web api might be limited to 30 second samples, and they may have restricted access to their embedded music player to prevent external control. If these two items are insurmountable, other options might include.
+- Wrapper around Windows spotify desktop app (how?)
+
+
+- Python GUI application for player/server using Libspotify 
+- Java GUI application for player/server using Libspotify
+	- Libspotify may be deprecated
+	https://developer.spotify.com/technologies/libspotify/
+
+If no option for audio playback of the Spotify stream in the web UI, then PM3 will have to be restricted to playlist management and power tools
+- contextual controls will happen by adding 
+
+
+-Control Embedded player-
+https://developer.spotify.com/technologies/widgets/spotify-play-button/
+<iframe src="https://embed.spotify.com/?uri=spotify:trackset:PREFEREDTITLE:5Z7ygHQo02SUrFmcgpwsKW,1x6ACsKV4UdWS2FMuPFUiT,4bi73jCM02fMpkI11Lqmfe" frameborder="0" allowtransparency="true"></iframe>
+https://embed.spotify.com/?uri=spotify:track:5frcZbcUA9NtD4mbj75vii
+
+var i = document.getElementsByClassName('play-pause-btn')[0]
+i.click()
+var t = document.getElementsByClassName('track-name')[0]
+t.textContent
+var a = document.getElementsByClassName('artist-name')[0]
+a.textContent
+
+dataContext
+
+var art = document.getElementsByClassName('art')[0]
+art.src
+change /85/ in url to /640/
+
+
+
+-Other resources-
+
+https://github.com/johanlindquist/jahspotify
+Jah'Spotify is a set of Java bindings over the Spotify native library (libspotify).
+
+https://github.com/nvdweem/libjahspotify
+Java wrapper for libspotify. Based on Jah'Spotify by Johan Lindquist.
+
+https://github.com/mopidy/pyspotify
+http://pyspotify.mopidy.com
+Python bindings for libspotify 
+
+compiling pyspotify on windows
+https://github.com/mopidy/pyspotify/issues/63

@@ -1,0 +1,663 @@
+[26/Jun/2015:01:45:35] ENGINE Listening for SIGTERM.
+[26/Jun/2015:01:45:35] ENGINE Bus STARTING
+[26/Jun/2015:01:45:35] ENGINE Set handler for console events.
+[26/Jun/2015:01:45:35] ENGINE Started monitor thread 'Autoreloader'.
+[26/Jun/2015:01:45:35] ENGINE Started monitor thread '_TimeoutMonitor'.
+[26/Jun/2015:01:45:35] ENGINE Serving on http://192.168.0.50:84
+[26/Jun/2015:01:45:35] ENGINE Bus STARTED
+[26/Jun/2015:01:46:25] ENGINE Listening for SIGTERM.
+[26/Jun/2015:01:46:25] ENGINE Bus STARTING
+[26/Jun/2015:01:46:25] ENGINE Set handler for console events.
+[26/Jun/2015:01:46:25] ENGINE Started monitor thread 'Autoreloader'.
+[26/Jun/2015:01:46:25] ENGINE Started monitor thread '_TimeoutMonitor'.
+[26/Jun/2015:01:46:25] ENGINE Serving on http://192.168.0.50:84
+[26/Jun/2015:01:46:25] ENGINE Bus STARTED
+[27/Jun/2015:01:44:20] ENGINE Listening for SIGTERM.
+[27/Jun/2015:01:44:20] ENGINE Bus STARTING
+[27/Jun/2015:01:44:20] ENGINE Set handler for console events.
+[27/Jun/2015:01:44:20] ENGINE Started monitor thread '_TimeoutMonitor'.
+[27/Jun/2015:01:44:20] ENGINE Started monitor thread 'Autoreloader'.
+[27/Jun/2015:01:44:21] ENGINE Serving on http://192.168.0.50:84
+[27/Jun/2015:01:44:21] ENGINE Bus STARTED
+[10/Aug/2015:01:54:06] ENGINE Listening for SIGTERM.
+[10/Aug/2015:01:54:06] ENGINE Bus STARTING
+[10/Aug/2015:01:54:06] ENGINE Set handler for console events.
+[10/Aug/2015:01:54:06] ENGINE Started monitor thread '_TimeoutMonitor'.
+[10/Aug/2015:01:54:06] ENGINE Started monitor thread 'Autoreloader'.
+[10/Aug/2015:01:54:06] ENGINE Serving on http://192.168.0.50:84
+[10/Aug/2015:01:54:06] ENGINE Bus STARTED
+[10/Aug/2015:01:55:54] ENGINE Restarting because C:/Users/Jeremy/Google Drive/Code/PlexCast/PlexCast.py changed.
+[10/Aug/2015:01:55:54] ENGINE Stopped thread 'Autoreloader'.
+[10/Aug/2015:01:55:54] ENGINE Bus STOPPING
+[10/Aug/2015:01:55:54] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('192.168.0.50', 84)) shut down
+[10/Aug/2015:01:55:54] ENGINE Stopped thread '_TimeoutMonitor'.
+[10/Aug/2015:01:55:54] ENGINE Removed handler for console events.
+[10/Aug/2015:01:55:54] ENGINE Bus STOPPED
+[10/Aug/2015:01:55:54] ENGINE Bus EXITING
+[10/Aug/2015:01:55:54] ENGINE Waiting for child threads to terminate...
+[10/Aug/2015:01:55:54] ENGINE Bus EXITED
+[10/Aug/2015:01:55:54] ENGINE Re-spawning C:/Users/Jeremy/Google Drive/Code/PlexCast/PlexCast.py
+[10/Aug/2015:01:55:54] ENGINE Listening for SIGTERM.
+[10/Aug/2015:01:55:54] ENGINE Bus STARTING
+[10/Aug/2015:01:55:54] ENGINE Set handler for console events.
+[10/Aug/2015:01:55:54] ENGINE Started monitor thread 'Autoreloader'.
+[10/Aug/2015:01:55:54] ENGINE Started monitor thread '_TimeoutMonitor'.
+[10/Aug/2015:01:55:54] ENGINE Serving on http://192.168.0.50:84
+[10/Aug/2015:01:55:54] ENGINE Bus STARTED
+[10/Aug/2015:01:56:02] ENGINE Listening for SIGTERM.
+[10/Aug/2015:01:56:02] ENGINE Bus STARTING
+[10/Aug/2015:01:56:02] ENGINE Set handler for console events.
+[10/Aug/2015:01:56:02] ENGINE Started monitor thread 'Autoreloader'.
+[10/Aug/2015:01:56:02] ENGINE Started monitor thread '_TimeoutMonitor'.
+[10/Aug/2015:01:56:07] ENGINE Error in 'start' listener <bound method Server.start of <cherrypy._cpserver.Server object at 0x02F98F70>>
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\process\wspbus.py", line 205, in publish
+    output.append(listener(*args, **kwargs))
+  File "C:\Python27\lib\site-packages\cherrypy\_cpserver.py", line 168, in start
+    ServerAdapter.start(self)
+  File "C:\Python27\lib\site-packages\cherrypy\process\servers.py", line 170, in start
+    wait_for_free_port(*self.bind_addr)
+  File "C:\Python27\lib\site-packages\cherrypy\process\servers.py", line 439, in wait_for_free_port
+    raise IOError("Port %r not free on %r" % (port, host))
+IOError: Port 84 not free on '192.168.0.50'
+
+[10/Aug/2015:01:56:07] ENGINE Shutting down due to error in start listener:
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\process\wspbus.py", line 243, in start
+    self.publish('start')
+  File "C:\Python27\lib\site-packages\cherrypy\process\wspbus.py", line 223, in publish
+    raise exc
+ChannelFailures: IOError("Port 84 not free on '192.168.0.50'",)
+
+[10/Aug/2015:01:56:07] ENGINE Bus STOPPING
+[10/Aug/2015:01:56:07] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('192.168.0.50', 84)) already shut down
+[10/Aug/2015:01:56:07] ENGINE Removed handler for console events.
+[10/Aug/2015:01:56:07] ENGINE Stopped thread 'Autoreloader'.
+[10/Aug/2015:01:56:07] ENGINE Stopped thread '_TimeoutMonitor'.
+[10/Aug/2015:01:56:07] ENGINE Bus STOPPED
+[10/Aug/2015:01:56:07] ENGINE Bus EXITING
+[10/Aug/2015:01:56:07] ENGINE Bus EXITED
+[10/Aug/2015:01:56:46] ENGINE Listening for SIGTERM.
+[10/Aug/2015:01:56:46] ENGINE Bus STARTING
+[10/Aug/2015:01:56:46] ENGINE Set handler for console events.
+[10/Aug/2015:01:56:46] ENGINE Started monitor thread 'Autoreloader'.
+[10/Aug/2015:01:56:46] ENGINE Started monitor thread '_TimeoutMonitor'.
+[10/Aug/2015:01:56:51] ENGINE Error in 'start' listener <bound method Server.start of <cherrypy._cpserver.Server object at 0x03078F70>>
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\process\wspbus.py", line 205, in publish
+    output.append(listener(*args, **kwargs))
+  File "C:\Python27\lib\site-packages\cherrypy\_cpserver.py", line 168, in start
+    ServerAdapter.start(self)
+  File "C:\Python27\lib\site-packages\cherrypy\process\servers.py", line 170, in start
+    wait_for_free_port(*self.bind_addr)
+  File "C:\Python27\lib\site-packages\cherrypy\process\servers.py", line 439, in wait_for_free_port
+    raise IOError("Port %r not free on %r" % (port, host))
+IOError: Port 84 not free on '192.168.0.50'
+
+[10/Aug/2015:01:56:51] ENGINE Shutting down due to error in start listener:
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\process\wspbus.py", line 243, in start
+    self.publish('start')
+  File "C:\Python27\lib\site-packages\cherrypy\process\wspbus.py", line 223, in publish
+    raise exc
+ChannelFailures: IOError("Port 84 not free on '192.168.0.50'",)
+
+[10/Aug/2015:01:56:51] ENGINE Bus STOPPING
+[10/Aug/2015:01:56:51] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('192.168.0.50', 84)) already shut down
+[10/Aug/2015:01:56:51] ENGINE Removed handler for console events.
+[10/Aug/2015:01:56:51] ENGINE Stopped thread 'Autoreloader'.
+[10/Aug/2015:01:56:51] ENGINE Stopped thread '_TimeoutMonitor'.
+[10/Aug/2015:01:56:51] ENGINE Bus STOPPED
+[10/Aug/2015:01:56:51] ENGINE Bus EXITING
+[10/Aug/2015:01:56:51] ENGINE Bus EXITED
+[10/Aug/2015:01:58:38] ENGINE Listening for SIGTERM.
+[10/Aug/2015:01:58:38] ENGINE Bus STARTING
+[10/Aug/2015:01:58:38] ENGINE Set handler for console events.
+[10/Aug/2015:01:58:38] ENGINE Started monitor thread 'Autoreloader'.
+[10/Aug/2015:01:58:38] ENGINE Started monitor thread '_TimeoutMonitor'.
+[10/Aug/2015:01:58:38] ENGINE Serving on http://192.168.0.50:84
+[10/Aug/2015:01:58:38] ENGINE Bus STARTED
+[10/Aug/2015:02:03:11] ENGINE Restarting because C:/Users/Jeremy/Google Drive/Code/PlexCast/PlexCast.py changed.
+[10/Aug/2015:02:03:11] ENGINE Stopped thread 'Autoreloader'.
+[10/Aug/2015:02:03:11] ENGINE Bus STOPPING
+[10/Aug/2015:02:03:11] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('192.168.0.50', 84)) shut down
+[10/Aug/2015:02:03:11] ENGINE Removed handler for console events.
+[10/Aug/2015:02:03:11] ENGINE Stopped thread '_TimeoutMonitor'.
+[10/Aug/2015:02:03:11] ENGINE Bus STOPPED
+[10/Aug/2015:02:03:11] ENGINE Bus EXITING
+[10/Aug/2015:02:03:11] ENGINE Waiting for child threads to terminate...
+[10/Aug/2015:02:03:11] ENGINE Bus EXITED
+[10/Aug/2015:02:03:11] ENGINE Re-spawning C:/Users/Jeremy/Google Drive/Code/PlexCast/PlexCast.py
+[10/Aug/2015:02:03:11] ENGINE Listening for SIGTERM.
+[10/Aug/2015:02:03:11] ENGINE Bus STARTING
+[10/Aug/2015:02:03:11] ENGINE Set handler for console events.
+[10/Aug/2015:02:03:11] ENGINE Started monitor thread 'Autoreloader'.
+[10/Aug/2015:02:03:11] ENGINE Started monitor thread '_TimeoutMonitor'.
+[10/Aug/2015:02:03:11] ENGINE Serving on http://192.168.0.50:84
+[10/Aug/2015:02:03:11] ENGINE Bus STARTED
+[10/Aug/2015:02:07:36] ENGINE Listening for SIGTERM.
+[10/Aug/2015:02:07:36] ENGINE Bus STARTING
+[10/Aug/2015:02:07:36] ENGINE Set handler for console events.
+[10/Aug/2015:02:07:36] ENGINE Started monitor thread 'Autoreloader'.
+[10/Aug/2015:02:07:36] ENGINE Started monitor thread '_TimeoutMonitor'.
+[10/Aug/2015:02:07:41] ENGINE Error in 'start' listener <bound method Server.start of <cherrypy._cpserver.Server object at 0x02FB2F70>>
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\process\wspbus.py", line 205, in publish
+    output.append(listener(*args, **kwargs))
+  File "C:\Python27\lib\site-packages\cherrypy\_cpserver.py", line 168, in start
+    ServerAdapter.start(self)
+  File "C:\Python27\lib\site-packages\cherrypy\process\servers.py", line 170, in start
+    wait_for_free_port(*self.bind_addr)
+  File "C:\Python27\lib\site-packages\cherrypy\process\servers.py", line 439, in wait_for_free_port
+    raise IOError("Port %r not free on %r" % (port, host))
+IOError: Port 84 not free on '192.168.0.50'
+
+[10/Aug/2015:02:07:41] ENGINE Shutting down due to error in start listener:
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\process\wspbus.py", line 243, in start
+    self.publish('start')
+  File "C:\Python27\lib\site-packages\cherrypy\process\wspbus.py", line 223, in publish
+    raise exc
+ChannelFailures: IOError("Port 84 not free on '192.168.0.50'",)
+
+[10/Aug/2015:02:07:41] ENGINE Bus STOPPING
+[10/Aug/2015:02:07:41] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('192.168.0.50', 84)) already shut down
+[10/Aug/2015:02:07:41] ENGINE Stopped thread 'Autoreloader'.
+[10/Aug/2015:02:07:41] ENGINE Removed handler for console events.
+[10/Aug/2015:02:07:41] ENGINE Stopped thread '_TimeoutMonitor'.
+[10/Aug/2015:02:07:41] ENGINE Bus STOPPED
+[10/Aug/2015:02:07:41] ENGINE Bus EXITING
+[10/Aug/2015:02:07:41] ENGINE Bus EXITED
+[10/Aug/2015:02:08:41] ENGINE Listening for SIGTERM.
+[10/Aug/2015:02:08:41] ENGINE Bus STARTING
+[10/Aug/2015:02:08:41] ENGINE Set handler for console events.
+[10/Aug/2015:02:08:41] ENGINE Started monitor thread 'Autoreloader'.
+[10/Aug/2015:02:08:41] ENGINE Started monitor thread '_TimeoutMonitor'.
+[10/Aug/2015:02:08:41] ENGINE Serving on http://192.168.0.50:84
+[10/Aug/2015:02:08:41] ENGINE Bus STARTED
+[10/Aug/2015:02:16:40] ENGINE Listening for SIGTERM.
+[10/Aug/2015:02:16:40] ENGINE Bus STARTING
+[10/Aug/2015:02:16:40] ENGINE Set handler for console events.
+[10/Aug/2015:02:16:40] ENGINE Started monitor thread 'Autoreloader'.
+[10/Aug/2015:02:16:40] ENGINE Started monitor thread '_TimeoutMonitor'.
+[10/Aug/2015:02:16:40] ENGINE Serving on http://192.168.0.50:84
+[10/Aug/2015:02:16:40] ENGINE Bus STARTED
+[10/Aug/2015:02:19:50] ENGINE Listening for SIGTERM.
+[10/Aug/2015:02:19:50] ENGINE Bus STARTING
+[10/Aug/2015:02:19:50] ENGINE Set handler for console events.
+[10/Aug/2015:02:19:50] ENGINE Started monitor thread 'Autoreloader'.
+[10/Aug/2015:02:19:50] ENGINE Started monitor thread '_TimeoutMonitor'.
+[10/Aug/2015:02:19:50] ENGINE Serving on http://192.168.0.50:84
+[10/Aug/2015:02:19:50] ENGINE Bus STARTED
+[10/Aug/2015:02:24:05] ENGINE Listening for SIGTERM.
+[10/Aug/2015:02:24:05] ENGINE Bus STARTING
+[10/Aug/2015:02:24:05] ENGINE Set handler for console events.
+[10/Aug/2015:02:24:05] ENGINE Started monitor thread 'Autoreloader'.
+[10/Aug/2015:02:24:05] ENGINE Started monitor thread '_TimeoutMonitor'.
+[10/Aug/2015:02:24:05] ENGINE Serving on http://192.168.0.50:84
+[10/Aug/2015:02:24:05] ENGINE Bus STARTED
+[10/Aug/2015:02:26:11] ENGINE Listening for SIGTERM.
+[10/Aug/2015:02:26:11] ENGINE Bus STARTING
+[10/Aug/2015:02:26:11] ENGINE Set handler for console events.
+[10/Aug/2015:02:26:11] ENGINE Started monitor thread 'Autoreloader'.
+[10/Aug/2015:02:26:11] ENGINE Started monitor thread '_TimeoutMonitor'.
+[10/Aug/2015:02:26:12] ENGINE Serving on http://192.168.0.50:84
+[10/Aug/2015:02:26:12] ENGINE Bus STARTED
+[10/Aug/2015:02:27:18] ENGINE Listening for SIGTERM.
+[10/Aug/2015:02:27:18] ENGINE Bus STARTING
+[10/Aug/2015:02:27:18] ENGINE Set handler for console events.
+[10/Aug/2015:02:27:18] ENGINE Started monitor thread 'Autoreloader'.
+[10/Aug/2015:02:27:18] ENGINE Started monitor thread '_TimeoutMonitor'.
+[10/Aug/2015:02:27:19] ENGINE Serving on http://192.168.0.50:84
+[10/Aug/2015:02:27:19] ENGINE Bus STARTED
+[10/Aug/2015:02:27:53] ENGINE Listening for SIGTERM.
+[10/Aug/2015:02:27:53] ENGINE Bus STARTING
+[10/Aug/2015:02:27:53] ENGINE Set handler for console events.
+[10/Aug/2015:02:27:53] ENGINE Started monitor thread 'Autoreloader'.
+[10/Aug/2015:02:27:53] ENGINE Started monitor thread '_TimeoutMonitor'.
+[10/Aug/2015:02:28:04] ENGINE Listening for SIGTERM.
+[10/Aug/2015:02:28:04] ENGINE Bus STARTING
+[10/Aug/2015:02:28:04] ENGINE Set handler for console events.
+[10/Aug/2015:02:28:04] ENGINE Started monitor thread 'Autoreloader'.
+[10/Aug/2015:02:28:04] ENGINE Started monitor thread '_TimeoutMonitor'.
+[10/Aug/2015:02:28:04] ENGINE Serving on http://192.168.0.50:84
+[10/Aug/2015:02:28:04] ENGINE Bus STARTED
+[10/Aug/2015:02:30:58] ENGINE Listening for SIGTERM.
+[10/Aug/2015:02:30:58] ENGINE Bus STARTING
+[10/Aug/2015:02:30:58] ENGINE Set handler for console events.
+[10/Aug/2015:02:30:58] ENGINE Started monitor thread 'Autoreloader'.
+[10/Aug/2015:02:30:58] ENGINE Started monitor thread '_TimeoutMonitor'.
+[10/Aug/2015:02:30:58] ENGINE Serving on http://192.168.0.50:84
+[10/Aug/2015:02:30:58] ENGINE Bus STARTED
+[10/Aug/2015:02:37:23] ENGINE Listening for SIGTERM.
+[10/Aug/2015:02:37:23] ENGINE Bus STARTING
+[10/Aug/2015:02:37:23] ENGINE Set handler for console events.
+[10/Aug/2015:02:37:23] ENGINE Started monitor thread 'Autoreloader'.
+[10/Aug/2015:02:37:23] ENGINE Started monitor thread '_TimeoutMonitor'.
+[10/Aug/2015:02:37:23] ENGINE Serving on http://192.168.0.50:84
+[10/Aug/2015:02:37:23] ENGINE Bus STARTED
+[10/Aug/2015:02:37:48] ENGINE Listening for SIGTERM.
+[10/Aug/2015:02:37:48] ENGINE Bus STARTING
+[10/Aug/2015:02:37:48] ENGINE Set handler for console events.
+[10/Aug/2015:02:37:48] ENGINE Started monitor thread 'Autoreloader'.
+[10/Aug/2015:02:37:48] ENGINE Started monitor thread '_TimeoutMonitor'.
+[10/Aug/2015:02:37:53] ENGINE Error in 'start' listener <bound method Server.start of <cherrypy._cpserver.Server object at 0x02F92F70>>
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\process\wspbus.py", line 205, in publish
+    output.append(listener(*args, **kwargs))
+  File "C:\Python27\lib\site-packages\cherrypy\_cpserver.py", line 168, in start
+    ServerAdapter.start(self)
+  File "C:\Python27\lib\site-packages\cherrypy\process\servers.py", line 170, in start
+    wait_for_free_port(*self.bind_addr)
+  File "C:\Python27\lib\site-packages\cherrypy\process\servers.py", line 439, in wait_for_free_port
+    raise IOError("Port %r not free on %r" % (port, host))
+IOError: Port 84 not free on '192.168.0.50'
+
+[10/Aug/2015:02:37:53] ENGINE Shutting down due to error in start listener:
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\process\wspbus.py", line 243, in start
+    self.publish('start')
+  File "C:\Python27\lib\site-packages\cherrypy\process\wspbus.py", line 223, in publish
+    raise exc
+ChannelFailures: IOError("Port 84 not free on '192.168.0.50'",)
+
+[10/Aug/2015:02:37:53] ENGINE Bus STOPPING
+[10/Aug/2015:02:37:53] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('192.168.0.50', 84)) already shut down
+[10/Aug/2015:02:37:53] ENGINE Stopped thread 'Autoreloader'.
+[10/Aug/2015:02:37:53] ENGINE Removed handler for console events.
+[10/Aug/2015:02:37:53] ENGINE Stopped thread '_TimeoutMonitor'.
+[10/Aug/2015:02:37:53] ENGINE Bus STOPPED
+[10/Aug/2015:02:37:53] ENGINE Bus EXITING
+[10/Aug/2015:02:37:53] ENGINE Bus EXITED
+[10/Aug/2015:02:38:44] ENGINE Listening for SIGTERM.
+[10/Aug/2015:02:38:44] ENGINE Bus STARTING
+[10/Aug/2015:02:38:44] ENGINE Set handler for console events.
+[10/Aug/2015:02:38:44] ENGINE Started monitor thread 'Autoreloader'.
+[10/Aug/2015:02:38:44] ENGINE Started monitor thread '_TimeoutMonitor'.
+[10/Aug/2015:02:38:44] ENGINE Serving on http://192.168.0.50:84
+[10/Aug/2015:02:38:44] ENGINE Bus STARTED
+[10/Aug/2015:03:00:44] ENGINE Listening for SIGTERM.
+[10/Aug/2015:03:00:44] ENGINE Bus STARTING
+[10/Aug/2015:03:00:44] ENGINE Set handler for console events.
+[10/Aug/2015:03:00:44] ENGINE Started monitor thread 'Autoreloader'.
+[10/Aug/2015:03:00:44] ENGINE Started monitor thread '_TimeoutMonitor'.
+[10/Aug/2015:03:00:45] ENGINE Serving on http://192.168.0.50:84
+[10/Aug/2015:03:00:45] ENGINE Bus STARTED
+[10/Aug/2015:03:02:26] ENGINE Listening for SIGTERM.
+[10/Aug/2015:03:02:26] ENGINE Bus STARTING
+[10/Aug/2015:03:02:26] ENGINE Set handler for console events.
+[10/Aug/2015:03:02:26] ENGINE Started monitor thread 'Autoreloader'.
+[10/Aug/2015:03:02:26] ENGINE Started monitor thread '_TimeoutMonitor'.
+[10/Aug/2015:03:02:31] ENGINE Error in 'start' listener <bound method Server.start of <cherrypy._cpserver.Server object at 0x03032F70>>
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\process\wspbus.py", line 205, in publish
+    output.append(listener(*args, **kwargs))
+  File "C:\Python27\lib\site-packages\cherrypy\_cpserver.py", line 168, in start
+    ServerAdapter.start(self)
+  File "C:\Python27\lib\site-packages\cherrypy\process\servers.py", line 170, in start
+    wait_for_free_port(*self.bind_addr)
+  File "C:\Python27\lib\site-packages\cherrypy\process\servers.py", line 439, in wait_for_free_port
+    raise IOError("Port %r not free on %r" % (port, host))
+IOError: Port 84 not free on '192.168.0.50'
+
+[10/Aug/2015:03:02:31] ENGINE Shutting down due to error in start listener:
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\process\wspbus.py", line 243, in start
+    self.publish('start')
+  File "C:\Python27\lib\site-packages\cherrypy\process\wspbus.py", line 223, in publish
+    raise exc
+ChannelFailures: IOError("Port 84 not free on '192.168.0.50'",)
+
+[10/Aug/2015:03:02:31] ENGINE Bus STOPPING
+[10/Aug/2015:03:02:31] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('192.168.0.50', 84)) already shut down
+[10/Aug/2015:03:02:31] ENGINE Stopped thread 'Autoreloader'.
+[10/Aug/2015:03:02:31] ENGINE Removed handler for console events.
+[10/Aug/2015:03:02:31] ENGINE Stopped thread '_TimeoutMonitor'.
+[10/Aug/2015:03:02:31] ENGINE Bus STOPPED
+[10/Aug/2015:03:02:31] ENGINE Bus EXITING
+[10/Aug/2015:03:02:31] ENGINE Bus EXITED
+[10/Aug/2015:03:02:36] ENGINE Listening for SIGTERM.
+[10/Aug/2015:03:02:36] ENGINE Bus STARTING
+[10/Aug/2015:03:02:36] ENGINE Set handler for console events.
+[10/Aug/2015:03:02:36] ENGINE Started monitor thread 'Autoreloader'.
+[10/Aug/2015:03:02:36] ENGINE Started monitor thread '_TimeoutMonitor'.
+[10/Aug/2015:03:02:36] ENGINE Serving on http://192.168.0.50:84
+[10/Aug/2015:03:02:36] ENGINE Bus STARTED
+[10/Aug/2015:03:03:05] ENGINE Listening for SIGTERM.
+[10/Aug/2015:03:03:05] ENGINE Bus STARTING
+[10/Aug/2015:03:03:05] ENGINE Set handler for console events.
+[10/Aug/2015:03:03:05] ENGINE Started monitor thread 'Autoreloader'.
+[10/Aug/2015:03:03:05] ENGINE Started monitor thread '_TimeoutMonitor'.
+[10/Aug/2015:03:03:06] ENGINE Serving on http://192.168.0.50:84
+[10/Aug/2015:03:03:06] ENGINE Bus STARTED
+[10/Aug/2015:03:03:37] ENGINE Restarting because C:/Users/Jeremy/Google Drive/Code/PlexCast/cp.py changed.
+[10/Aug/2015:03:03:37] ENGINE Stopped thread 'Autoreloader'.
+[10/Aug/2015:03:03:37] ENGINE Bus STOPPING
+[10/Aug/2015:03:03:49] ENGINE Listening for SIGTERM.
+[10/Aug/2015:03:03:49] ENGINE Bus STARTING
+[10/Aug/2015:03:03:49] ENGINE Set handler for console events.
+[10/Aug/2015:03:03:49] ENGINE Started monitor thread '_TimeoutMonitor'.
+[10/Aug/2015:03:03:49] ENGINE Started monitor thread 'Autoreloader'.
+[10/Aug/2015:03:03:49] ENGINE Serving on http://192.168.0.50:84
+[10/Aug/2015:03:03:49] ENGINE Bus STARTED
+[10/Aug/2015:03:06:39] ENGINE Restarting because C:/Users/Jeremy/Google Drive/Code/PlexCast/cp.py changed.
+[10/Aug/2015:03:06:39] ENGINE Stopped thread 'Autoreloader'.
+[10/Aug/2015:03:06:39] ENGINE Bus STOPPING
+[10/Aug/2015:03:06:39] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('192.168.0.50', 84)) shut down
+[10/Aug/2015:03:06:39] ENGINE Stopped thread '_TimeoutMonitor'.
+[10/Aug/2015:03:06:39] ENGINE Removed handler for console events.
+[10/Aug/2015:03:06:39] ENGINE Bus STOPPED
+[10/Aug/2015:03:06:39] ENGINE Bus EXITING
+[10/Aug/2015:03:06:39] ENGINE Waiting for child threads to terminate...
+[10/Aug/2015:03:06:39] ENGINE Bus EXITED
+[10/Aug/2015:03:06:39] ENGINE Re-spawning C:/Users/Jeremy/Google Drive/Code/PlexCast/cp.py
+[10/Aug/2015:03:06:39] ENGINE Listening for SIGTERM.
+[10/Aug/2015:03:06:39] ENGINE Bus STARTING
+[10/Aug/2015:03:06:39] ENGINE Set handler for console events.
+[10/Aug/2015:03:06:39] ENGINE Started monitor thread 'Autoreloader'.
+[10/Aug/2015:03:06:39] ENGINE Started monitor thread '_TimeoutMonitor'.
+[10/Aug/2015:03:06:40] ENGINE Serving on http://192.168.0.50:84
+[10/Aug/2015:03:06:40] ENGINE Bus STARTED
+[10/Aug/2015:03:06:52] ENGINE Listening for SIGTERM.
+[10/Aug/2015:03:06:52] ENGINE Bus STARTING
+[10/Aug/2015:03:06:52] ENGINE Set handler for console events.
+[10/Aug/2015:03:06:52] ENGINE Started monitor thread 'Autoreloader'.
+[10/Aug/2015:03:06:52] ENGINE Started monitor thread '_TimeoutMonitor'.
+[10/Aug/2015:03:06:57] ENGINE Error in 'start' listener <bound method Server.start of <cherrypy._cpserver.Server object at 0x02F4CF70>>
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\process\wspbus.py", line 205, in publish
+    output.append(listener(*args, **kwargs))
+  File "C:\Python27\lib\site-packages\cherrypy\_cpserver.py", line 168, in start
+    ServerAdapter.start(self)
+  File "C:\Python27\lib\site-packages\cherrypy\process\servers.py", line 170, in start
+    wait_for_free_port(*self.bind_addr)
+  File "C:\Python27\lib\site-packages\cherrypy\process\servers.py", line 439, in wait_for_free_port
+    raise IOError("Port %r not free on %r" % (port, host))
+IOError: Port 84 not free on '192.168.0.50'
+
+[10/Aug/2015:03:06:57] ENGINE Shutting down due to error in start listener:
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\process\wspbus.py", line 243, in start
+    self.publish('start')
+  File "C:\Python27\lib\site-packages\cherrypy\process\wspbus.py", line 223, in publish
+    raise exc
+ChannelFailures: IOError("Port 84 not free on '192.168.0.50'",)
+
+[10/Aug/2015:03:06:57] ENGINE Bus STOPPING
+[10/Aug/2015:03:06:57] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('192.168.0.50', 84)) already shut down
+[10/Aug/2015:03:06:57] ENGINE Stopped thread 'Autoreloader'.
+[10/Aug/2015:03:06:57] ENGINE Removed handler for console events.
+[10/Aug/2015:03:06:57] ENGINE Stopped thread '_TimeoutMonitor'.
+[10/Aug/2015:03:06:57] ENGINE Bus STOPPED
+[10/Aug/2015:03:06:57] ENGINE Bus EXITING
+[10/Aug/2015:03:06:57] ENGINE Bus EXITED
+[10/Aug/2015:03:07:09] ENGINE Listening for SIGTERM.
+[10/Aug/2015:03:07:09] ENGINE Bus STARTING
+[10/Aug/2015:03:07:09] ENGINE Set handler for console events.
+[10/Aug/2015:03:07:09] ENGINE Started monitor thread 'Autoreloader'.
+[10/Aug/2015:03:07:09] ENGINE Started monitor thread '_TimeoutMonitor'.
+[10/Aug/2015:03:07:09] ENGINE Serving on http://192.168.0.50:84
+[10/Aug/2015:03:07:09] ENGINE Bus STARTED
+[10/Aug/2015:03:09:49] ENGINE Restarting because C:/Users/Jeremy/Google Drive/Code/PlexCast/cp.py changed.
+[10/Aug/2015:03:09:49] ENGINE Stopped thread 'Autoreloader'.
+[10/Aug/2015:03:09:49] ENGINE Bus STOPPING
+[10/Aug/2015:03:09:49] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('192.168.0.50', 84)) shut down
+[10/Aug/2015:03:09:49] ENGINE Removed handler for console events.
+[10/Aug/2015:03:09:49] ENGINE Stopped thread '_TimeoutMonitor'.
+[10/Aug/2015:03:09:49] ENGINE Bus STOPPED
+[10/Aug/2015:03:09:49] ENGINE Bus EXITING
+[10/Aug/2015:03:09:49] ENGINE Waiting for child threads to terminate...
+[10/Aug/2015:03:09:49] ENGINE Bus EXITED
+[10/Aug/2015:03:09:49] ENGINE Re-spawning C:/Users/Jeremy/Google Drive/Code/PlexCast/cp.py
+[10/Aug/2015:03:09:50] ENGINE Listening for SIGTERM.
+[10/Aug/2015:03:09:50] ENGINE Bus STARTING
+[10/Aug/2015:03:09:50] ENGINE Set handler for console events.
+[10/Aug/2015:03:09:50] ENGINE Started monitor thread 'Autoreloader'.
+[10/Aug/2015:03:09:50] ENGINE Started monitor thread '_TimeoutMonitor'.
+[10/Aug/2015:03:09:50] ENGINE Serving on http://192.168.0.50:84
+[10/Aug/2015:03:09:50] ENGINE Bus STARTED
+[10/Aug/2015:03:17:11] ENGINE Listening for SIGTERM.
+[10/Aug/2015:03:17:11] ENGINE Bus STARTING
+[10/Aug/2015:03:17:11] ENGINE Set handler for console events.
+[10/Aug/2015:03:17:11] ENGINE Started monitor thread 'Autoreloader'.
+[10/Aug/2015:03:17:11] ENGINE Started monitor thread '_TimeoutMonitor'.
+[10/Aug/2015:03:17:16] ENGINE Error in 'start' listener <bound method Server.start of <cherrypy._cpserver.Server object at 0x02F8CF70>>
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\process\wspbus.py", line 205, in publish
+    output.append(listener(*args, **kwargs))
+  File "C:\Python27\lib\site-packages\cherrypy\_cpserver.py", line 168, in start
+    ServerAdapter.start(self)
+  File "C:\Python27\lib\site-packages\cherrypy\process\servers.py", line 170, in start
+    wait_for_free_port(*self.bind_addr)
+  File "C:\Python27\lib\site-packages\cherrypy\process\servers.py", line 439, in wait_for_free_port
+    raise IOError("Port %r not free on %r" % (port, host))
+IOError: Port 84 not free on '192.168.0.50'
+
+[10/Aug/2015:03:17:16] ENGINE Shutting down due to error in start listener:
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\process\wspbus.py", line 243, in start
+    self.publish('start')
+  File "C:\Python27\lib\site-packages\cherrypy\process\wspbus.py", line 223, in publish
+    raise exc
+ChannelFailures: IOError("Port 84 not free on '192.168.0.50'",)
+
+[10/Aug/2015:03:17:16] ENGINE Bus STOPPING
+[10/Aug/2015:03:17:16] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('192.168.0.50', 84)) already shut down
+[10/Aug/2015:03:17:16] ENGINE Stopped thread 'Autoreloader'.
+[10/Aug/2015:03:17:16] ENGINE Removed handler for console events.
+[10/Aug/2015:03:17:16] ENGINE Stopped thread '_TimeoutMonitor'.
+[10/Aug/2015:03:17:16] ENGINE Bus STOPPED
+[10/Aug/2015:03:17:16] ENGINE Bus EXITING
+[10/Aug/2015:03:17:16] ENGINE Bus EXITED
+[10/Aug/2015:03:17:45] ENGINE Listening for SIGTERM.
+[10/Aug/2015:03:17:45] ENGINE Bus STARTING
+[10/Aug/2015:03:17:45] ENGINE Set handler for console events.
+[10/Aug/2015:03:17:45] ENGINE Started monitor thread 'Autoreloader'.
+[10/Aug/2015:03:17:45] ENGINE Started monitor thread '_TimeoutMonitor'.
+[10/Aug/2015:03:17:45] ENGINE Serving on http://192.168.0.50:84
+[10/Aug/2015:03:17:45] ENGINE Bus STARTED
+[10/Aug/2015:03:32:26] ENGINE Listening for SIGTERM.
+[10/Aug/2015:03:32:26] ENGINE Bus STARTING
+[10/Aug/2015:03:32:26] ENGINE Set handler for console events.
+[10/Aug/2015:03:32:26] ENGINE Started monitor thread 'Autoreloader'.
+[10/Aug/2015:03:32:26] ENGINE Started monitor thread '_TimeoutMonitor'.
+[10/Aug/2015:03:32:26] ENGINE Serving on http://192.168.0.50:84
+[10/Aug/2015:03:32:26] ENGINE Bus STARTED
+[10/Aug/2015:16:22:32] ENGINE Listening for SIGTERM.
+[10/Aug/2015:16:22:32] ENGINE Bus STARTING
+[10/Aug/2015:16:22:32] ENGINE Set handler for console events.
+[10/Aug/2015:16:22:32] ENGINE Started monitor thread 'Autoreloader'.
+[10/Aug/2015:16:22:32] ENGINE Started monitor thread '_TimeoutMonitor'.
+[10/Aug/2015:16:22:37] ENGINE Error in 'start' listener <bound method Server.start of <cherrypy._cpserver.Server object at 0x02FFCF70>>
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\process\wspbus.py", line 205, in publish
+    output.append(listener(*args, **kwargs))
+  File "C:\Python27\lib\site-packages\cherrypy\_cpserver.py", line 168, in start
+    ServerAdapter.start(self)
+  File "C:\Python27\lib\site-packages\cherrypy\process\servers.py", line 170, in start
+    wait_for_free_port(*self.bind_addr)
+  File "C:\Python27\lib\site-packages\cherrypy\process\servers.py", line 439, in wait_for_free_port
+    raise IOError("Port %r not free on %r" % (port, host))
+IOError: Port 84 not free on '192.168.0.50'
+
+[10/Aug/2015:16:22:37] ENGINE Shutting down due to error in start listener:
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\process\wspbus.py", line 243, in start
+    self.publish('start')
+  File "C:\Python27\lib\site-packages\cherrypy\process\wspbus.py", line 223, in publish
+    raise exc
+ChannelFailures: IOError("Port 84 not free on '192.168.0.50'",)
+
+[10/Aug/2015:16:22:37] ENGINE Bus STOPPING
+[10/Aug/2015:16:22:37] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('192.168.0.50', 84)) already shut down
+[10/Aug/2015:16:22:37] ENGINE Stopped thread 'Autoreloader'.
+[10/Aug/2015:16:22:37] ENGINE Removed handler for console events.
+[10/Aug/2015:16:22:37] ENGINE Stopped thread '_TimeoutMonitor'.
+[10/Aug/2015:16:22:37] ENGINE Bus STOPPED
+[10/Aug/2015:16:22:37] ENGINE Bus EXITING
+[10/Aug/2015:16:22:37] ENGINE Bus EXITED
+[10/Aug/2015:16:22:49] ENGINE Listening for SIGTERM.
+[10/Aug/2015:16:22:49] ENGINE Bus STARTING
+[10/Aug/2015:16:22:49] ENGINE Set handler for console events.
+[10/Aug/2015:16:22:49] ENGINE Started monitor thread 'Autoreloader'.
+[10/Aug/2015:16:22:49] ENGINE Started monitor thread '_TimeoutMonitor'.
+[10/Aug/2015:16:22:50] ENGINE Serving on http://192.168.0.50:84
+[10/Aug/2015:16:22:50] ENGINE Bus STARTED
+[10/Aug/2015:16:24:33] ENGINE Listening for SIGTERM.
+[10/Aug/2015:16:24:33] ENGINE Bus STARTING
+[10/Aug/2015:16:24:33] ENGINE Set handler for console events.
+[10/Aug/2015:16:24:33] ENGINE Started monitor thread 'Autoreloader'.
+[10/Aug/2015:16:24:33] ENGINE Started monitor thread '_TimeoutMonitor'.
+[10/Aug/2015:16:24:33] ENGINE Serving on http://192.168.0.50:84
+[10/Aug/2015:16:24:33] ENGINE Bus STARTED
+[11/Aug/2015:00:29:54] ENGINE Listening for SIGTERM.
+[11/Aug/2015:00:29:54] ENGINE Bus STARTING
+[11/Aug/2015:00:29:54] ENGINE Set handler for console events.
+[11/Aug/2015:00:29:54] ENGINE Started monitor thread 'Autoreloader'.
+[11/Aug/2015:00:29:54] ENGINE Started monitor thread '_TimeoutMonitor'.
+[11/Aug/2015:00:29:59] ENGINE Error in 'start' listener <bound method Server.start of <cherrypy._cpserver.Server object at 0x02FACF70>>
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\process\wspbus.py", line 205, in publish
+    output.append(listener(*args, **kwargs))
+  File "C:\Python27\lib\site-packages\cherrypy\_cpserver.py", line 168, in start
+    ServerAdapter.start(self)
+  File "C:\Python27\lib\site-packages\cherrypy\process\servers.py", line 170, in start
+    wait_for_free_port(*self.bind_addr)
+  File "C:\Python27\lib\site-packages\cherrypy\process\servers.py", line 439, in wait_for_free_port
+    raise IOError("Port %r not free on %r" % (port, host))
+IOError: Port 84 not free on '192.168.0.50'
+
+[11/Aug/2015:00:29:59] ENGINE Shutting down due to error in start listener:
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\process\wspbus.py", line 243, in start
+    self.publish('start')
+  File "C:\Python27\lib\site-packages\cherrypy\process\wspbus.py", line 223, in publish
+    raise exc
+ChannelFailures: IOError("Port 84 not free on '192.168.0.50'",)
+
+[11/Aug/2015:00:29:59] ENGINE Bus STOPPING
+[11/Aug/2015:00:29:59] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('192.168.0.50', 84)) already shut down
+[11/Aug/2015:00:29:59] ENGINE Stopped thread 'Autoreloader'.
+[11/Aug/2015:00:29:59] ENGINE Removed handler for console events.
+[11/Aug/2015:00:29:59] ENGINE Stopped thread '_TimeoutMonitor'.
+[11/Aug/2015:00:29:59] ENGINE Bus STOPPED
+[11/Aug/2015:00:29:59] ENGINE Bus EXITING
+[11/Aug/2015:00:29:59] ENGINE Bus EXITED
+[11/Aug/2015:00:30:40] ENGINE Listening for SIGTERM.
+[11/Aug/2015:00:30:40] ENGINE Bus STARTING
+[11/Aug/2015:00:30:40] ENGINE Set handler for console events.
+[11/Aug/2015:00:30:40] ENGINE Started monitor thread 'Autoreloader'.
+[11/Aug/2015:00:30:40] ENGINE Started monitor thread '_TimeoutMonitor'.
+[11/Aug/2015:00:30:40] ENGINE Serving on http://192.168.0.50:84
+[11/Aug/2015:00:30:40] ENGINE Bus STARTED
+[11/Aug/2015:23:47:11] ENGINE Listening for SIGTERM.
+[11/Aug/2015:23:47:11] ENGINE Bus STARTING
+[11/Aug/2015:23:47:11] ENGINE Set handler for console events.
+[11/Aug/2015:23:47:11] ENGINE Started monitor thread '_TimeoutMonitor'.
+[11/Aug/2015:23:47:11] ENGINE Started monitor thread 'Autoreloader'.
+[11/Aug/2015:23:47:12] ENGINE Serving on http://192.168.0.50:84
+[11/Aug/2015:23:47:12] ENGINE Bus STARTED
+[12/Aug/2015:00:29:37] ENGINE Listening for SIGTERM.
+[12/Aug/2015:00:29:37] ENGINE Bus STARTING
+[12/Aug/2015:00:29:37] ENGINE Set handler for console events.
+[12/Aug/2015:00:29:37] ENGINE Started monitor thread '_TimeoutMonitor'.
+[12/Aug/2015:00:29:37] ENGINE Started monitor thread 'Autoreloader'.
+[12/Aug/2015:15:02:40] ENGINE Listening for SIGTERM.
+[12/Aug/2015:15:02:40] ENGINE Bus STARTING
+[12/Aug/2015:15:02:40] ENGINE Set handler for console events.
+[12/Aug/2015:15:02:40] ENGINE Started monitor thread '_TimeoutMonitor'.
+[12/Aug/2015:15:02:40] ENGINE Started monitor thread 'Autoreloader'.
+[12/Aug/2015:15:02:41] ENGINE Serving on http://192.168.0.50:84
+[12/Aug/2015:15:02:41] ENGINE Bus STARTED
+[13/Aug/2015:15:59:15] ENGINE Listening for SIGTERM.
+[13/Aug/2015:15:59:15] ENGINE Bus STARTING
+[13/Aug/2015:15:59:15] ENGINE Set handler for console events.
+[13/Aug/2015:15:59:15] ENGINE Started monitor thread '_TimeoutMonitor'.
+[13/Aug/2015:15:59:15] ENGINE Started monitor thread 'Autoreloader'.
+[13/Aug/2015:15:59:38] ENGINE Listening for SIGTERM.
+[13/Aug/2015:15:59:38] ENGINE Bus STARTING
+[13/Aug/2015:15:59:38] ENGINE Set handler for console events.
+[13/Aug/2015:15:59:38] ENGINE Started monitor thread '_TimeoutMonitor'.
+[13/Aug/2015:15:59:38] ENGINE Started monitor thread 'Autoreloader'.
+[13/Aug/2015:15:59:38] ENGINE Serving on http://192.168.0.50:84
+[13/Aug/2015:15:59:38] ENGINE Bus STARTED
+[14/Aug/2015:04:02:02] ENGINE Listening for SIGTERM.
+[14/Aug/2015:04:02:02] ENGINE Bus STARTING
+[14/Aug/2015:04:02:02] ENGINE Set handler for console events.
+[14/Aug/2015:04:02:02] ENGINE Started monitor thread '_TimeoutMonitor'.
+[14/Aug/2015:04:02:02] ENGINE Started monitor thread 'Autoreloader'.
+[14/Aug/2015:04:02:08] ENGINE Error in 'start' listener <bound method Server.start of <cherrypy._cpserver.Server object at 0x02F52F50>>
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\process\wspbus.py", line 205, in publish
+    output.append(listener(*args, **kwargs))
+  File "C:\Python27\lib\site-packages\cherrypy\_cpserver.py", line 168, in start
+    ServerAdapter.start(self)
+  File "C:\Python27\lib\site-packages\cherrypy\process\servers.py", line 170, in start
+    wait_for_free_port(*self.bind_addr)
+  File "C:\Python27\lib\site-packages\cherrypy\process\servers.py", line 439, in wait_for_free_port
+    raise IOError("Port %r not free on %r" % (port, host))
+IOError: Port 84 not free on '192.168.0.50'
+
+[14/Aug/2015:04:02:08] ENGINE Shutting down due to error in start listener:
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\process\wspbus.py", line 243, in start
+    self.publish('start')
+  File "C:\Python27\lib\site-packages\cherrypy\process\wspbus.py", line 223, in publish
+    raise exc
+ChannelFailures: IOError("Port 84 not free on '192.168.0.50'",)
+
+[14/Aug/2015:04:02:08] ENGINE Bus STOPPING
+[14/Aug/2015:04:02:08] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('192.168.0.50', 84)) already shut down
+[14/Aug/2015:04:02:08] ENGINE Stopped thread 'Autoreloader'.
+[14/Aug/2015:04:02:08] ENGINE Stopped thread '_TimeoutMonitor'.
+[14/Aug/2015:04:02:08] ENGINE Removed handler for console events.
+[14/Aug/2015:04:02:08] ENGINE Bus STOPPED
+[14/Aug/2015:04:02:08] ENGINE Bus EXITING
+[14/Aug/2015:04:02:08] ENGINE Bus EXITED
+[14/Aug/2015:04:02:24] ENGINE Listening for SIGTERM.
+[14/Aug/2015:04:02:24] ENGINE Bus STARTING
+[14/Aug/2015:04:02:24] ENGINE Set handler for console events.
+[14/Aug/2015:04:02:24] ENGINE Started monitor thread '_TimeoutMonitor'.
+[14/Aug/2015:04:02:24] ENGINE Started monitor thread 'Autoreloader'.
+[14/Aug/2015:04:02:24] ENGINE Serving on http://192.168.0.50:84
+[14/Aug/2015:04:02:24] ENGINE Bus STARTED
+[15/Aug/2015:16:43:43] ENGINE Listening for SIGTERM.
+[15/Aug/2015:16:43:43] ENGINE Bus STARTING
+[15/Aug/2015:16:43:43] ENGINE Set handler for console events.
+[15/Aug/2015:16:43:43] ENGINE Started monitor thread 'Autoreloader'.
+[15/Aug/2015:16:43:43] ENGINE Started monitor thread '_TimeoutMonitor'.
+[15/Aug/2015:16:43:48] ENGINE Error in 'start' listener <bound method Server.start of <cherrypy._cpserver.Server object at 0x0308D050>>
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\process\wspbus.py", line 205, in publish
+    output.append(listener(*args, **kwargs))
+  File "C:\Python27\lib\site-packages\cherrypy\_cpserver.py", line 168, in start
+    ServerAdapter.start(self)
+  File "C:\Python27\lib\site-packages\cherrypy\process\servers.py", line 170, in start
+    wait_for_free_port(*self.bind_addr)
+  File "C:\Python27\lib\site-packages\cherrypy\process\servers.py", line 439, in wait_for_free_port
+    raise IOError("Port %r not free on %r" % (port, host))
+IOError: Port 84 not free on '192.168.0.50'
+
+[15/Aug/2015:16:43:48] ENGINE Shutting down due to error in start listener:
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\cherrypy\process\wspbus.py", line 243, in start
+    self.publish('start')
+  File "C:\Python27\lib\site-packages\cherrypy\process\wspbus.py", line 223, in publish
+    raise exc
+ChannelFailures: IOError("Port 84 not free on '192.168.0.50'",)
+
+[15/Aug/2015:16:43:48] ENGINE Bus STOPPING
+[15/Aug/2015:16:43:48] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('192.168.0.50', 84)) already shut down
+[15/Aug/2015:16:43:48] ENGINE Removed handler for console events.
+[15/Aug/2015:16:43:48] ENGINE Stopped thread 'Autoreloader'.
+[15/Aug/2015:16:43:48] ENGINE Stopped thread '_TimeoutMonitor'.
+[15/Aug/2015:16:43:48] ENGINE Bus STOPPED
+[15/Aug/2015:16:43:48] ENGINE Bus EXITING
+[15/Aug/2015:16:43:48] ENGINE Bus EXITED
+[15/Aug/2015:16:44:02] ENGINE Listening for SIGTERM.
+[15/Aug/2015:16:44:02] ENGINE Bus STARTING
+[15/Aug/2015:16:44:02] ENGINE Set handler for console events.
+[15/Aug/2015:16:44:02] ENGINE Started monitor thread 'Autoreloader'.
+[15/Aug/2015:16:44:02] ENGINE Started monitor thread '_TimeoutMonitor'.
+[15/Aug/2015:16:44:02] ENGINE Serving on http://192.168.0.50:84
+[15/Aug/2015:16:44:02] ENGINE Bus STARTED

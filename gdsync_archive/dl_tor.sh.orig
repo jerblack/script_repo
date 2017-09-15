@@ -1,0 +1,69 @@
+#! /bin/bash
+check_interval_mins=15
+notify_interval_mins=5 
+dl_src="gdu:transfer"
+encfs_enc="$HOME/_work/encfs_enc"
+encfs_dec="$HOME/_work/encfs_dec"
+decrypted="$HOME/_work/decrypted"
+recycled="$HOME/_work/recycled"
+mv_dst="$HOME/shares/server.x/_work/proc/"
+mv_dst_tv="$HOME/shares/server.x/_work/tv/"
+
+mins_so_far=$check_interval_mins # lets script check immediately on startup
+
+say () { echo "___$1___"; return 0; }
+
+say "Starting dl_torrents. Checking every $[check_interval_mins] minutes."
+
+while [ true ]; do
+	if [[ $mins_so_far -ge $check_interval_mins ]]; then
+		say "Checking for new files on Google."
+		rclone --retries 50 --exclude hold move "$dl_src" "$encfs_enc"
+		if [ "$(ls ${encfs_dec})" ]; then
+			# echo "Not Empty"
+			if [ "$(ls ${encfs_dec})" ]; then
+				say "Decrypting downloaded files."
+				mv -v ${encfs_dec}/* ${decrypted}/
+			   	say "Extracting archives"
+			fi
+		   	for f in ${decrypted}/*; do
+				if [ -d "$f" ]; then
+					echo "Extracting archive in $f"
+					# http://askubuntu.com/a/531487/547434
+					# https://github.com/arfoll/unrarall
+					unrarall --clean=all --full-path "$f"
+				fi
+			done				
+			if [ -d "${decrypted}/tv/" ]; then
+				if [ "$(ls ${decrypted}/tv)" ]; then
+					say "Moving new TV shows"
+					rsync --exclude=.Trash-1000  -av "${decrypted}/tv/" "${mv_dst_tv}"
+					mv -f "${decrypted}/tv/*" "${recycled}/tv"
+					for f in ${decrypted}/tv/*; do
+						rm -rf "$f"
+					done
+				fi
+			fi
+			if [ "$(ls ${decrypted})" ]; then
+				say "Moving new downloads"
+	    		rsync --exclude=.Trash-1000 -av "${decrypted}/" "${mv_dst}"
+				mv -f "${decrypted}/*" "${recycled}"
+				for f in ${decrypted}/*; do
+					rm -rf "$f"
+				done
+			fi
+		# else
+		#    echo "Empty"
+		fi
+		
+
+		mins_so_far=0
+		say "Check complete. Will check again in $[check_interval_mins] minutes."
+	else
+		if [[ $[mins_so_far%notify_interval_mins] -eq 0 ]]; then
+			say "Waiting to check. Next check in $[check_interval_mins-mins_so_far] minutes."
+		fi
+		let mins_so_far+=1
+	fi
+ 	sleep 60
+done

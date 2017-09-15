@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>PoleyMote</title>
+    <link rel="stylesheet" href="sp://import/css/adam.css">
+    <link rel="stylesheet" href="sp://import/css/api.css">
+    <link rel="stylesheet" href="pm.spapp.css">
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="pm.spapp.js"></script>
+</head>
+
+<body>
+<div id="main">
+<table>
+    <tr>
+        <td>
+        <div id="toolboxDiv">
+            <input class="buttons" type="button" value="Archive Track" id='archivetrack' />
+            <input class="buttons" type="button" value="Remove Track When Done" id='remove_later_set' />
+            <input class="buttons" type="button" value="Cancel Remove Later" id='remove_later_cancel' />
+            <input class="buttons" type="button" value="Remove this Artist" id='remove_artist' />
+            <input class="buttons" type="button" value="Remove this Album" id='remove_album' />
+            <input class="buttons" type="button" value="Remove Duplicate Tracks" id='dedupe' />
+            <input class="buttons" type="button" value="Process Remove Queue" id='deletequeue' />
+            <input class="buttons" type="button" value="Connect Sonos" id='connectsonos' />
+            <input class="buttons" type="button" value="Disconnect Sonos" id='disconnectsonos' />
+        </div>
+        </td>
+
+        <td>
+        <div id="playerDiv">
+            <div id="playerButtons">
+                <div class="playerButtons" ><img src="pm.spapp.img.skipback.png" /></div>
+                <div class="playerButtons" ><img src="pm.spapp.img.play.png" /></div>
+                <div class="playerButtons" ><img src="pm.spapp.img.next.png" /></div>
+                <div class="playerButtons" ><img src="pm.spapp.img.remove.png" /></div>
+                <div class="playerButtons" ><img src="pm.spapp.img.star_white.png" /></div>
+
+
+
+
+
+            </div>
+            <div>
+                <input class="buttons" type="button" id="backBtn" value="Skip Back"  />
+                <input class="buttons" type="button" id="playBtn" value="Play/Pause" />
+                <input class="buttons" type="button" id="nextBtn" value="Next Track" />
+                <input class="buttons" type="button" id="thumbsDownBtn" value="Thumbs Down" />
+                <input class="buttons" type="button" id="thumbsUpBtn"   value="Thumbs Up"   />
+            </div>
+            <div id="now-playing"><div id="starDiv"></div></div>
+        </div>
+        </td>
+
+        <td>
+        <div id="playlistDiv">
+            <div class="header">Select a playlist</div>
+                <input class="buttons" type="button" value="Play Shuffle Playlists" id="playshuffle" />
+                <input class="buttons" type="button" value="Starred" id='playstarred'  />
+                <div id="favPlaylists"></div>
+
+            <div class="header">Jeremy's Bookmarks</div>
+                <div>
+                    <div class="">
+                        <input class="bmButtonLeft bmButtons" type="button" value="Add" onclick="addToBookmarks('jeremy')" />
+                    </div>
+                    <div class="">
+                        <input class="bmButtonRight bmButtons" type="button" value="Play" onclick="playBookmark('jeremy')" />
+                    </div>
+                </div>
+
+            <div class="header">Maria's Bookmarks</div>
+                <div class="bmButtonContainer">
+                    <div class="">
+                        <input class="bmButtonLeft bmButtons" type="button" value="Add" onclick="addToBookmarks('maria')" />
+                    </div>
+                    <div class="">
+                        <input class="bmButtonRight bmButtons" type="button" value="Play" onclick="playBookmark('maria')" />
+                    </div>
+                </div>
+        </div>
+        </td>
+
+        <td>
+        <div id="statusDiv">
+            <div id="serverStatus">
+                <p>|Server Status|</p>
+                <div style="margin-left:20px;">
+                    <p id="url">Unknown server URL</p>
+                    <p id="status">Unknown connection status</p>
+                </div>
+            </div>
+            <div id="activityLog">
+                <div>|PoleyMote Activity Log|</div>
+            </div>
+        </div>
+        </td>
+
+    </tr>
+</table>
+</div>
+</body>
+</html>

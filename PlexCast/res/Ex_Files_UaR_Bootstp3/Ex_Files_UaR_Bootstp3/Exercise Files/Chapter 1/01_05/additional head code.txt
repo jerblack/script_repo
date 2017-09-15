@@ -1,0 +1,12 @@
+Respond.js script available at:
+
+https://github.com/scottjehl/Respond
+
+
+Download respond.min.js, place in js folder, link in the HEAD of your HTML document
+	<script src="js/respond.js"></script>
+
+In the body of your document, just above </body>, place these links:
+
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    	<script src="js/bootstrap.min.js"></script>

@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>PoleyMote</title>
+    <link rel="stylesheet" href="sp://import/css/adam.css">
+    <link rel="stylesheet" href="sp://import/css/api.css">
+
+    <script type="text/javascript" src="jquery.min.js"></script>
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="pm.spapp.css">
+    <script type="text/javascript" src="pm.spapp.js"></script>
+</head>
+
+<body>
+<div class="container" role="main">
+    <nav class="navbar navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Dashboard</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+
+                    <!--TODO: Remove Duplicates by URI, Find Duplicates by Metadata-->
+                    <!--TODO: Populate Playlist Menu-->
+                    <!--TODO: Count Menu-->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false">Tools <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" id='archive-track'>Archive Track</a></li>
+                            <li><a href="#" id='remove-later-set'/>Remove Track When Done</a></li>
+                            <li><a href="#" id='remove-later-cancel'>Cancel Remove Later</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#" id='remove-artist'>Remove this Artist</a></li>
+                            <li><a href="#" id='remove-album'>Remove this Album</a></li>
+                            <li><a href="#" id='delete-queue'>Process Remove Queue</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#" id='add-dupe'>Add to ~Dupes</a></li>
+                            <li><a href="#" id='de-dupe'>Remove Duplicate Tracks</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#" id='move-ambient'>Move to Ambient</a></li>
+                            <li><a href="#" id='move-electronic'>Move to Electronic</a></li>
+                            <li><a href="#" id="move-shuffle">Move to Shuffle Playlist</a></li>
+                            <li><a href="#" id="move-sahara">Move to Sahara</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false">Play Playlist <span class="caret"></span></a>
+                        <ul class="dropdown-menu" id="playlists">
+                            <li><a href="#" id="play-shuffle">Shuffle Playlists</a></li>
+                            <li><a href="#" id='play-starred'>Starred</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown" id="count-btn">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false" id="count-toggle">Track Count <span class="caret"></span></a>
+
+                        <ul class="dropdown-menu" id="count">
+                            <li><a href="#" id='refresh-count'>Refresh Count</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li id="skip-back-button">
+                        <a href="#" >
+                            <span class="glyphicon glyphicon-step-backward" aria-hidden="true"></span>
+                        </a>
+                    </li>
+                    <li id="play-button">
+                        <a href="#" >
+                            <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+                            <span class="glyphicon glyphicon-pause" aria-hidden="true"></span>
+                        </a>
+                    </li>
+                    <li id="next-button">
+                        <a href="#" >
+                            <span class="glyphicon glyphicon-step-forward" aria-hidden="true"></span>
+                        </a>
+                    </li>
+                </ul>
+
+
+
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </nav>
+
+
+    <div class="jumbotron" id="now-playing-jumbo">
+        <div class="row">
+            <div class="col-xs-6">
+                <a id="np-image-link">
+                    <div id="np-image"></div>
+                </a>
+            </div>
+            <div class="col-xs-6 pull-right" id="np-info">
+                <div>title</div>
+                <a id="np-title"></a>
+
+                <div>artist</div>
+                <a id="np-artist"></a>
+
+                <div>album</div>
+                <a id="np-album"></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="xs-1 pull-right">
+                <div id="status">
+                    <span class="label label-danger" id="status-icon" aria-hidden="true">disconnected</span>
+                </div>
+                <div id="remove">
+                    <span class="glyphicon glyphicon-trash" id="remove-icon" aria-hidden="true"></span>
+                </div>
+                <div id="star">
+                    <span class="glyphicon glyphicon-star-empty star-icon" id="star-false" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-star star-icon" id="star-true" aria-hidden="true"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="log-box">
+        <div id="log"></div>
+    </div>
+
+</div>
+</body>
+</html>

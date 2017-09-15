@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleIdentifier</key>
+	<string>com.plexapp.agents.xbmcnfotv</string>
+	<key>PlexFrameworkVersion</key>
+	<string>2</string>
+	<key>PlexPluginClass</key>
+	<string>Agent</string>
+	<key>PlexPluginCodePolicy</key>
+	<string>Elevated</string>
+	<key>PlexAgentAttributionText</key>
+	<string>
+<![CDATA[
+XBMCnfoTVImporter (V 1.1-24)
+<br /><br />
+is an agent to import the local metadata XBMC creates when you export your library
+to seperate files. Series and season poster, fanart and thumbs will be recognized,
+if they are saved alongside your series in the series and season folders.
+XBMC naming conventions apply. So don't expect it to work, if your naming doesn't
+follow them.
+]]>
+	</string>
+</dict>
+</plist>

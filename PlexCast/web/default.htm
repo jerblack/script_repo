@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>PlexCast Show Page</title>
+    <link rel="icon" href="img/favicon.ico">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="css/bootstrap-combobox.css" rel="stylesheet">
+
+    <!--<link href="//www.fuelcdn.com/fuelux/3.11.0/css/fuelux.min.css" rel="stylesheet">-->
+    <link href="css/custom.css" rel="stylesheet">
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-combobox.js"></script>
+    <!--<script src="//www.fuelcdn.com/fuelux/3.11.0/js/fuelux.min.js"></script>-->
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script>
+        $(function () {
+            $('.combobox').combobox()
+            console.log('popped');
+        })
+    </script>
+
+</head>
+
+<body class="fuelux">
+<!--<div id="logo-div">-->
+<!--<img id="logo" src="img/logo.png">-->
+<!--</div>-->
+<!--TOP NAVBAR DEFINITION-->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">PlexCast</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <form class="navbar-form navbar-right" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search or Add Show">
+                    <button type="submit" class="btn btn-sm">
+                        <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                </div>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-film"></span> Shows</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-cloud-download"></span> Downloads</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-chevron-right"></span> Plex</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-cog"></span> Settings</a></li>
+            </ul>
+
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</nav>
+
+
+<div id="show-page">
+    <!--SHOW BANNER DEFINITION-->
+    <div id="show-banner" class=" container ">
+        <div class="jumbotron">
+            <div class="row" id="show-details">
+                <div id="show-img-div" class="col-xs-12 col-sm-3">
+                    <img id="show-img" src="img/show.jpg" class="img-rounded img-responsive">
+                </div>
+
+                <div id="show-desc" class="col-xs-12 col-sm-9">
+                    <div id="show-header">
+                        <div id="show-logo" class="show-header-item">
+                            <i class="fa fa-rss fa-pull-left fa-2x"></i>
+                        </div>
+                        <div id="show-title" class="show-header-item">
+                            <h4>CNET News (HD)</h4>
+                        </div>
+
+
+                        <div id="ep-labels" class="show-header-item">
+                            <span class="label label-default">Available: 13</span>
+                            <span class="label label-primary">Downloaded: 7</span>
+                            <span class="label label-success">Unplayed: 4</span>
+                        </div>
+
+                    </div>
+                    <div id="show-text">
+                        <p>Videos pertaining to breaking tech news or focusing
+                            on newsworthy happenings, such as keynote addresses
+                            and interviews, as it pertains to the world of tech.
+                            These videos are intended to be viewed by those looking
+                            for video on news.com or news videos on CNET TV.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="show-options">
+                <div class="panel panel-default">
+                      <div class="panel-heading"><p style="margin:0;">Show folder</p></div>
+                      <div class="panel-body">
+                            <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Select folder"
+                                   value="D:\PlexCast\CNET News (HD)">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">
+                                    <span class="glyphicon glyphicon-folder-open"></span></button>
+                                <button class="btn btn-default" type="button">
+                                    <span class="glyphicon glyphicon-ok"></span></button>
+                            </span>
+                            </div>
+                      </div>
+                </div>
+
+
+                <div class="row form-group">
+                    <!--<label class="control-label col-sm-1 indent-1" style="padding-top: 0.4em; margin-right:0.5em;">Download</label>-->
+                    <div class="col-sm-1" style="text-align: right; padding-top: 0.5em;">
+                        <p>Download</p>
+                    </div>
+                    <div class="col-sm-1" id="dl-num">
+                        <select class="combobox input form-control" name="horizontal" required="required">
+                            <option value="" selected="selected">all</option>
+                            <option value="3">3</option>
+                            <option value="5">5</option>
+                            <option value="7">7</option>
+                            <option value="10">10</option>
+                            <option value="15">15</option>
+                            <option value="20">20</option>
+                            <option value="25">25</option>
+                            <option value="50">50</option>
+
+                        </select>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="row">
+                    <div class="col-sm-6 indent-1">
+                        <div class="checkbox" id="get-all-eps">
+                            <label>
+                                <input type="checkbox" checked>
+                                <span>Download all episodes</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                            <!--<div class="form-group">-->
+                                <!--<div class="form-inline">-->
+                                    <!--<div class="form-group-sm">-->
+                                        <!--<label for="dl1">Download</label>-->
+                                        <!--<input type="text" class="form-control" id="dl1" value="10" placeholder="##">-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+
+
+                            <!--<div class="checkbox" id="count-pinned">-->
+                                <!--<label>-->
+                                    <!--<input type="checkbox" checked>-->
+                                    <!--<span>Don't count pinned shows</span>-->
+                                <!--</label>-->
+                            <!--</div>-->
+                            <!--<div class="checkbox" id="auto-pin-manual">-->
+                                <!--<label>-->
+                                    <!--<input type="checkbox" checked>-->
+                                    <!--<span>Automatically pin manual downloads</span>-->
+                                <!--</label>-->
+                            <!--</div>-->
+                            <!--<div class="checkbox" id="auto-remove-watched">-->
+                                <!--<label>-->
+                                    <!--<input type="checkbox" checked>-->
+                                    <!--<span>Remove watched episodes automatically</span>-->
+                                <!--</label>-->
+                            <!--</div>-->
+                            <!--<div class="checkbox indent-1" id="auto-remove-period">-->
+                                <!--<label>-->
+                                    <!--<input type="checkbox" checked>-->
+                                    <!--<span>Delay removal for XX days</span>-->
+                                <!--</label>-->
+                            <!--</div>-->
+                        <!--</div>-->
+
+
+                        <!--<p>Number of episodes to keep</p>-->
+
+                        <!--<p>10</p>-->
+
+                        <!--<p>Pause Show</p>-->
+
+                        <!--<p>Delete Show</p>-->
+
+                        <!--<p>Plex library</p>-->
+
+                        <!--<p>Podcasts</p>-->
+
+
+                    <!--</div>-->
+
+
+
+    <div id="ep-list-container" class="container">
+        <div class="jumbotron">
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th></th>
+                    <th>#</th>
+                    <th>Date</th>
+                    <th>Title</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+                <tbody>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>1</td>
+                    <td>08/13/15</td>
+                    <td>Earbuds to change how you hear music</td>
+                    <td>Available</td>
+                    <td>
+                        <span class="glyphicon glyphicon-cloud-download" style="color:#2b669a;"></span>
+                        <span class="glyphicon glyphicon-pushpin" style="color:green;"></span>
+                        <span class="glyphicon glyphicon-remove" style="color:darkred;"></span>
+                        <span class="glyphicon glyphicon-question-sign"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>2</td>
+                    <td>08/13/15</td>
+                    <td>Samsung teases new Gear S2 smartwatch</td>
+                    <td>Downloaded</td>
+                    <td>
+                        <span class="glyphicon glyphicon-cloud-download" style="color:#2b669a;"></span>
+                        <span class="glyphicon glyphicon-pushpin" style="color:green;"></span>
+                        <span class="glyphicon glyphicon-remove" style="color:darkred;"></span>
+                        <span class="glyphicon glyphicon-question-sign"></span>
+                    </td>
+                </tr>
+                </tbody>
+                </thead>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+<!--</div>-->
+
+<!--&lt;!&ndash;<button type="button" class="btn btn-default ">&ndash;&gt;-->
+<!--&lt;!&ndash;<span class="glyphicon glyphicon-pause"></span>&ndash;&gt;-->
+<!--&lt;!&ndash;</button>&ndash;&gt;-->
+
+<!--</div>-->
+<!--</div>-->
+

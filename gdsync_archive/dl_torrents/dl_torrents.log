@@ -1,0 +1,1735 @@
+___Starting dl_torrents. Checking every 10 minutes.___
+___Checking for new files on Google.___
+2016/07/01 21:25:35 Failed to create file system for "gdu:transfer": Couldn't read info about Drive: Get https://www.googleapis.com/drive/v2/about?alt=json: dial tcp: lookup www.googleapis.com on [::1]:53: read udp [::1]:51889->[::1]:53: read: connection refused
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/01 22:11:11 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/01 22:11:22 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/01 22:11:22 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/01 22:11:22 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:       34.8s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/01 22:22:41 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/01 22:22:42 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/01 22:22:42 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/01 22:22:42 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:        8.7s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/01 22:33:50 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/01 22:33:51 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/01 22:33:51 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/01 22:33:51 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:        2.4s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/01 22:44:53 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/01 22:45:01 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/01 22:45:01 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/01 22:45:01 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:         18s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/01 22:56:10 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/01 22:56:11 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/01 22:56:11 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/01 22:56:11 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:        8.7s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/01 23:07:19 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/01 23:07:20 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/01 23:07:20 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/01 23:07:20 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:       20.4s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/01 23:18:40 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/01 23:18:40 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/01 23:18:40 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/01 23:18:40 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:       12.2s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/01 23:30:00 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/01 23:30:19 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/01 23:30:19 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/01 23:30:19 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:       28.2s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/01 23:41:20 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/01 23:41:21 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/01 23:41:21 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/01 23:41:21 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:       10.3s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/01 23:52:31 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/01 23:52:32 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/01 23:52:32 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/01 23:52:32 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:       17.4s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 00:03:48 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 00:03:50 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 00:03:50 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 00:03:50 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:        4.4s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 00:15:01 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 00:15:02 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 00:15:02 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 00:15:02 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:       18.5s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 00:26:18 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 00:26:31 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 00:26:31 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 00:26:31 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:       30.8s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 00:37:42 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 00:37:51 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 00:37:51 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 00:37:51 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:         10s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 00:48:52 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 00:48:53 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 00:48:53 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 00:48:53 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:        8.2s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 01:00:00 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 01:00:01 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 01:00:01 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 01:00:01 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:       10.4s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 01:11:12 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 01:11:31 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 01:11:31 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 01:11:31 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:       30.4s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 01:22:42 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 01:22:51 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 01:22:51 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 01:22:51 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:       16.3s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 01:33:58 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 01:33:59 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 01:33:59 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 01:33:59 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:        2.3s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 01:45:00 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 01:45:01 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 01:45:01 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 01:45:01 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:        2.2s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 01:56:03 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 01:56:12 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 01:56:12 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 01:56:12 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:       18.3s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 02:07:21 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 02:07:22 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 02:07:22 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 02:07:22 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:        2.3s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 02:18:29 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 02:18:30 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 02:18:30 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 02:18:30 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:        7.8s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 02:29:31 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 02:29:32 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 02:29:32 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 02:29:32 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:       10.2s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 02:40:41 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 02:40:50 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 02:40:50 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 02:40:50 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:       18.3s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 02:52:00 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 02:52:00 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 02:52:00 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 02:52:00 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:        8.5s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 03:03:09 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 03:03:11 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 03:03:11 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 03:03:11 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:       13.9s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 03:14:28 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 03:14:31 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 03:14:31 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 03:14:31 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:         18s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 03:25:40 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 03:25:41 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 03:25:41 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 03:25:41 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:       10.1s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 03:36:51 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 03:36:51 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 03:36:51 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 03:36:51 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:        2.4s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 03:47:59 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 03:47:59 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 03:47:59 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 03:47:59 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:        7.9s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 03:59:01 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 03:59:02 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 03:59:02 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 03:59:02 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:        2.3s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 04:10:09 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 04:10:10 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 04:10:10 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 04:10:10 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:         16s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 04:21:19 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 04:21:20 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 04:21:20 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 04:21:20 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:          2s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 04:32:22 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 04:32:23 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 04:32:23 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 04:32:23 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:        8.7s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 04:43:30 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 04:43:31 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 04:43:31 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 04:43:31 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:        2.4s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 04:54:33 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 04:54:40 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 04:54:40 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 04:54:40 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:        8.3s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 05:05:41 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 05:05:42 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 05:05:42 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 05:05:42 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:       10.2s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 05:16:52 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 05:16:52 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 05:16:52 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 05:16:52 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:        8.1s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 05:28:00 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 05:28:01 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 05:28:01 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 05:28:01 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:        2.2s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 05:39:02 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 05:39:03 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 05:39:03 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 05:39:03 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:        8.2s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 05:50:11 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 05:50:12 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 05:50:12 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 05:50:12 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:       10.9s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 06:01:21 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 06:01:30 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 06:01:30 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 06:01:30 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:       10.2s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 06:12:32 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 06:12:40 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 06:12:40 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 06:12:40 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:       10.5s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 06:23:48 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 06:23:51 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 06:23:51 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 06:23:51 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:        9.9s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 06:34:52 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 06:34:53 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 06:34:53 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 06:34:53 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:        8.1s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 06:46:00 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 06:46:01 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 06:46:01 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 06:46:01 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:        2.1s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 06:57:10 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 06:57:12 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 06:57:12 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 06:57:12 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:       10.6s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 07:08:19 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 07:08:20 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 07:08:20 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 07:08:20 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:        8.4s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 07:19:21 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 07:19:31 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 07:19:31 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 07:19:31 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:       10.3s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 07:30:37 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 07:30:41 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 07:30:41 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 07:30:41 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:       17.3s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 07:41:50 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 07:41:51 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 07:41:51 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 07:41:51 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:        2.7s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 07:52:52 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 07:52:53 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 07:52:53 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 07:52:53 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:        2.3s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 08:04:00 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 08:04:01 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 08:04:01 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 08:04:01 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:          8s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 08:15:11 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 08:15:11 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 08:15:11 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 08:15:11 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:       18.1s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 08:26:21 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 08:26:22 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 08:26:22 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 08:26:22 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:        6.6s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 08:37:28 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 08:37:28 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 08:37:28 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 08:37:28 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:        2.3s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 08:48:30 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 08:48:31 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 08:48:31 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 08:48:31 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:        2.2s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 08:59:32 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 08:59:41 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 08:59:41 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 08:59:41 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:         10s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 09:10:48 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 09:10:51 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 09:10:51 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 09:10:51 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:       16.2s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 09:21:58 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 09:21:59 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 09:21:59 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 09:21:59 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:        2.2s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 09:33:01 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 09:33:01 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 09:33:01 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 09:33:01 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:        8.1s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 09:44:10 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 09:44:12 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 09:44:12 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 09:44:12 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:       12.1s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 09:55:21 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 09:55:22 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 09:55:22 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 09:55:22 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:       10.3s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 10:06:40 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 10:06:51 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 10:06:51 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 10:06:51 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:       30.3s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 10:18:02 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 10:18:11 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 10:18:11 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 10:18:11 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:       10.2s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 10:29:20 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 10:29:21 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 10:29:21 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 10:29:21 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:       18.2s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 10:40:30 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 10:40:31 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 10:40:31 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 10:40:31 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:       10.2s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 10:51:41 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 10:51:41 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 10:51:41 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 10:51:41 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:        2.1s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 11:02:51 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 11:02:59 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 11:02:59 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 11:02:59 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:       25.9s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 11:14:10 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 11:14:20 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 11:14:20 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 11:14:20 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:       20.5s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 11:25:29 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 11:25:30 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 11:25:30 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 11:25:30 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:        2.2s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 11:36:32 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 11:36:32 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 11:36:32 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 11:36:32 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:       10.1s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 11:47:42 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 11:47:50 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 11:47:50 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 11:47:50 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:       10.1s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 11:58:53 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 11:59:01 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 11:59:01 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 11:59:01 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:         16s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 12:10:08 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 12:10:09 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 12:10:09 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 12:10:09 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:        2.1s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 12:21:10 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 12:21:11 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 12:21:11 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 12:21:11 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:        2.1s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 12:32:20 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 12:32:21 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 12:32:21 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 12:32:21 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:       18.1s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 12:43:30 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 12:43:31 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 12:43:31 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 12:43:31 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:       10.1s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 12:54:41 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 12:54:42 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 12:54:42 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 12:54:42 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:        2.4s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 13:05:49 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 13:05:50 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 13:05:50 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 13:05:50 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:        8.5s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 13:16:59 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 13:17:00 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 13:17:00 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 13:17:00 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:        9.9s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 13:28:09 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 13:28:21 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 13:28:21 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 13:28:21 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:       30.1s
+
+___Check complete. Will check again in 10 minutes.___
+s.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 13:28:52 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+20160702 13:28:56 dl_torrents: client (pid 1645) killed by signal 15, stopping
+___Starting dl_torrents. Checking every 10 minutes.___
+___Checking for new files on Google.___
+2016/07/02 13:29:16 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 13:29:18 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 13:29:18 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 13:29:18 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:        5.5s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 13:40:19 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 13:40:20 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 13:40:20 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 13:40:20 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:          2s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 13:51:21 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 13:51:22 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 13:51:31 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 13:51:35 Waiting for deletions to finish
+
+Transferred:    893648611 Bytes (28894.75 kByte/s)
+Errors:                 0
+Checks:                21
+Transferred:           21
+Elapsed time:       30.2s
+
+___Decrypting downloaded files.___
+building file list ... 
+ 0 files...24 files to consider
+./
+Dark.Matter.S02E01.720p.HDTV.x264-AVS/
+Dark.Matter.S02E01.720p.HDTV.x264-AVS/dark.matter.s02e01.720p.hdtv.x264-avs.nfo
+             59 100%    0.00kB/s    0:00:00               59 100%    0.00kB/s    0:00:00 (xfr#1, to-chk=21/24)
+Dark.Matter.S02E01.720p.HDTV.x264-AVS/dark.matter.s02e01.720p.hdtv.x264-avs.r00
+         32,768   0%   31.25MB/s    0:00:01       50,000,000 100%  285.53MB/s    0:00:00 (xfr#2, to-chk=20/24)
+Dark.Matter.S02E01.720p.HDTV.x264-AVS/dark.matter.s02e01.720p.hdtv.x264-avs.r01
+         32,768   0%  190.48kB/s    0:04:22       50,000,000 100%  140.66MB/s    0:00:00 (xfr#3, to-chk=19/24)
+Dark.Matter.S02E01.720p.HDTV.x264-AVS/dark.matter.s02e01.720p.hdtv.x264-avs.r02
+         32,768   0%   94.12kB/s    0:08:50       50,000,000 100%   92.05MB/s    0:00:00 (xfr#4, to-chk=18/24)
+Dark.Matter.S02E01.720p.HDTV.x264-AVS/dark.matter.s02e01.720p.hdtv.x264-avs.r03
+         32,768   0%   61.78kB/s    0:13:28       50,000,000 100%   68.22MB/s    0:00:00 (xfr#5, to-chk=17/24)
+Dark.Matter.S02E01.720p.HDTV.x264-AVS/dark.matter.s02e01.720p.hdtv.x264-avs.r04
+         32,768   0%   45.71kB/s    0:18:13       50,000,000 100%   54.19MB/s    0:00:00 (xfr#6, to-chk=16/24)
+Dark.Matter.S02E01.720p.HDTV.x264-AVS/dark.matter.s02e01.720p.hdtv.x264-avs.r05
+         32,768   0%   36.36kB/s    0:22:54       33,161,216  66%   31.62MB/s    0:00:00       50,000,000 100%   44.56MB/s    0:00:01 (xfr#7, to-chk=15/24)
+Dark.Matter.S02E01.720p.HDTV.x264-AVS/dark.matter.s02e01.720p.hdtv.x264-avs.r06
+         32,768   0%  444.44kB/s    0:01:52       50,000,000 100%  188.47MB/s    0:00:00 (xfr#8, to-chk=14/24)
+Dark.Matter.S02E01.720p.HDTV.x264-AVS/dark.matter.s02e01.720p.hdtv.x264-avs.r07
+         32,768   0%  125.98kB/s    0:06:36       50,000,000 100%  110.38MB/s    0:00:00 (xfr#9, to-chk=13/24)
+Dark.Matter.S02E01.720p.HDTV.x264-AVS/dark.matter.s02e01.720p.hdtv.x264-avs.r08
+         32,768   0%   73.90kB/s    0:11:16       50,000,000 100%   78.04MB/s    0:00:00 (xfr#10, to-chk=12/24)
+Dark.Matter.S02E01.720p.HDTV.x264-AVS/dark.matter.s02e01.720p.hdtv.x264-avs.r09
+         32,768   0%   52.20kB/s    0:15:57       50,000,000 100%   60.28MB/s    0:00:00 (xfr#11, to-chk=11/24)
+Dark.Matter.S02E01.720p.HDTV.x264-AVS/dark.matter.s02e01.720p.hdtv.x264-avs.r10
+         32,768   0%   40.00kB/s    0:20:49       50,000,000 100%   49.41MB/s    0:00:00 (xfr#12, to-chk=10/24)
+Dark.Matter.S02E01.720p.HDTV.x264-AVS/dark.matter.s02e01.720p.hdtv.x264-avs.r11
+         32,768   0%   32.89kB/s    0:25:19        8,126,464  16%    7.75MB/s    0:00:05       50,000,000 100%   41.90MB/s    0:00:01 (xfr#13, to-chk=9/24)
+Dark.Matter.S02E01.720p.HDTV.x264-AVS/dark.matter.s02e01.720p.hdtv.x264-avs.r12
+         32,768   0%  216.22kB/s    0:03:51       50,000,000 100%  151.86MB/s    0:00:00 (xfr#14, to-chk=8/24)
+Dark.Matter.S02E01.720p.HDTV.x264-AVS/dark.matter.s02e01.720p.hdtv.x264-avs.r13
+         32,768   0%   99.38kB/s    0:08:22       50,000,000 100%   97.71MB/s    0:00:00 (xfr#15, to-chk=7/24)
+Dark.Matter.S02E01.720p.HDTV.x264-AVS/dark.matter.s02e01.720p.hdtv.x264-avs.r14
+         32,768   0%   64.26kB/s    0:12:57       50,000,000 100%   72.36MB/s    0:00:00 (xfr#16, to-chk=6/24)
+Dark.Matter.S02E01.720p.HDTV.x264-AVS/dark.matter.s02e01.720p.hdtv.x264-avs.r15
+         32,768   0%   47.90kB/s    0:17:23       50,000,000 100%   55.84MB/s    0:00:00 (xfr#17, to-chk=5/24)
+Dark.Matter.S02E01.720p.HDTV.x264-AVS/dark.matter.s02e01.720p.hdtv.x264-avs.r16
+         32,768   0%   37.08kB/s    0:08:46       19,543,559 100%   20.11MB/s    0:00:00 (xfr#18, to-chk=4/24)
+Dark.Matter.S02E01.720p.HDTV.x264-AVS/dark.matter.s02e01.720p.hdtv.x264-avs.rar
+         32,768   0%   34.22kB/s    0:24:19       19,726,336  39%   18.81MB/s    0:00:01       50,000,000 100%   43.39MB/s    0:00:01 (xfr#19, to-chk=3/24)
+Dark.Matter.S02E01.720p.HDTV.x264-AVS/dark.matter.s02e01.720p.hdtv.x264-avs.sfv
+            936 100%    8.46kB/s    0:00:00              936 100%    8.46kB/s    0:00:00 (xfr#20, to-chk=2/24)
+Dark.Matter.S02E01.720p.HDTV.x264-AVS/Sample/
+Dark.Matter.S02E01.720p.HDTV.x264-AVS/Sample/sample-dark.matter.s02e01.720p.hdtv.x264-avs.mkv
+         32,768   0%  273.50kB/s    0:01:28       24,103,889 100%  115.51MB/s    0:00:00 (xfr#21, to-chk=0/24)
+
+sent 893,868,070 bytes  received 636 bytes  255,391,058.86 bytes/sec
+total size is 893,648,443  speedup is 1.00
+___Extracting archives___
+Extracting archive in /home/jeremy/_work/decrypted/Dark.Matter.S02E01.720p.HDTV.x264-AVS
+Working over directory "/home/jeremy/_work/decrypted/Dark.Matter.S02E01.720p.HDTV.x264-AVS"
+Install cksfv in order to get CRC checked before using unrar
+Extracting (x) "/home/jeremy/_work/decrypted/Dark.Matter.S02E01.720p.HDTV.x264-AVS/dark.matter.s02e01.720p.hdtv.x264-avs.rar"...[32mok[0m
+Running hooks...covers_folders nfo osx_junk proof_folders rar sample_folders find: ‘./Sample’: No such file or directory
+sample_videos windows_junk empty_folders [32mFinished running hooks[0m
+1 rar files found, extracted and then cleaned using the following hooks: all
+___Moving new downloads___
+building file list ... 
+ 0 files...3 files to consider
+./
+Dark.Matter.S02E01.720p.HDTV.x264-AVS/
+Dark.Matter.S02E01.720p.HDTV.x264-AVS/Dark.Matter.S02E01.720p.HDTV.x264-AVS.mkv
+         32,768   0%    0.00kB/s    0:00:00      185,434,112  21%  176.81MB/s    0:00:03      398,819,328  45%  190.25MB/s    0:00:02      617,185,280  70%  196.25MB/s    0:00:01      834,502,656  95%  199.05MB/s    0:00:00      869,541,885 100%  198.71MB/s    0:00:04 (xfr#1, to-chk=0/3)
+
+sent 869,754,394 bytes  received 49 bytes  193,278,765.11 bytes/sec
+total size is 869,541,885  speedup is 1.00
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 14:03:01 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 14:03:09 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 14:03:18 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 14:03:28 Waiting for deletions to finish
+
+Transferred:    893648611 Bytes (21365.65 kByte/s)
+Errors:                 0
+Checks:                21
+Transferred:           21
+Elapsed time:       40.8s
+
+___Decrypting downloaded files.___
+building file list ... 
+ 0 files...24 files to consider
+./
+Dark.Matter.S02E01.720p.HDTV.x264-AVS/
+Dark.Matter.S02E01.720p.HDTV.x264-AVS/dark.matter.s02e01.720p.hdtv.x264-avs.nfo
+             59 100%    0.00kB/s    0:00:00               59 100%    0.00kB/s    0:00:00 (xfr#1, to-chk=21/24)
+Dark.Matter.S02E01.720p.HDTV.x264-AVS/dark.matter.s02e01.720p.hdtv.x264-avs.r00
+         32,768   0%   31.25MB/s    0:00:01       50,000,000 100%  290.75MB/s    0:00:00 (xfr#2, to-chk=20/24)
+Dark.Matter.S02E01.720p.HDTV.x264-AVS/dark.matter.s02e01.720p.hdtv.x264-avs.r01
+         32,768   0%  193.94kB/s    0:04:17       50,000,000 100%  144.94MB/s    0:00:00 (xfr#3, to-chk=19/24)
+Dark.Matter.S02E01.720p.HDTV.x264-AVS/dark.matter.s02e01.720p.hdtv.x264-avs.r02
+         32,768   0%   96.97kB/s    0:08:35       50,000,000 100%   96.72MB/s    0:00:00 (xfr#4, to-chk=18/24)
+Dark.Matter.S02E01.720p.HDTV.x264-AVS/dark.matter.s02e01.720p.hdtv.x264-avs.r03
+         32,768   0%   64.78kB/s    0:12:51       50,000,000 100%   72.14MB/s    0:00:00 (xfr#5, to-chk=17/24)
+Dark.Matter.S02E01.720p.HDTV.x264-AVS/dark.matter.s02e01.720p.hdtv.x264-avs.r04
+         32,768   0%   48.34kB/s    0:17:13       50,000,000 100%   57.24MB/s    0:00:00 (xfr#6, to-chk=16/24)
+Dark.Matter.S02E01.720p.HDTV.x264-AVS/dark.matter.s02e01.720p.hdtv.x264-avs.r05
+         32,768   0%   38.37kB/s    0:21:42       46,432,256  92%   44.28MB/s    0:00:00       50,000,000 100%   47.16MB/s    0:00:01 (xfr#7, to-chk=15/24)
+Dark.Matter.S02E01.720p.HDTV.x264-AVS/dark.matter.s02e01.720p.hdtv.x264-avs.r06
+         32,768   0%    2.40MB/s    0:00:20       50,000,000 100%  244.53MB/s    0:00:00 (xfr#8, to-chk=14/24)
+Dark.Matter.S02E01.720p.HDTV.x264-AVS/dark.matter.s02e01.720p.hdtv.x264-avs.r07
+         32,768   0%  163.27kB/s    0:05:06       50,000,000 100%  126.82MB/s    0:00:00 (xfr#9, to-chk=13/24)
+Dark.Matter.S02E01.720p.HDTV.x264-AVS/dark.matter.s02e01.720p.hdtv.x264-avs.r08
+         32,768   0%   84.88kB/s    0:09:48       50,000,000 100%   85.76MB/s    0:00:00 (xfr#10, to-chk=12/24)
+Dark.Matter.S02E01.720p.HDTV.x264-AVS/dark.matter.s02e01.720p.hdtv.x264-avs.r09
+         32,768   0%   57.45kB/s    0:14:29       50,000,000 100%   64.61MB/s    0:00:00 (xfr#11, to-chk=11/24)
+Dark.Matter.S02E01.720p.HDTV.x264-AVS/dark.matter.s02e01.720p.hdtv.x264-avs.r10
+         32,768   0%   42.84kB/s    0:19:26       50,000,000 100%   52.28MB/s    0:00:00 (xfr#12, to-chk=10/24)
+Dark.Matter.S02E01.720p.HDTV.x264-AVS/dark.matter.s02e01.720p.hdtv.x264-avs.r11
+         32,768   0%   34.74kB/s    0:23:58       24,051,712  48%   22.94MB/s    0:00:01       50,000,000 100%   43.99MB/s    0:00:01 (xfr#13, to-chk=9/24)
+Dark.Matter.S02E01.720p.HDTV.x264-AVS/dark.matter.s02e01.720p.hdtv.x264-avs.r12
+         32,768   0%  344.09kB/s    0:02:25       50,000,000 100%  184.82MB/s    0:00:00 (xfr#14, to-chk=8/24)
+Dark.Matter.S02E01.720p.HDTV.x264-AVS/dark.matter.s02e01.720p.hdtv.x264-avs.r13
+         32,768   0%  120.30kB/s    0:06:55       50,000,000 100%  106.67MB/s    0:00:00 (xfr#15, to-chk=7/24)
+Dark.Matter.S02E01.720p.HDTV.x264-AVS/dark.matter.s02e01.720p.hdtv.x264-avs.r14
+         32,768   0%   70.33kB/s    0:11:50       50,000,000 100%   76.91MB/s    0:00:00 (xfr#16, to-chk=6/24)
+Dark.Matter.S02E01.720p.HDTV.x264-AVS/dark.matter.s02e01.720p.hdtv.x264-avs.r15
+         32,768   0%   50.96kB/s    0:16:20       50,000,000 100%   57.87MB/s    0:00:00 (xfr#17, to-chk=5/24)
+Dark.Matter.S02E01.720p.HDTV.x264-AVS/dark.matter.s02e01.720p.hdtv.x264-avs.r16
+         32,768   0%   38.42kB/s    0:08:27       19,543,559 100%   20.78MB/s    0:00:00 (xfr#18, to-chk=4/24)
+Dark.Matter.S02E01.720p.HDTV.x264-AVS/dark.matter.s02e01.720p.hdtv.x264-avs.rar
+         32,768   0%   35.32kB/s    0:23:34       28,606,464  57%   27.28MB/s    0:00:00       50,000,000 100%   44.65MB/s    0:00:01 (xfr#19, to-chk=3/24)
+Dark.Matter.S02E01.720p.HDTV.x264-AVS/dark.matter.s02e01.720p.hdtv.x264-avs.sfv
+            936 100%   11.87kB/s    0:00:00              936 100%   11.87kB/s    0:00:00 (xfr#20, to-chk=2/24)
+Dark.Matter.S02E01.720p.HDTV.x264-AVS/Sample/
+Dark.Matter.S02E01.720p.HDTV.x264-AVS/Sample/sample-dark.matter.s02e01.720p.hdtv.x264-avs.mkv
+         32,768   0%  376.47kB/s    0:01:03       24,103,889 100%  116.69MB/s    0:00:00 (xfr#21, to-chk=0/24)
+
+sent 893,868,070 bytes  received 636 bytes  198,637,490.22 bytes/sec
+total size is 893,648,443  speedup is 1.00
+___Extracting archives___
+Extracting archive in /home/jeremy/_work/decrypted/Dark.Matter.S02E01.720p.HDTV.x264-AVS
+Working over directory "/home/jeremy/_work/decrypted/Dark.Matter.S02E01.720p.HDTV.x264-AVS"
+Install cksfv in order to get CRC checked before using unrar
+Extracting (x) "/home/jeremy/_work/decrypted/Dark.Matter.S02E01.720p.HDTV.x264-AVS/dark.matter.s02e01.720p.hdtv.x264-avs.rar"...[32mok[0m
+Running hooks...covers_folders nfo osx_junk proof_folders rar sample_folders find: ‘./Sample’: No such file or directory
+sample_videos windows_junk empty_folders [32mFinished running hooks[0m
+1 rar files found, extracted and then cleaned using the following hooks: all
+___Moving new downloads___
+building file list ... 
+ 0 files...3 files to consider
+./
+Dark.Matter.S02E01.720p.HDTV.x264-AVS/
+
+sent 185 bytes  received 33 bytes  436.00 bytes/sec
+total size is 869,541,885  speedup is 3,988,724.24
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 14:14:47 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 14:14:47 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 14:14:47 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 14:14:47 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:        1.7s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 14:25:49 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 14:25:49 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 14:25:49 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 14:25:49 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:        1.6s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 14:36:50 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 14:36:51 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 14:36:51 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 14:36:51 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:        1.6s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 14:47:52 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 14:47:52 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 14:47:52 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 14:47:52 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:        1.5s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 14:59:00 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 14:59:01 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 14:59:01 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 14:59:01 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:         14s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 15:10:08 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 15:10:08 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 15:10:08 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 15:10:08 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:        1.5s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 15:21:09 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 15:21:10 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 15:21:10 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 15:21:10 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:        1.4s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 15:32:21 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 15:32:21 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 15:32:21 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 15:32:21 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:       19.2s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 15:43:31 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 15:43:32 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 15:43:32 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 15:43:32 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:       10.8s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 15:54:42 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 15:54:42 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 15:54:42 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 15:54:42 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:       10.1s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 16:05:51 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 16:05:51 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 16:05:51 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 16:05:51 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:        1.5s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 16:16:53 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 16:16:57 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 16:16:57 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 16:16:57 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:        7.5s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 16:28:00 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 16:28:00 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 16:28:00 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 16:28:00 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:        1.4s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 16:39:02 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 16:39:08 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 16:39:08 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 16:39:08 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:        9.5s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 16:50:11 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 16:50:12 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 16:50:12 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 16:50:12 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:        7.7s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 17:01:19 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 17:01:19 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 17:01:19 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 17:01:19 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:        1.6s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 17:12:21 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 17:12:21 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 17:12:21 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 17:12:21 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:        7.5s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 17:23:28 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 17:23:29 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 17:23:29 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 17:23:29 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:        1.5s
+
+___Check complete. Will check again in 10 minutes.___
+___Waiting to check. Next check in 10 minutes.___
+___Waiting to check. Next check in 5 minutes.___
+___Checking for new files on Google.___
+2016/07/02 17:34:30 Local file system at /home/jeremy/_work/encfs_enc: Building file list
+2016/07/02 17:34:30 Local file system at /home/jeremy/_work/encfs_enc: Waiting for checks to finish
+2016/07/02 17:34:30 Local file system at /home/jeremy/_work/encfs_enc: Waiting for transfers to finish
+2016/07/02 17:34:30 Waiting for deletions to finish
+
+Transferred:            0 Bytes (   0.00 kByte/s)
+Errors:                 0
+Checks:                 0
+Transferred:            0
+Elapsed time:        1.5s
+
+___Check complete. Will check again in 10 minutes.___
+20160702 17:35:26 dl_torrents: client (pid 2233) killed by signal 15, stopping

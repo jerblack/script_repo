@@ -1,0 +1,100 @@
+body {
+    background-color: #555;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    display: block;
+    background-size: 100%;
+    padding-top: 70px;
+    /*background-image: url(/img/rays-back.jpg);*/
+}
+#show-options {
+        padding: 1em;
+        margin: 1em;
+        margin-top: 2em;
+        background-color: whitesmoke;
+        border-radius: 0.5em;
+        border: 0.8px solid rgb(221,221,221);
+    }
+.indent-1 {
+    margin-left: 1em;
+}
+.indent-2 {
+    margin-left: 2em;
+}
+.indent-3 {
+    margin-left: 3em;
+}
+#dl-num {
+    padding: 0;
+    margin: 0;
+}
+
+
+/*xs*/
+#show-img-div {
+    margin: 0 auto 1em;
+
+}
+#show-img {
+    margin: 0 auto;
+    /*height: 14em;*/
+    width: 200px;
+}
+
+#show-details {
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+/*sm should be 768*/
+@media (min-width: 768px) {
+    #show-img-div {
+        display: block;
+        margin: 0 auto;
+    }
+    #show-img {
+        width: auto;
+    }
+    #show-page {
+        margin: auto;
+    }
+    #show-header {
+        overflow: hidden;
+    }
+    .show-header-item {
+        float: left;
+    }
+    #ep-labels {
+        float:right;
+    }
+    #show-title {
+        margin: -0.75em 1em 0.1em;
+    }
+
+}
+
+/*md*/
+@media (min-width: 992px) {}
+
+/*lg*/
+@media (min-width: 1200px) { }
+
+.container .jumbotron,
+.container-fluid .jumbotron {
+    padding: 1.5em;
+    border-radius: 5px;
+    background-color: #eee;
+
+}
+
+.jumbotron {
+    margin: 1em auto;
+    background-color: white;
+    /*width: auto;*/
+}
+
+.jumbotron p {
+    font-size: 1em;
+}
+

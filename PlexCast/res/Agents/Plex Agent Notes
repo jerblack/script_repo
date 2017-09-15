@@ -1,0 +1,64 @@
+
+All TV agents include:
+
+<class>(Agent.TV_Shows)
+	search(self, results, media, lang)
+
+	update(self, metadata, media, lang)
+	
+	name = <name>
+	ver = <version number>
+	languages = [Locale.Language.English] or 
+				[Locale.Language.NoLanguage]
+	
+	primary_provider = True <?>
+	
+	accepts_from = ['com.plexapp.agents.localmedia','com.plexapp.agents.opensubtitles','com.plexapp.agents.podnapisi','com.plexapp.agents.plexthememusic']
+	contributes_to = ['com.plexapp.agents.thetvdb']
+
+
+results <?>
+results.Append(MetadataSearchResult(id=id, name=title, year=year, lang=lang, score=100))
+results.Append(MetadataSearchResult(id=media.primary_metadata.id, score = 100))
+
+media   <?>
+	media.primary_metadata
+	media.primary_metadata.id
+	media.filename
+	media.id
+	media.title
+	filename=os.path.basename(media.items[0].parts[0].file)
+	path1 = os.path.dirname(media.items[0].parts[0].file)
+
+update  <?>
+
+
+metadata <?>
+	metadata.duration =  = duration_ms
+	metadata.title
+	metadata.original_title
+	metadata.content_rating = 'NR'
+	metadata.studio
+	metadata.originally_available_at
+	metadata.tagline
+	metadata.summary
+	metadata.rating 
+	ID: " + str(metadata.guid)
+
+
+	posterData = Core.storage.load(posterFilename)
+	metadata.posters['poster.jpg'] = Proxy.Media(posterData)
+
+	bannerData = Core.storage.load(bannerFilename)
+	metadata.banners['banner.jpg'] = Proxy.Media(bannerData)
+	
+	fanartData = Core.storage.load(fanartFilename)
+	metadata.art['fanart.jpg'] = Proxy.Media(fanartData)
+
+	metadata.genres.clear()
+	[metadata.genres.add(g.strip()) for genreXML in genres for g in genreXML.text.split("/")]
+	metadata.genres.discard('')
+
+	metadata.collections.clear()
+	[metadata.collections.add(s.strip()) for setXML in sets for s in setXML.text.split("/")]
+	metadata.collections.discard('')
