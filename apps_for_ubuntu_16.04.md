@@ -443,12 +443,12 @@ RDP client
       
       if find /etc/apt/ -name *.list | xargs cat | grep  ^[[:space:]]*deb | grep $REPO -q
       then
-      	echo ___$REPO repository is already present___
+        echo ___$REPO repository is already present___
       else
-      	echo ___adding $REPO repository___
-      	sudo apt-add-repository ppa:$REPO -y
-      	echo "___Updating repo database___"
-      	sudo apt update
+        echo ___adding $REPO repository___
+        sudo apt-add-repository ppa:$REPO -y
+        echo "___Updating repo database___"
+        sudo apt update
       fi
       
       echo "___Installing Sublime Text___"
@@ -458,6 +458,13 @@ RDP client
       mkdir -p ~/.config/sublime-text-3/Packages/Theme\ -\ Default
       SIDEBAR_THEME="https://gist.githubusercontent.com/jerblack/5d4ec251ca885b53d22ad5c57fd1d138/raw/1efcc83df0cd338c6c1f54c14b30516e64bc8ff7/Default.sublime-theme"
       wget $SIDEBAR_THEME -O ~/.config/sublime-text-3/Packages/Theme\ -\ Default/Default.sublime-theme
+      
+      echo "___Adding User Preferences___"
+      USERPREF="{
+        "font_size": 16,
+        "scroll_speed": 0
+      }
+      " > "~/.config/sublime-text-3/Packages/User/Preferences.sublime-settings"
       
 - **Transmission Remote**
 
